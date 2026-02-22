@@ -4,10 +4,10 @@ const parrain = {
 };
 
 const partenaires = [
-  { name: "Métropole Aix-Marseille Provence", src: "/960px-Logo_Métropole_Aix_Marseille_Provence.svg.png" },
+  { name: "Métropole Aix-Marseille Provence", src: "/logo-metropole-aix-marseille.png" },
   { name: "Batiactu", src: "/81792a_3e8f982fc8a6497ca46a98b487517d35~mv2.png" },
   { name: "Haribo", src: "/png-clipart-logo-haribo-of-america-brand-bear-bear-animals-text.png" },
-  { name: "Min. Enseignement Sup.", src: "/3840px-Logo_du_Ministère_de_l'Enseignement_Supérieur_et_de_la_Recherche_(2022).svg.png" },
+  { name: "Min. Enseignement Sup.", src: "/logo-ministere.png" },
   { name: "La Mie Câline", src: "/logo-la-mie-caline.png" },
   { name: "Cafés Richard", src: "/logo-cafes-richard.png" },
   { name: "Gomet'", src: "/logo-gomet.png" },

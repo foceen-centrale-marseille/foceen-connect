@@ -15,27 +15,27 @@ import team15 from "@/assets/teams/team15.webp";
 import isoCertification from "@/assets/iso-certification.jpg";
 
 const teamYears = [
-  { year: 2025, label: "Equipe 2025", img: team25 },
-  { year: 2024, label: "Equipe 2024", img: team24 },
-  { year: 2023, label: "Equipe 2023", img: team23 },
-  { year: 2022, label: "Equipe 2022", img: team22 },
-  { year: 2021, label: "Equipe 2021", img: team21 },
-  { year: 2020, label: "Equipe 2020", img: team20 },
-  { year: 2019, label: "Equipe 2019", img: team19 },
-  { year: 2018, label: "Equipe 2018", img: team18 },
-  { year: 2017, label: "Equipe 2017", img: team17 },
-  { year: 2016, label: "Equipe 2016", img: team16 },
-  { year: 2015, label: "Equipe 2015", img: team15 },
-];
+{ year: 2025, label: "Equipe 2025", img: team25 },
+{ year: 2024, label: "Equipe 2024", img: team24 },
+{ year: 2023, label: "Equipe 2023", img: team23 },
+{ year: 2022, label: "Equipe 2022", img: team22 },
+{ year: 2021, label: "Equipe 2021", img: team21 },
+{ year: 2020, label: "Equipe 2020", img: team20 },
+{ year: 2019, label: "Equipe 2019", img: team19 },
+{ year: 2018, label: "Equipe 2018", img: team18 },
+{ year: 2017, label: "Equipe 2017", img: team17 },
+{ year: 2016, label: "Equipe 2016", img: team16 },
+{ year: 2015, label: "Equipe 2015", img: team15 }];
+
 
 const values = [
-  { icon: Briefcase, title: "Professionnalisme", desc: "Un événement organisé avec rigueur et exigence à chaque édition." },
-  { icon: Heart, title: "Engagement", desc: "28 étudiants investis pour créer un pont entre écoles et entreprises." },
-  { icon: Lightbulb, title: "Innovation", desc: "Des formats renouvelés chaque année pour répondre aux attentes du marché." },
-  { icon: Shield, title: "Autonomie", desc: "Une gestion indépendante et responsable de l'événement." },
-  { icon: Users, title: "Solidarité", desc: "Égalité des chances et accessibilité pour tous les étudiants." },
-  { icon: Leaf, title: "Éco-responsabilité", desc: "Une démarche durable intégrée à chaque étape de l'organisation." },
-];
+{ icon: Briefcase, title: "Professionnalisme", desc: "Un événement organisé avec rigueur et exigence à chaque édition." },
+{ icon: Heart, title: "Engagement", desc: "28 étudiants investis pour créer un pont entre écoles et entreprises." },
+{ icon: Lightbulb, title: "Innovation", desc: "Des formats renouvelés chaque année pour répondre aux attentes du marché." },
+{ icon: Shield, title: "Autonomie", desc: "Une gestion indépendante et responsable de l'événement." },
+{ icon: Users, title: "Solidarité", desc: "Égalité des chances et accessibilité pour tous les étudiants." },
+{ icon: Leaf, title: "Éco-responsabilité", desc: "Une démarche durable intégrée à chaque étape de l'organisation." }];
+
 
 const QuiSommesNous = () => {
   const [carouselIndex, setCarouselIndex] = useState(0);
@@ -57,16 +57,16 @@ const QuiSommesNous = () => {
       <section className="relative h-[70vh] md:h-[80vh] overflow-hidden flex items-center justify-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${team25})` }}
-        >
+          style={{ backgroundImage: `url(${team25})` }}>
+
           <div className="absolute inset-0 bg-black/25" />
         </div>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
-          className="relative text-center px-4"
-        >
+          className="relative text-center px-4">
+
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground uppercase tracking-wide leading-tight">
             Une équipe dynamique
             <br />
@@ -84,14 +84,14 @@ const QuiSommesNous = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center"
-          >
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-8">
-              LE <span className="text-cyan">FOCEEN</span>
+            className="text-center">
+
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-8">FOCEEN
+              <span className="text-cyan">FOCEEN</span>
             </h2>
             <p className="text-base md:text-lg font-body text-muted-foreground leading-relaxed max-w-3xl mx-auto">
               Le FOCEEN (Forum Centrale Méditerranée Entreprises) est une association de l'École Centrale de Marseille
-              composée de <strong className="text-foreground">28 étudiants-ingénieurs</strong> passionnés. Chaque année,
+              composée de <strong className="text-cyan-500">28 étudiants-ingénieurs</strong> passionnés. Chaque année,
               ces étudiants organisent le plus grand forum de recrutement ingénieur de la région Sud-Est, réunissant
               entreprises, écoles et talents autour d'un événement unique.
             </p>
@@ -122,8 +122,8 @@ const QuiSommesNous = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-heading font-bold text-center mb-4"
-          >
+            className="text-3xl md:text-4xl font-heading font-bold text-center mb-4">
+
             NOTRE HISTOIRE
           </motion.h2>
           <div className="w-20 h-1 bg-cyan mx-auto rounded-full mb-8" />
@@ -139,14 +139,14 @@ const QuiSommesNous = () => {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -50 }}
                 transition={{ duration: 0.4 }}
-                className="relative aspect-video rounded-lg overflow-hidden"
-              >
+                className="relative aspect-video rounded-lg overflow-hidden">
+
                 <img
                   src={teamYears[carouselIndex].img}
                   alt={teamYears[carouselIndex].label}
                   className="w-full h-full object-cover"
-                  loading="eager"
-                />
+                  loading="eager" />
+
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary/90 to-transparent p-6">
                   <h3 className="text-xl md:text-2xl font-heading font-bold">
                     {teamYears[carouselIndex].label}
@@ -158,32 +158,32 @@ const QuiSommesNous = () => {
             <button
               onClick={prevSlide}
               className="absolute left-2 md:-left-5 top-1/2 -translate-y-1/2 p-2 rounded-full bg-primary/80 hover:bg-primary text-primary-foreground transition-colors"
-              aria-label="Équipe précédente"
-            >
+              aria-label="Équipe précédente">
+
               <ChevronLeft size={24} />
             </button>
             <button
               onClick={nextSlide}
               className="absolute right-2 md:-right-5 top-1/2 -translate-y-1/2 p-2 rounded-full bg-primary/80 hover:bg-primary text-primary-foreground transition-colors"
-              aria-label="Équipe suivante"
-            >
+              aria-label="Équipe suivante">
+
               <ChevronRight size={24} />
             </button>
 
             <div className="flex justify-center gap-2 mt-6 flex-wrap">
-              {teamYears.map((t, i) => (
-                <button
-                  key={t.year}
-                  onClick={() => setCarouselIndex(i)}
-                  className={`px-3 py-1 rounded-full text-xs font-heading transition-all ${
-                    i === carouselIndex
-                      ? "bg-cyan text-primary-foreground"
-                      : "bg-primary-foreground/10 text-primary-foreground/60 hover:bg-primary-foreground/20"
-                  }`}
-                >
+              {teamYears.map((t, i) =>
+              <button
+                key={t.year}
+                onClick={() => setCarouselIndex(i)}
+                className={`px-3 py-1 rounded-full text-xs font-heading transition-all ${
+                i === carouselIndex ?
+                "bg-cyan text-primary-foreground" :
+                "bg-primary-foreground/10 text-primary-foreground/60 hover:bg-primary-foreground/20"}`
+                }>
+
                   {t.year}
                 </button>
-              ))}
+              )}
             </div>
           </div>
         </div>
@@ -196,8 +196,8 @@ const QuiSommesNous = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-heading font-bold text-center text-foreground mb-6"
-          >
+            className="text-3xl md:text-4xl font-heading font-bold text-center text-foreground mb-6">
+
             NOS VALEURS
           </motion.h2>
           <p className="text-center text-muted-foreground font-body mb-16 max-w-2xl mx-auto">
@@ -205,22 +205,22 @@ const QuiSommesNous = () => {
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {values.map((v, i) => (
-              <motion.div
-                key={v.title}
-                initial={{ opacity: 0, y: 15 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.08, duration: 0.4 }}
-                className="flex flex-col items-center text-center gap-3 p-6"
-              >
+            {values.map((v, i) =>
+            <motion.div
+              key={v.title}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.08, duration: 0.4 }}
+              className="flex flex-col items-center text-center gap-3 p-6">
+
                 <div className="w-14 h-14 rounded-xl bg-cyan/10 flex items-center justify-center">
                   <v.icon size={26} className="text-cyan" />
                 </div>
                 <h4 className="font-heading font-semibold text-foreground">{v.title}</h4>
                 <p className="text-sm text-muted-foreground font-body leading-relaxed">{v.desc}</p>
               </motion.div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -232,8 +232,8 @@ const QuiSommesNous = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-heading font-bold text-center text-foreground mb-16"
-          >
+            className="text-3xl md:text-4xl font-heading font-bold text-center text-foreground mb-16">
+
             CERTIFICATIONS
           </motion.h2>
 
@@ -270,8 +270,8 @@ const QuiSommesNous = () => {
                 src={isoCertification}
                 alt="Certification ISO 9001 et ISO 20121 - Bureau Veritas"
                 className="w-full max-w-md rounded-xl border border-border shadow-sm object-contain"
-                loading="eager"
-              />
+                loading="eager" />
+
             </div>
           </div>
         </div>
@@ -284,8 +284,8 @@ const QuiSommesNous = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-heading font-bold text-center text-foreground mb-16"
-          >
+            className="text-3xl md:text-4xl font-heading font-bold text-center text-foreground mb-16">
+
             NOTRE POLITIQUE QUALITÉ EN QUELQUES MOTS
           </motion.h2>
 
@@ -296,8 +296,8 @@ const QuiSommesNous = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="bg-card p-8 rounded-xl border border-border shadow-sm"
-            >
+              className="bg-card p-8 rounded-xl border border-border shadow-sm">
+
               <h3 className="text-xl font-heading font-bold text-foreground mb-4 flex items-center gap-2">
                 <Shield size={20} className="text-cyan" />
                 Piliers fondateurs
@@ -332,8 +332,8 @@ const QuiSommesNous = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="bg-card p-8 rounded-xl border border-border shadow-sm"
-            >
+              className="bg-card p-8 rounded-xl border border-border shadow-sm">
+
               <h3 className="text-xl font-heading font-bold text-foreground mb-4 flex items-center gap-2">
                 <Users size={20} className="text-cyan" />
                 Politique d'accueil
@@ -365,8 +365,8 @@ const QuiSommesNous = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>);
+
 };
 
 export default QuiSommesNous;

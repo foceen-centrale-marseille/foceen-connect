@@ -45,7 +45,7 @@ const HeroSlider = () => {
   const prev = useCallback(() => setCurrent((c) => (c - 1 + slides.length) % slides.length), []);
 
   useEffect(() => {
-    const timer = setInterval(next, 8000);
+    const timer = setInterval(next, 16000);
     return () => clearInterval(timer);
   }, [next]);
 

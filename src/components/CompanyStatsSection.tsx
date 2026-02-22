@@ -101,16 +101,16 @@ const ChartWithLegend = ({
 const CompanyStatsSection = () => (
   <section className="py-16 bg-background">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        {/* Left column - Text */}
+      <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-8 lg:gap-12 items-center">
+        {/* Left column - Text (40%) */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl font-heading font-bold text-foreground mb-6">136 EXPOSANTS</h2>
-          <p className="text-base font-body text-muted-foreground leading-relaxed">
+          <h2 className="text-2xl lg:text-3xl font-heading font-bold text-foreground mb-4">136 EXPOSANTS</h2>
+          <p className="text-sm lg:text-base font-body text-muted-foreground leading-relaxed">
             C'est plus de 136 entreprises qui font le déplacement chaque année pour présenter leurs activités et rencontrer les étudiants qui viennent se présenter à elles.
           </p>
         </motion.div>

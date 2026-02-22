@@ -60,7 +60,7 @@ const QuiSommesNous = () => {
       <section className="relative h-[70vh] md:h-[80vh] overflow-hidden flex items-center justify-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${team25})`, imageRendering: 'auto' }}
+          style={{ backgroundImage: `url(${team25})`, imageRendering: '-webkit-optimize-contrast' }}
         >
           <div className="absolute inset-0 bg-black/40" />
         </div>
@@ -147,7 +147,7 @@ const QuiSommesNous = () => {
                   src={teamYears[carouselIndex].img}
                   alt={teamYears[carouselIndex].label}
                   className="w-full h-full object-cover"
-                  style={{ imageRendering: 'auto' }}
+                  style={{ imageRendering: '-webkit-optimize-contrast', WebkitImageRendering: 'crisp-edges' } as React.CSSProperties}
                   loading="eager"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary/90 to-transparent p-6">
@@ -204,21 +204,15 @@ const QuiSommesNous = () => {
             NOS VALEURS & CERTIFICATIONS
           </motion.h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Gauche — Texte */}
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <p className="text-sm md:text-base font-body text-muted-foreground leading-relaxed mb-6">
+          <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 items-center my-12">
+            <div className="flex flex-col gap-6 order-1">
+              <p className="text-sm md:text-base font-body text-muted-foreground leading-relaxed">
                 Depuis sa création, le FOCEEN s'est imposé comme un acteur incontournable du recrutement étudiant
                 dans la région Sud-Est. Cette réputation repose sur des valeurs fortes et un engagement constant
                 envers la qualité et l'innovation.
               </p>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 {values.map((v, i) => (
                   <motion.div
                     key={v.title}
@@ -255,23 +249,17 @@ const QuiSommesNous = () => {
                   </li>
                 </ul>
               </div>
-            </motion.div>
+            </div>
 
-            {/* Droite — Visuel ISO */}
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="flex items-center justify-center"
-            >
+            <div className="w-full flex justify-center order-2">
               <img
                 src={isoCertification}
                 alt="Certification ISO 9001 et ISO 20121 - Bureau Veritas"
-                className="w-full max-w-md rounded-xl border border-border shadow-sm object-contain"
-                style={{ imageRendering: 'auto' }}
+                className="w-full max-w-md rounded-xl border border-border shadow-sm"
+                style={{ imageRendering: '-webkit-optimize-contrast', objectFit: 'contain' } as React.CSSProperties}
+                loading="eager"
               />
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>

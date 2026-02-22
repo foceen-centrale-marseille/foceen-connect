@@ -26,31 +26,9 @@ const slides = [
     id: 2,
     content: (
       <div className="text-center text-primary-foreground max-w-3xl mx-auto">
-        <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">FORUM FOCEEN</h2>
-        <p className="text-base md:text-lg font-body leading-relaxed text-primary-foreground/90">
-          Attirant plus de 2500 visiteurs et 136 entreprises, le FOCEEN est le plus grand forum de recrutement de la région Sud-Est. Notre but est de trouver les meilleures offres de stages et d'emplois pour les élèves de la région d'Aix-Marseille. Certifiée par la norme ISO 9001 et ISO 20121, notre association prône la qualité ainsi que l'excellence, le professionnalisme et l'autonomie mais aussi l'éco-responsabilité et la solidarité.
-        </p>
-      </div>
-    ),
-  },
-  {
-    id: 3,
-    content: (
-      <div className="text-center text-primary-foreground max-w-3xl mx-auto">
         <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">PRÈS DE 2500 VISITEURS</h2>
         <p className="text-base md:text-lg font-body leading-relaxed text-primary-foreground/90">
           Chaque année, le souhait du Forum Centrale Méditerranée Entreprises est de proposer des profils variés aux recruteurs présents au Palais des Congrès de Marseille. Pour cela, nous avons développé des partenariats avec de multiples écoles dans toute la France. Provenant à la fois d'écoles d'ingénieurs généralistes (Centrale Méditerranée, Polytech, Mines Saint Etienne, Arts et Métiers) mais aussi d'écoles plus spécialisées (Institut G4, ISBA TP) ou encore d'écoles de management (Kedge BS) ainsi que de l'IAE d'Aix-en-Provence et l'Université d'Aix-Marseille, le panel d'étudiants est grand et nous espérons, année après année, le diversifier.
-        </p>
-      </div>
-    ),
-  },
-  {
-    id: 4,
-    content: (
-      <div className="text-center text-primary-foreground max-w-3xl mx-auto">
-        <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">136 EXPOSANTS</h2>
-        <p className="text-base md:text-lg font-body leading-relaxed text-primary-foreground/90">
-          C'est plus de 136 entreprises qui font le déplacement chaque année pour présenter leurs activités et rencontrer les étudiants qui viennent se présenter à elles.
         </p>
       </div>
     ),

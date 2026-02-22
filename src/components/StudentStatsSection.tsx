@@ -105,15 +105,15 @@ const ChartWithLegend = ({
     transition={{ duration: 0.3 }}
     className="flex flex-col md:flex-row items-center justify-center gap-6"
   >
-    <div className="w-full md:w-auto h-[320px] min-w-[280px]">
+    <div className="w-full md:w-auto h-[280px] min-w-[240px]">
       <ResponsiveContainer width="100%" height="100%">
         <PieChart>
           <Pie
             data={data}
             cx="50%"
             cy="50%"
-            outerRadius={130}
-            innerRadius={55}
+            outerRadius={110}
+            innerRadius={45}
             dataKey="value"
             paddingAngle={1}
             label={false}
@@ -133,33 +133,48 @@ const ChartWithLegend = ({
 
 const StudentStatsSection = () => (
   <section className="py-16 bg-background">
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <motion.h2
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="text-3xl font-heading font-bold text-center text-foreground mb-10"
-      >
-        PROFILS ÉTUDIANTS
-      </motion.h2>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        {/* Left column - Text */}
+        <motion.div
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <h2 className="text-3xl font-heading font-bold text-foreground mb-6">FORUM FOCÉEN</h2>
+          <p className="text-base font-body text-muted-foreground leading-relaxed">
+            Attirant plus de 2500 visiteurs et 136 entreprises, le FOCÉEN est le plus grand forum de recrutement de la région Sud-Est. Notre but est de trouver les meilleures offres de stages et d'emplois pour les élèves de la région d'Aix-Marseille. Certifiée par la norme ISO 9001 et ISO 20121, notre association prône la qualité ainsi que l'excellence, le professionnalisme et l'autonomie mais aussi l'éco-responsabilité et la solidarité.
+          </p>
+        </motion.div>
 
-      <Tabs defaultValue="school" className="w-full">
-        <TabsList className="grid w-full grid-cols-3 mb-8">
-          <TabsTrigger value="school">Répartition par école</TabsTrigger>
-          <TabsTrigger value="interest">Domaines d'intérêts</TabsTrigger>
-          <TabsTrigger value="level">Niveau d'étude</TabsTrigger>
-        </TabsList>
+        {/* Right column - Charts */}
+        <motion.div
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <h3 className="text-2xl font-heading font-bold text-center text-foreground mb-6">PROFILS ÉTUDIANTS</h3>
+          <Tabs defaultValue="school" className="w-full">
+            <TabsList className="grid w-full grid-cols-3 mb-6">
+              <TabsTrigger value="school">Par école</TabsTrigger>
+              <TabsTrigger value="interest">Intérêts</TabsTrigger>
+              <TabsTrigger value="level">Niveau</TabsTrigger>
+            </TabsList>
 
-        <TabsContent value="school">
-          <ChartWithLegend data={schoolData} colors={COLORS_SCHOOL} isAbsolute />
-        </TabsContent>
-        <TabsContent value="interest">
-          <ChartWithLegend data={interestData} colors={COLORS_INTEREST} />
-        </TabsContent>
-        <TabsContent value="level">
-          <ChartWithLegend data={studyLevelData} colors={COLORS_LEVEL} />
-        </TabsContent>
-      </Tabs>
+            <TabsContent value="school">
+              <ChartWithLegend data={schoolData} colors={COLORS_SCHOOL} isAbsolute />
+            </TabsContent>
+            <TabsContent value="interest">
+              <ChartWithLegend data={interestData} colors={COLORS_INTEREST} />
+            </TabsContent>
+            <TabsContent value="level">
+              <ChartWithLegend data={studyLevelData} colors={COLORS_LEVEL} />
+            </TabsContent>
+          </Tabs>
+        </motion.div>
+      </div>
     </div>
   </section>
 );

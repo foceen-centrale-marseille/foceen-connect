@@ -729,7 +729,7 @@ export const exposantsList: Exposant[] = [
   // ── Exposants existants (non encore mis à jour via fiches) ──
   { id: 1, name: "Accenture", sector: "Conseil & Technologie", domain: "Conseil", yearCreated: 1989, location: "Paris, France", employees: "738 000+", website: "https://www.accenture.com", profiles: "Consultants, ingénieurs IT", postTypes: ["CDI", "Stage", "Alternance"], applicationMethod: "Candidature en ligne", description: "Accenture est une entreprise mondiale de services professionnels, spécialisée dans le conseil, la technologie et l'externalisation.", highlights: ["Fortune Global 500", "Présence mondiale", "Innovation digitale"] },
   {
-    id: 15, name: "Thales", sector: "Défense, Aérospatial, Cyber et Digital", domain: "Défense", yearCreated: 2000,
+    id: 15, name: "Thales", logo: "/logos/thales.png", sector: "Défense, Aérospatial, Cyber et Digital", domain: "Défense", yearCreated: 2000,
     location: "68 pays, une quarantaine de sites en France", employees: "83 000", chiffreAffaires: "20,6 milliards d'euros",
     website: "https://www.thalesgroup.com/en", websiteCarriere: "https://careers.thalesgroup.com/",
     profiles: "Tous profils ingénieurs : défense, aérospatial, cybersécurité, digital, IA, Big data",
@@ -754,7 +754,7 @@ export const exposantsList: Exposant[] = [
   { id: 20, name: "CMA CGM", sector: "Transport maritime", domain: "Transport", yearCreated: 1978, location: "Marseille, France", employees: "155 000+", website: "https://www.cmacgm.com", profiles: "Ingénieurs logistique, supply chain", postTypes: ["CDI", "Stage", "Alternance"], applicationMethod: "Site carrières CMA CGM", description: "CMA CGM est un leader mondial du transport maritime et de la logistique, basé à Marseille.", highlights: ["3e armateur mondial", "Siège à Marseille", "Innovation logistique"] },
   // ── Vulcain Engineering Group ──
   {
-    id: 85, name: "Vulcain Engineering Group", sector: "Services d'ingénierie et de conseil", domain: "Énergie", yearCreated: 2005,
+    id: 85, name: "Vulcain Engineering Group", logo: "/logos/vulcain.svg", sector: "Services d'ingénierie et de conseil", domain: "Énergie", yearCreated: 2005,
     location: "Présent sur toute la France et dans 16 pays du monde", employees: "6 000", chiffreAffaires: "630 millions d'euros",
     website: "https://www.vulcain-eng.com/", profiles: "Essentiellement des ingénieurs de formation",
     postTypes: ["CDI", "Stage"],
@@ -764,7 +764,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── ATOS ──
   {
-    id: 86, name: "ATOS", sector: "ESN - Entreprise de service du numérique", domain: "Numérique", yearCreated: 1997,
+    id: 86, name: "ATOS", logo: "/logos/atos.png", sector: "ESN - Entreprise de service du numérique", domain: "Numérique", yearCreated: 1997,
     location: "Implantations en France métropolitaine et Outre-Mer : Paris, Lille, Caen, Rouen, Rennes, Angers, Nantes, Metz, Strasbourg, Tours, Clermont-Ferrand, Lyon, Bordeaux, Toulouse, Grenoble, Montpellier, Aix-en-Provence, Sophia-Antipolis, Toulon",
     employees: "10 130", chiffreAffaires: "9,6 milliards d'euros",
     website: "https://atos.net/fr/rejoignez-nous", websiteCarriere: "https://atos.net/advancing-what-matters/fr/rejoignez-nous",
@@ -776,7 +776,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── Dassault Systèmes ──
   {
-    id: 87, name: "Dassault Systèmes", sector: "Éditeur de logiciels 3D", domain: "Numérique", yearCreated: 1981,
+    id: 87, name: "Dassault Systèmes", logo: "/logos/dassault-systemes.png", sector: "Éditeur de logiciels 3D", domain: "Numérique", yearCreated: 1981,
     location: "En France : Île-de-France, Bretagne, Auvergne Rhône Alpes, Occitanie, Provence Alpes Côte d'Azur. 195 bureaux dans le monde.",
     employees: "23 800", chiffreAffaires: "5,95 milliards d'euros",
     website: "https://www.3ds.com/fr/", websiteCarriere: "https://www.3ds.com/fr/careers",
@@ -788,7 +788,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── France Télévisions ──
   {
-    id: 88, name: "France Télévisions", sector: "Audiovisuel", domain: "Numérique", yearCreated: 1992,
+    id: 88, name: "France Télévisions", logo: "/logos/france-televisions.png", sector: "Audiovisuel", domain: "Numérique", yearCreated: 1992,
     location: "France", employees: "9 000", chiffreAffaires: "5,5 milliards d'euros",
     website: "https://www.francetelevisions.fr/groupe", websiteCarriere: "https://recrutement.francetelevisions.fr",
     profiles: "Ingénieurs Technologies, Chef de Projet informatiques, Architecte SI, Administrateurs Réseaux IT, Assistant DATA, Data Ingénieur",
@@ -799,7 +799,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── Lucca ──
   {
-    id: 89, name: "Lucca", sector: "Tech/SaaS", domain: "Numérique", yearCreated: 2002,
+    id: 89, name: "Lucca", logo: "/logos/lucca.png", sector: "Tech/SaaS", domain: "Numérique", yearCreated: 2002,
     location: "Paris, Nantes, Marseille, Barcelone, Toulouse, Genève, Munich, Bordeaux", employees: "800",
     website: "https://www.lucca.fr/", profiles: "Product Manager, SRE, UI Developer, Full stack software engineer, back-end engineer, front-end engineer",
     postTypes: ["Alternance", "CDD", "CDI", "Stage"],
@@ -809,7 +809,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── Murex ──
   {
-    id: 90, name: "Murex", sector: "Fintech", domain: "Numérique", yearCreated: 1986,
+    id: 90, name: "Murex", logo: "/logos/murex.png", sector: "Fintech", domain: "Numérique", yearCreated: 1986,
     location: "Paris, France – 19 bureaux à l'international", employees: "3 000", chiffreAffaires: "791 millions d'euros",
     website: "https://www.murex.com/en", websiteCarriere: "https://murex.wd3.myworkdayjobs.com/MurexCareerPage1",
     profiles: "Ingénierie Financière (finance quantitative), Ingénierie Information (software development, C++ / Java)",
@@ -820,7 +820,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── Orange SA ──
   {
-    id: 91, name: "Orange SA", sector: "Télécommunications multiservices - IT & Innovation", domain: "Numérique", yearCreated: 1988,
+    id: 91, name: "Orange SA", logo: "/logos/orange.png", sector: "Télécommunications multiservices - IT & Innovation", domain: "Numérique", yearCreated: 1988,
     location: "Orange Massalia Bât C, 93 rue Felix Pyat 13003 Marseille", employees: "130 000", chiffreAffaires: "43 milliards d'euros",
     website: "https://www.orange.fr/portail", websiteCarriere: "https://orange.jobs/site/fr-home/",
     profiles: "IA, cybersécurité, big data, IoT, virtualisation des réseaux, Cloud, 5G, fonctions support",
@@ -831,7 +831,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── Akkodis ──
   {
-    id: 92, name: "Akkodis", sector: "Ingénierie industrie / IT / Défense", domain: "Ingénierie", yearCreated: 2022,
+    id: 92, name: "Akkodis", logo: "/logos/akkodis.png", sector: "Ingénierie industrie / IT / Défense", domain: "Ingénierie", yearCreated: 2022,
     location: "30 pays", employees: "2 000 (France : 9 000)", chiffreAffaires: "4 milliards d'euros",
     website: "https://www.akkodis.com/fr/", websiteCarriere: "https://www.akkodis.com/fr-fr/emplois/",
     profiles: "Ingénierie système, Ingénierie mécanique, Développement / Conception logiciel, Soutien logistique intégré",
@@ -842,7 +842,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── Assystem ──
   {
-    id: 93, name: "Assystem", sector: "Bureau d'études", domain: "Ingénierie", yearCreated: 1966,
+    id: 93, name: "Assystem", logo: "/logos/assystem.png", sector: "Bureau d'études", domain: "Ingénierie", yearCreated: 1966,
     location: "Internationale – 12 pays (Europe, Moyen-Orient, Asie)", employees: "8 000", chiffreAffaires: "611 millions d'euros",
     website: "https://www.assystem.com/fr/", profiles: "Ingénieurs Projets, PMO, Études, Fonctionnement, Démantèlement, Sûreté Nucléaire, Électricité, Mécaniques, Génie Civil, Risques, Automatisme, Systèmes, Informatique, Data Scientist, IA, I&C",
     postTypes: ["Alternance", "CDI", "Stage"],

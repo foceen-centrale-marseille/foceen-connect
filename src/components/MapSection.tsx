@@ -11,8 +11,8 @@ const MapSection = () => {
         </div>
         <div className="rounded-lg overflow-hidden h-[450px] shadow-lg">
           <iframe
-            title="Parc Chanot, Marseille"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2904.8!2d5.3938!3d43.2695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c0b5db659e65%3A0x5765b1e3c82e0e0!2sPalais%20des%20Congr%C3%A8s%20-%20Parc%20Chanot!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr"
+            title="Palais des Congrès - Forum FOCEEN"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1452.0!2d5.3938!3d43.2695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9bf1d071c2c1d%3A0x7b449c4ef9a49c95!2sPalais%20des%20Congr%C3%A8s%20-%20Parc%20Chanot!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr"
             style={{ width: "100%", height: "100%", border: 0 }}
             allowFullScreen
             loading="lazy"

@@ -64,60 +64,29 @@ export const parrain: Exposant = {
 
 export const partenaires: Exposant[] = [
   {
-    id: 100,
-    name: "Métropole Aix-Marseille Provence",
-    logo: "/logo-metropole-aix-marseille.png",
-    sector: "Collectivité territoriale",
-    domain: "Environnement",
-    yearCreated: 2016,
-    location: "Marseille, France",
-    employees: "10 000+",
-    website: "https://www.ampmetropole.fr",
-    profiles: "Ingénieurs, urbanistes, gestionnaires",
-    postTypes: ["CDI", "Stage", "CDD"],
-    applicationMethod: "Via le portail de recrutement de la Métropole",
+    id: 50,
+    name: "Groupe ADF",
+    logo: "/logos/groupe-adf.png",
+    sector: "Industrie",
+    domain: "Industrie",
+    yearCreated: 1962,
+    location: "Echelle internationale",
+    employees: "4 900",
+    chiffreAffaires: "640 millions d'euros",
+    website: "https://www.groupeadf.com/fr/groupe/groupe-adf",
+    websiteCarriere: "https://careers.groupeadf.com/",
+    profiles: "Esprit d'équipe et coopération, Rigueur et sens des responsabilités, Réactivité et adaptabilité, Culture sécurité, Orientation client, Leadership terrain",
+    postTypes: ["Alternance", "CDD", "CDI", "Stage"],
+    applicationMethod:
+      "Entretien téléphonique RH après sélection du CV et de la lettre de motivation, un entretien avec le responsable opérationnel par la suite.",
     description:
-      "La Métropole Aix-Marseille-Provence est la plus vaste métropole de France. Elle œuvre pour le développement économique, l'aménagement du territoire et la transition écologique.",
-    highlights: ["Plus grande métropole de France", "92 communes", "Acteur clé de la transition écologique"],
+      "Nos équipes répondent aux besoins d'ingénierie pour imaginer et concevoir les solutions du futur, réaliser des projets et des équipements innovants, et assurer un support quotidien à la production et à la maintenance tout en relevant les défis de la transition énergétique et de la digitalisation des opérations.",
+    highlights: [
+      "Solutions d'ingénierie innovantes",
+      "Présence internationale",
+      "Transition énergétique et digitalisation",
+    ],
   },
-  {
-    id: 101,
-    name: "Haribo",
-    logo: "/png-clipart-logo-haribo-of-america-brand-bear-bear-animals-text.png",
-    sector: "Agroalimentaire",
-    domain: "Agroalimentaire",
-    yearCreated: 1920,
-    location: "Marseille, France",
-    employees: "7 000+",
-    website: "https://www.haribo.com/fr-fr",
-    profiles: "Ingénieurs production, qualité, supply chain",
-    postTypes: ["CDI", "Alternance", "Stage"],
-    applicationMethod: "Candidature en ligne",
-    description:
-      "HARIBO est le leader mondial de la confiserie de sucre et de réglisse, offrant des produits de qualité depuis plus d'un siècle.",
-    highlights: ["Leader mondial de la confiserie", "Usine à Marseille", "Marque iconique"],
-  },
-  {
-    id: 102,
-    name: "Batiactu",
-    logo: "/81792a_3e8f982fc8a6497ca46a98b487517d35~mv2.png",
-    sector: "Média / BTP",
-    domain: "BTP",
-    yearCreated: 2000,
-    location: "Paris, France",
-    employees: "50-200",
-    website: "https://www.batiactu.com",
-    profiles: "Rédacteurs, développeurs, commerciaux",
-    postTypes: ["CDI", "Stage"],
-    applicationMethod: "Candidature par email",
-    description:
-      "Batiactu est le premier portail d'information dédié aux professionnels de la construction et du bâtiment en France.",
-    highlights: ["Média de référence du BTP", "Actualités et réglementation", "Communauté de professionnels"],
-  },
-];
-
-export const exposantsList: Exposant[] = [
-  // ── Fiches intégrées depuis les documents reçus ──
   {
     id: 5,
     name: "CEA",
@@ -142,30 +111,10 @@ export const exposantsList: Exposant[] = [
       "La défense et la sécurité",
     ],
   },
-  {
-    id: 50,
-    name: "Groupe ADF",
-    logo: "/logos/groupe-adf.png",
-    sector: "Industrie",
-    domain: "Industrie",
-    yearCreated: 1962,
-    location: "Echelle internationale",
-    employees: "4 900",
-    chiffreAffaires: "640 millions d'euros",
-    website: "https://www.groupeadf.com/fr/groupe/groupe-adf",
-    websiteCarriere: "https://careers.groupeadf.com/",
-    profiles: "Esprit d'équipe et coopération, Rigueur et sens des responsabilités, Réactivité et adaptabilité, Culture sécurité, Orientation client, Leadership terrain",
-    postTypes: ["Alternance", "CDD", "CDI", "Stage"],
-    applicationMethod:
-      "Entretien téléphonique RH après sélection du CV et de la lettre de motivation, un entretien avec le responsable opérationnel par la suite.",
-    description:
-      "Nos équipes répondent aux besoins d'ingénierie pour imaginer et concevoir les solutions du futur, réaliser des projets et des équipements innovants, et assurer un support quotidien à la production et à la maintenance tout en relevant les défis de la transition énergétique et de la digitalisation des opérations.",
-    highlights: [
-      "Solutions d'ingénierie innovantes",
-      "Présence internationale",
-      "Transition énergétique et digitalisation",
-    ],
-  },
+];
+
+export const exposantsList: Exposant[] = [
+  // ── Fiches intégrées depuis les documents reçus ──
   {
     id: 51,
     name: "ACCEO",
@@ -726,8 +675,7 @@ export const exposantsList: Exposant[] = [
     highlights: ["Producteur d'énergie renouvelable international", "Transition énergétique et écologique", "Présence internationale"],
   },
 
-  // ── Exposants existants (non encore mis à jour via fiches) ──
-  { id: 1, name: "Accenture", sector: "Conseil & Technologie", domain: "Conseil", yearCreated: 1989, location: "Paris, France", employees: "738 000+", website: "https://www.accenture.com", profiles: "Consultants, ingénieurs IT", postTypes: ["CDI", "Stage", "Alternance"], applicationMethod: "Candidature en ligne", description: "Accenture est une entreprise mondiale de services professionnels, spécialisée dans le conseil, la technologie et l'externalisation.", highlights: ["Fortune Global 500", "Présence mondiale", "Innovation digitale"] },
+  // ── Exposants avec fiches complètes ──
   {
     id: 15, name: "Thales", logo: "/logos/thales.png", sector: "Défense, Aérospatial, Cyber et Digital", domain: "Défense", yearCreated: 2000,
     location: "68 pays, une quarantaine de sites en France", employees: "83 000", chiffreAffaires: "20,6 milliards d'euros",
@@ -738,20 +686,6 @@ export const exposantsList: Exposant[] = [
     description: "Thales est un leader mondial des hautes technologies qui compte 83 000 collaborateurs dans le monde. Thales investit dans les innovations du numérique et de la « Deep Tech » (connectivité, Big data, intelligence artificielle, cybersécurité et quantique) pour construire un avenir de confiance. Opérant sur les marchés de la défense, de l'aérospatial, de la cyber et du digital, le Groupe propose des solutions, services et produits qui aident ses clients à remplir leurs missions critiques.",
     highlights: ["Leader mondial des hautes technologies", "83 000 collaborateurs dans 68 pays", "Deep Tech : IA, cybersécurité, quantique"],
   },
-  { id: 16, name: "TotalEnergies", sector: "Énergie", domain: "Énergie", yearCreated: 1924, location: "La Défense, France", employees: "100 000+", website: "https://www.totalenergies.fr", profiles: "Ingénieurs procédés, énergie", postTypes: ["CDI", "Alternance", "Stage"], applicationMethod: "Site carrières TotalEnergies", description: "TotalEnergies est une compagnie multi-énergies mondiale de production et de fourniture d'énergies.", highlights: ["Multi-énergies", "Transition énergétique", "Innovation R&D"] },
-  {
-    id: 17, name: "Veolia", sector: "Gestion des services à l'environnement", domain: "Environnement", yearCreated: 1853,
-    location: "Présent sur les 5 continents", employees: "215 000", chiffreAffaires: "44,7 milliards d'euros",
-    website: "https://www.veolia.com/fr",
-    profiles: "Quelle que soit votre expérience ou votre pays d'origine, nous vous offrons l'opportunité de travailler dans un contexte professionnel innovant et multiculturel. Nous attachons une grande importance à votre personnalité, vos ambitions, votre créativité, votre enthousiasme et votre capacité à entreprendre.",
-    postTypes: ["CDD", "CDI", "Stage"],
-    applicationMethod: "Veolia vous accompagne dans votre projet professionnel ! Que vous soyez étudiant en recherche de stage ou d'alternance, jeune diplômé visant un VIE ou une première expérience professionnelle, rejoignez un leader mondial de la transformation écologique.",
-    description: "Le groupe Veolia a pour ambition de devenir l'entreprise de référence de la transformation écologique. Présent sur les cinq continents avec 215 000 salariés, le Groupe conçoit et déploie des solutions utiles et concrètes pour la gestion de l'eau, des déchets et de l'énergie. En 2024, le Groupe a servi 111 millions d'habitants en eau potable, 98 millions en assainissement, a produit 42 térawattheures d'énergie et traité 65 millions de tonnes de déchets.",
-    highlights: ["Leader mondial de la transformation écologique", "215 000 salariés sur 5 continents", "Gestion de l'eau, des déchets et de l'énergie", "Évolution de carrière : mobilité, développement des expertises"],
-  },
-  { id: 18, name: "Alstom", sector: "Transport ferroviaire", domain: "Transport", yearCreated: 1928, location: "Saint-Ouen, France", employees: "80 000+", website: "https://www.alstom.com", profiles: "Ingénieurs ferroviaire, systèmes", postTypes: ["CDI", "Stage", "Alternance"], applicationMethod: "Site carrières Alstom", description: "Alstom est un leader mondial de la mobilité intelligente et durable, proposant des systèmes intégrés de transport ferroviaire.", highlights: ["TGV & trains régionaux", "Mobilité durable", "Signalisation ferroviaire"] },
-  { id: 19, name: "BNP Paribas", sector: "Banque & Finance", domain: "Finance", yearCreated: 2000, location: "Paris, France", employees: "190 000+", website: "https://www.bnpparibas.com", profiles: "Ingénieurs financiers, data analysts", postTypes: ["CDI", "Stage", "Alternance"], applicationMethod: "Portail carrières BNP Paribas", description: "BNP Paribas est l'une des premières banques européennes avec une présence internationale.", highlights: ["Banque universelle", "Innovation fintech", "Finance durable"] },
-  { id: 20, name: "CMA CGM", sector: "Transport maritime", domain: "Transport", yearCreated: 1978, location: "Marseille, France", employees: "155 000+", website: "https://www.cmacgm.com", profiles: "Ingénieurs logistique, supply chain", postTypes: ["CDI", "Stage", "Alternance"], applicationMethod: "Site carrières CMA CGM", description: "CMA CGM est un leader mondial du transport maritime et de la logistique, basé à Marseille.", highlights: ["3e armateur mondial", "Siège à Marseille", "Innovation logistique"] },
   // ── Vulcain Engineering Group ──
   {
     id: 85, name: "Vulcain Engineering Group", logo: "/logos/vulcain.svg", sector: "Services d'ingénierie et de conseil", domain: "Énergie", yearCreated: 2005,

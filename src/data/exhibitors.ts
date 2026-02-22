@@ -35,6 +35,7 @@ export const DOMAINS = [
   "Finance",
   "Banque / Assurance",
   "Audit & Conseil",
+  "Ingénierie",
 ];
 
 export const parrain: Exposant = {
@@ -727,7 +728,16 @@ export const exposantsList: Exposant[] = [
 
   // ── Exposants existants (non encore mis à jour via fiches) ──
   { id: 1, name: "Accenture", sector: "Conseil & Technologie", domain: "Conseil", yearCreated: 1989, location: "Paris, France", employees: "738 000+", website: "https://www.accenture.com", profiles: "Consultants, ingénieurs IT", postTypes: ["CDI", "Stage", "Alternance"], applicationMethod: "Candidature en ligne", description: "Accenture est une entreprise mondiale de services professionnels, spécialisée dans le conseil, la technologie et l'externalisation.", highlights: ["Fortune Global 500", "Présence mondiale", "Innovation digitale"] },
-  { id: 15, name: "Thales", sector: "Défense & Technologie", domain: "Défense", yearCreated: 2000, location: "Paris, France", employees: "81 000+", website: "https://www.thalesgroup.com", profiles: "Ingénieurs systèmes, cybersécurité", postTypes: ["CDI", "Stage", "Alternance"], applicationMethod: "Portail carrières Thales", description: "Thales est un leader mondial des hautes technologies pour les marchés de la Défense, de l'Aéronautique et du Spatial.", highlights: ["Cybersécurité", "Identité numérique", "Spatial & défense"] },
+  {
+    id: 15, name: "Thales", sector: "Défense, Aérospatial, Cyber et Digital", domain: "Défense", yearCreated: 2000,
+    location: "68 pays, une quarantaine de sites en France", employees: "83 000", chiffreAffaires: "20,6 milliards d'euros",
+    website: "https://www.thalesgroup.com/en", websiteCarriere: "https://careers.thalesgroup.com/",
+    profiles: "Tous profils ingénieurs : défense, aérospatial, cybersécurité, digital, IA, Big data",
+    postTypes: ["Alternance", "CDI", "Stages"],
+    applicationMethod: "Candidature sur notre site carrières (CV), entretien de préqualification, entretien opérationnel puis RH.",
+    description: "Thales est un leader mondial des hautes technologies qui compte 83 000 collaborateurs dans le monde. Thales investit dans les innovations du numérique et de la « Deep Tech » (connectivité, Big data, intelligence artificielle, cybersécurité et quantique) pour construire un avenir de confiance. Opérant sur les marchés de la défense, de l'aérospatial, de la cyber et du digital, le Groupe propose des solutions, services et produits qui aident ses clients à remplir leurs missions critiques.",
+    highlights: ["Leader mondial des hautes technologies", "83 000 collaborateurs dans 68 pays", "Deep Tech : IA, cybersécurité, quantique"],
+  },
   { id: 16, name: "TotalEnergies", sector: "Énergie", domain: "Énergie", yearCreated: 1924, location: "La Défense, France", employees: "100 000+", website: "https://www.totalenergies.fr", profiles: "Ingénieurs procédés, énergie", postTypes: ["CDI", "Alternance", "Stage"], applicationMethod: "Site carrières TotalEnergies", description: "TotalEnergies est une compagnie multi-énergies mondiale de production et de fourniture d'énergies.", highlights: ["Multi-énergies", "Transition énergétique", "Innovation R&D"] },
   {
     id: 17, name: "Veolia", sector: "Gestion des services à l'environnement", domain: "Environnement", yearCreated: 1853,
@@ -742,6 +752,104 @@ export const exposantsList: Exposant[] = [
   { id: 18, name: "Alstom", sector: "Transport ferroviaire", domain: "Transport", yearCreated: 1928, location: "Saint-Ouen, France", employees: "80 000+", website: "https://www.alstom.com", profiles: "Ingénieurs ferroviaire, systèmes", postTypes: ["CDI", "Stage", "Alternance"], applicationMethod: "Site carrières Alstom", description: "Alstom est un leader mondial de la mobilité intelligente et durable, proposant des systèmes intégrés de transport ferroviaire.", highlights: ["TGV & trains régionaux", "Mobilité durable", "Signalisation ferroviaire"] },
   { id: 19, name: "BNP Paribas", sector: "Banque & Finance", domain: "Finance", yearCreated: 2000, location: "Paris, France", employees: "190 000+", website: "https://www.bnpparibas.com", profiles: "Ingénieurs financiers, data analysts", postTypes: ["CDI", "Stage", "Alternance"], applicationMethod: "Portail carrières BNP Paribas", description: "BNP Paribas est l'une des premières banques européennes avec une présence internationale.", highlights: ["Banque universelle", "Innovation fintech", "Finance durable"] },
   { id: 20, name: "CMA CGM", sector: "Transport maritime", domain: "Transport", yearCreated: 1978, location: "Marseille, France", employees: "155 000+", website: "https://www.cmacgm.com", profiles: "Ingénieurs logistique, supply chain", postTypes: ["CDI", "Stage", "Alternance"], applicationMethod: "Site carrières CMA CGM", description: "CMA CGM est un leader mondial du transport maritime et de la logistique, basé à Marseille.", highlights: ["3e armateur mondial", "Siège à Marseille", "Innovation logistique"] },
+  // ── Vulcain Engineering Group ──
+  {
+    id: 85, name: "Vulcain Engineering Group", sector: "Services d'ingénierie et de conseil", domain: "Énergie", yearCreated: 2005,
+    location: "Présent sur toute la France et dans 16 pays du monde", employees: "6 000", chiffreAffaires: "630 millions d'euros",
+    website: "https://www.vulcain-eng.com/", profiles: "Essentiellement des ingénieurs de formation",
+    postTypes: ["CDI", "Stage"],
+    applicationMethod: "CV - 3 entretiens - anglais obligatoire",
+    description: "Vulcain Engineering Group fournit des services d'ingénierie et de conseil dans le monde entier. Créer, concevoir, construire et exploiter des solutions qui améliorent les infrastructures essentielles et favorisent le progrès durable. Optimiser les processus de production et minimiser l'empreinte environnementale par la décarbonisation, l'optimisation de la consommation d'eau et la baisse de la pollution.",
+    highlights: ["Services d'ingénierie multidisciplinaires", "Présence dans 16 pays", "Pilotage de la transformation numérique"],
+  },
+  // ── ATOS ──
+  {
+    id: 86, name: "ATOS", sector: "ESN - Entreprise de service du numérique", domain: "Numérique", yearCreated: 1997,
+    location: "Implantations en France métropolitaine et Outre-Mer : Paris, Lille, Caen, Rouen, Rennes, Angers, Nantes, Metz, Strasbourg, Tours, Clermont-Ferrand, Lyon, Bordeaux, Toulouse, Grenoble, Montpellier, Aix-en-Provence, Sophia-Antipolis, Toulon",
+    employees: "10 130", chiffreAffaires: "9,6 milliards d'euros",
+    website: "https://atos.net/fr/rejoignez-nous", websiteCarriere: "https://atos.net/advancing-what-matters/fr/rejoignez-nous",
+    profiles: "Tous profils IT et ingénierie",
+    postTypes: ["CDI", "Stages"],
+    applicationMethod: "Postuler en ligne sur le site carrières, pré-sélection, entretien RH, entretien opérationnel.",
+    description: "Chez Atos Tech Foundations, nous concevons des solutions numériques de la vie quotidienne aux activités critiques – en matière d'intelligence artificielle, de cloud hybride, de gestion des infrastructures, de décarbonation et d'expérience utilisateur. Nous sommes une équipe de 72 000 collaborateurs passionnés avec une ambition claire : utiliser le numérique pour faire avancer ce qui compte pour nos clients et la société dans 68 pays.",
+    highlights: ["« Power of We » : impact significatif pour clients et société", "72 000 collaborateurs dans 68 pays", "IA, cloud hybride, décarbonation"],
+  },
+  // ── Dassault Systèmes ──
+  {
+    id: 87, name: "Dassault Systèmes", sector: "Éditeur de logiciels 3D", domain: "Numérique", yearCreated: 1981,
+    location: "En France : Île-de-France, Bretagne, Auvergne Rhône Alpes, Occitanie, Provence Alpes Côte d'Azur. 195 bureaux dans le monde.",
+    employees: "23 800", chiffreAffaires: "5,95 milliards d'euros",
+    website: "https://www.3ds.com/fr/", websiteCarriere: "https://www.3ds.com/fr/careers",
+    profiles: "R&D : développement logiciel & web, Data & IA, DevOps, UX/UI, Support Clients. Génie Mécanique, Mathématiques Appliquées. Systèmes et Réseaux, Cloud, Cybersécurité. Ventes & Services, Finance & Legal, RH, Marketing & Communication.",
+    postTypes: ["Alternance", "CDI", "Stage"],
+    applicationMethod: "Candidature en ligne plus deux entretiens de recrutement. Langues parlées : anglais, français.",
+    description: "Dassault Systèmes est un accélérateur de progrès humain. Nous proposons aux entreprises et aux particuliers des environnements virtuels collaboratifs permettant d'imaginer des innovations durables. Grâce aux jumeaux virtuels d'expérience du monde réel qu'ils créent avec la plateforme 3DEXPERIENCE et ses applications, Dassault Systèmes est un créateur de valeur, au service de plus de 350 000 clients de toutes tailles et de tous secteurs d'activité, dans plus de 150 pays.",
+    highlights: ["Plateforme 3DEXPERIENCE", "350 000 clients dans 150+ pays", "23 800 collaborateurs passionnés"],
+  },
+  // ── France Télévisions ──
+  {
+    id: 88, name: "France Télévisions", sector: "Audiovisuel", domain: "Numérique", yearCreated: 1992,
+    location: "France", employees: "9 000", chiffreAffaires: "5,5 milliards d'euros",
+    website: "https://www.francetelevisions.fr/groupe", websiteCarriere: "https://recrutement.francetelevisions.fr",
+    profiles: "Ingénieurs Technologies, Chef de Projet informatiques, Architecte SI, Administrateurs Réseaux IT, Assistant DATA, Data Ingénieur",
+    postTypes: ["Alternance", "CDI", "Stage"],
+    applicationMethod: "CV",
+    description: "Rejoindre France Télévisions, c'est contribuer à faire le média de la société de demain. Le média qui offre à tous les Français une information fiable et indépendante. France Télévisions est le groupe audiovisuel public incontournable des Français, avec des chaînes emblématiques comme France 2, France 3, France 4, France 5 et France Info. Notre mission est simple : informer, éduquer et divertir ! Entre IA, data, cloud, outils technologiques novateurs, l'innovation est au cœur de nos missions.",
+    highlights: ["Premier groupe audiovisuel public français", "Innovation : IA, data, cloud", "Chaînes : France 2, 3, 4, 5, Info"],
+  },
+  // ── Lucca ──
+  {
+    id: 89, name: "Lucca", sector: "Tech/SaaS", domain: "Numérique", yearCreated: 2002,
+    location: "Paris, Nantes, Marseille, Barcelone, Toulouse, Genève, Munich, Bordeaux", employees: "800",
+    website: "https://www.lucca.fr/", profiles: "Product Manager, SRE, UI Developer, Full stack software engineer, back-end engineer, front-end engineer",
+    postTypes: ["Alternance", "CDD", "CDI", "Stage"],
+    applicationMethod: "CV / 4 entretiens (RH, Manager, Petit oral, Grand oral)",
+    description: "Lucca est une scale-up française en forte croissance qui révolutionne la gestion RH et finance grâce à des logiciels ni gris, ni moches, ni tristes. En quelques chiffres : 800 collaborateurs (900 fin 2025), 8 sites, 1,5 million d'utilisateurs, 35 % de croissance du CA en 2024, 14 logiciels. Un objectif de multiplier x3 notre ARR pour atteindre les +250M€.",
+    highlights: ["Scale-up française en forte croissance", "14 logiciels RH et finance", "8 sites internationaux"],
+  },
+  // ── Murex ──
+  {
+    id: 90, name: "Murex", sector: "Fintech", domain: "Numérique", yearCreated: 1986,
+    location: "Paris, France – 19 bureaux à l'international", employees: "3 000", chiffreAffaires: "791 millions d'euros",
+    website: "https://www.murex.com/en", websiteCarriere: "https://murex.wd3.myworkdayjobs.com/MurexCareerPage1",
+    profiles: "Ingénierie Financière (finance quantitative), Ingénierie Information (software development, C++ / Java)",
+    postTypes: ["Stage"],
+    applicationMethod: "Test technique en ligne, entretien RH puis entretien manager",
+    description: "Murex is a global fintech leader in trading, risk management and processing solutions for capital markets. Operating from our 19 offices, 3 000 Murexians from over 60 different nationalities ensure the development, implementation and support of our platform which is used by banks, asset managers, corporations and utilities, across the world.",
+    highlights: ["Leader mondial fintech pour les marchés de capitaux", "3 000 collaborateurs, 60+ nationalités", "19 bureaux dans le monde"],
+  },
+  // ── Orange SA ──
+  {
+    id: 91, name: "Orange SA", sector: "Télécommunications multiservices - IT & Innovation", domain: "Numérique", yearCreated: 1988,
+    location: "Orange Massalia Bât C, 93 rue Felix Pyat 13003 Marseille", employees: "130 000", chiffreAffaires: "43 milliards d'euros",
+    website: "https://www.orange.fr/portail", websiteCarriere: "https://orange.jobs/site/fr-home/",
+    profiles: "IA, cybersécurité, big data, IoT, virtualisation des réseaux, Cloud, 5G, fonctions support",
+    postTypes: ["Alternance", "Stage"],
+    applicationMethod: "1. Découvrez nos offres sur orange.jobs. 2. Postulez avec CV et lettre de motivation. 3. Entretien RH puis entretien avec futur manager.",
+    description: "Découvrez Orange, un leader des télécommunications et de l'innovation ! Avec plus de 266 millions de clients et une présence dans 26 pays, Orange est le leader en France et un acteur majeur en Europe. En tant qu'acteur clé de l'IT, nous recrutons des femmes et des hommes engagés, prêts à relever de nouveaux défis dans des domaines innovants tels que l'IA, la cybersécurité, le big data, l'IoT, la virtualisation des réseaux, le Cloud, la 5G.",
+    highlights: ["Leader télécommunications en France", "266 millions de clients dans 26 pays", "Innovation : IA, cybersécurité, 5G, IoT"],
+  },
+  // ── Akkodis ──
+  {
+    id: 92, name: "Akkodis", sector: "Ingénierie industrie / IT / Défense", domain: "Ingénierie", yearCreated: 2022,
+    location: "30 pays", employees: "2 000 (France : 9 000)", chiffreAffaires: "4 milliards d'euros",
+    website: "https://www.akkodis.com/fr/", websiteCarriere: "https://www.akkodis.com/fr-fr/emplois/",
+    profiles: "Ingénierie système, Ingénierie mécanique, Développement / Conception logiciel, Soutien logistique intégré",
+    postTypes: ["CDI"],
+    applicationMethod: "CV et lettre de motivation. Étape 1 : pré-qualification téléphonique. Étape 2 : Entretien RH. Étape 3 : Entretien Business Manager. Étape 4 (optionnelle) : Entretien technique.",
+    description: "Akkodis, leader mondial sur le marché de l'ingénierie et de la R&D, s'appuie sur la puissance des données connectées pour accélérer l'innovation et la transformation digitale. Avec une passion commune pour la technologie et les talents, nos 50 000 experts en IT et Ingénierie répartis dans 30 pays offrent une expertise intersectorielle approfondie. Akkodis fait partie du groupe Adecco.",
+    highlights: ["Leader mondial ingénierie et R&D", "50 000 experts dans 30 pays", "Partie du groupe Adecco"],
+  },
+  // ── Assystem ──
+  {
+    id: 93, name: "Assystem", sector: "Bureau d'études", domain: "Ingénierie", yearCreated: 1966,
+    location: "Internationale – 12 pays (Europe, Moyen-Orient, Asie)", employees: "8 000", chiffreAffaires: "611 millions d'euros",
+    website: "https://www.assystem.com/fr/", profiles: "Ingénieurs Projets, PMO, Études, Fonctionnement, Démantèlement, Sûreté Nucléaire, Électricité, Mécaniques, Génie Civil, Risques, Automatisme, Systèmes, Informatique, Data Scientist, IA, I&C",
+    postTypes: ["Alternance", "CDI", "Stage"],
+    applicationMethod: "CV, Entretien RH et technique",
+    description: "Chez Assystem, nous accordons une importance capitale au développement de vos compétences tout au long de votre carrière. Assystem met au cœur de sa politique formation la volonté de créer une dynamique apprenante. Trouver des solutions au dérèglement climatique est la priorité du 21ème siècle, et implique de switcher à l'énergie bas-carbone. Chez Assystem, on s'est donné pour mission d'accélérer la transition énergétique partout dans le monde. Présent dans 12 pays, nous travaillons sur la production et la distribution d'électricité bas-carbone, à travers le développement des énergies nucléaires et renouvelables.",
+    highlights: ["Accélérateur de la transition énergétique", "8 000 Switchers dans 12 pays", "Expertise nucléaire et renouvelables"],
+  },
 ];
 
 export const allExposants = [parrain, ...partenaires, ...exposantsList].sort((a, b) =>

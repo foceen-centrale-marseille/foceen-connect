@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
 import { useState, useCallback, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Users, Award, Shield, Lightbulb, Heart, Leaf, Briefcase } from "lucide-react";
-import heroImg from "@/assets/hero-bg.jpg";
-
 import team25 from "@/assets/teams/team25.webp";
+import team24 from "@/assets/teams/team24.jpg";
 import team23 from "@/assets/teams/team23.jpg";
 import team22 from "@/assets/teams/team22.webp";
 import team21 from "@/assets/teams/team21.webp";
@@ -12,9 +11,12 @@ import team19 from "@/assets/teams/team19.webp";
 import team18 from "@/assets/teams/team18.webp";
 import team17 from "@/assets/teams/team17.webp";
 import team16 from "@/assets/teams/team16.webp";
+import team15 from "@/assets/teams/team15.webp";
+import isoCertification from "@/assets/iso-certification.jpg";
 
 const teamYears = [
   { year: 2025, label: "Equipe 2025", img: team25 },
+  { year: 2024, label: "Equipe 2024", img: team24 },
   { year: 2023, label: "Equipe 2023", img: team23 },
   { year: 2022, label: "Equipe 2022", img: team22 },
   { year: 2021, label: "Equipe 2021", img: team21 },
@@ -23,6 +25,7 @@ const teamYears = [
   { year: 2018, label: "Equipe 2018", img: team18 },
   { year: 2017, label: "Equipe 2017", img: team17 },
   { year: 2016, label: "Equipe 2016", img: team16 },
+  { year: 2015, label: "Equipe 2015", img: team15 },
 ];
 
 const values = [
@@ -57,7 +60,7 @@ const QuiSommesNous = () => {
       <section className="relative h-[70vh] md:h-[80vh] overflow-hidden flex items-center justify-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroImg})` }}
+          style={{ backgroundImage: `url(${team25})`, imageRendering: 'auto' }}
         >
           <div className="absolute inset-0 bg-primary/60" />
         </div>
@@ -144,6 +147,7 @@ const QuiSommesNous = () => {
                   src={teamYears[carouselIndex].img}
                   alt={teamYears[carouselIndex].label}
                   className="w-full h-full object-cover"
+                  style={{ imageRendering: 'auto' }}
                   loading="lazy"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary/90 to-transparent p-6">
@@ -261,10 +265,12 @@ const QuiSommesNous = () => {
               transition={{ duration: 0.6 }}
               className="flex items-center justify-center"
             >
-              <div className="w-full aspect-square max-w-md bg-muted rounded-xl border border-border flex flex-col items-center justify-center gap-4 text-muted-foreground">
-                <Award size={72} strokeWidth={1} />
-                <span className="font-heading text-sm">Logos ISO à venir</span>
-              </div>
+              <img
+                src={isoCertification}
+                alt="Certification ISO 9001 et ISO 20121 - Bureau Veritas"
+                className="w-full max-w-md rounded-xl border border-border shadow-sm object-contain"
+                style={{ imageRendering: 'auto' }}
+              />
             </motion.div>
           </div>
         </div>

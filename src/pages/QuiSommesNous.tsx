@@ -62,7 +62,7 @@ const QuiSommesNous = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${team25})`, imageRendering: 'auto' }}
         >
-          <div className="absolute inset-0 bg-primary/60" />
+          <div className="absolute inset-0 bg-black/40" />
         </div>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -148,7 +148,7 @@ const QuiSommesNous = () => {
                   alt={teamYears[carouselIndex].label}
                   className="w-full h-full object-cover"
                   style={{ imageRendering: 'auto' }}
-                  loading="lazy"
+                  loading="eager"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary/90 to-transparent p-6">
                   <h3 className="text-xl md:text-2xl font-heading font-bold">

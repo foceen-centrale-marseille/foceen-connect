@@ -9,7 +9,7 @@ const slides = [
     id: 1,
     content: (
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 text-primary-foreground">
-        <img src={logoWhite} alt="FOCEEN" className="h-24 md:h-36" />
+        <img src={logoWhite} alt="FOCEEN" className="h-40 md:h-56 lg:h-64 w-auto" />
         <div>
           <h1 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold leading-tight">
             <span className="bg-cyan/80 px-3 py-1 inline-block mb-2">PLUS GRAND</span>

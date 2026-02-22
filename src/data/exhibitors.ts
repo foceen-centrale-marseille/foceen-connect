@@ -636,7 +636,7 @@ export const exposantsList: Exposant[] = [
 
   // ── Razel-Bec ──
   {
-    id: 77, name: "Razel-Bec", sector: "Construction - Travaux Publics", domain: "BTP", yearCreated: 1880,
+    id: 77, name: "Razel-Bec", logo: "/logos/razel-bec.jpg", sector: "Construction - Travaux Publics", domain: "BTP", yearCreated: 1880,
     location: "9 implantations dans le monde", employees: "4 500", chiffreAffaires: "1 milliard d'euros",
     website: "https://razel-bec.fayat.com/",
     profiles: "Nombreux profils en stage dans nos principaux domaines : travaux, études, matériel, qualité, santé et environnement. Offres de CDI pour les jeunes diplômés.",
@@ -647,7 +647,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── SADE CGTH ──
   {
-    id: 78, name: "SADE CGTH", sector: "Travaux publics", domain: "BTP", yearCreated: 1918,
+    id: 78, name: "SADE CGTH", logo: "/logos/sade-cgth.webp", sector: "Travaux publics", domain: "BTP", yearCreated: 1918,
     location: "Marseille et dans toute la France", employees: "350", chiffreAffaires: "82 870 euros",
     website: "https://www.sade-cgth.fr/",
     profiles: "Conducteur de travaux, Chef de chantier, Chef d'équipe, Canalisateur",
@@ -658,7 +658,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── Setec ──
   {
-    id: 79, name: "Setec", sector: "Ingénierie multisectorielle", domain: "Conseil", yearCreated: 1957,
+    id: 79, name: "Setec", logo: "/logos/setec.jpg", sector: "Ingénierie multisectorielle", domain: "Conseil", yearCreated: 1957,
     location: "France : Paris, Lyon, Vitrolles, Bordeaux, Toulouse et Nantes. Monde : Europe, Afrique, Amérique latine, Amérique du Nord et Arabie Saoudite",
     employees: "4 000", chiffreAffaires: "547 millions d'euros (2024)",
     website: "https://www.setec.fr/", websiteCarriere: "https://setec.nous-recrutons.fr/offres-emploi/",
@@ -670,7 +670,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── SMAC ──
   {
-    id: 80, name: "SMAC", sector: "BTP", domain: "BTP", yearCreated: 1884,
+    id: 80, name: "SMAC", logo: "/logos/smac.webp", sector: "BTP", domain: "BTP", yearCreated: 1884,
     location: "Nationale et internationale", employees: "2 400", chiffreAffaires: "450 millions d'euros",
     website: "https://www.smac-sa.com", websiteCarriere: "https://www.smac-sa.com/carriere/",
     profiles: "Conducteur de travaux H/F, Chargé d'affaires H/F, Chargé études de prix H/F, Chargé étude méthodes H/F",
@@ -681,7 +681,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── TechnicAtome ──
   {
-    id: 81, name: "TechnicAtome", sector: "Défense / Nucléaire", domain: "Défense", yearCreated: 1972,
+    id: 81, name: "TechnicAtome", logo: "/logos/technicatome.jpg", sector: "Défense / Nucléaire", domain: "Défense", yearCreated: 1972,
     location: "Nationale : Aix-en Provence, Cadarache, Saclay, Toulon, Bordeaux, Nantes, Brest et Cherbourg",
     employees: "2 100", chiffreAffaires: "633 millions d'euros",
     website: "https://www.technicatome.com", websiteCarriere: "https://technicatome.beekome.com/fr",
@@ -693,7 +693,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── Technip Energies ──
   {
-    id: 82, name: "Technip Energies", sector: "Ingénierie, études techniques", domain: "Énergie", yearCreated: 1967,
+    id: 82, name: "Technip Energies", logo: "/logos/technip-energies.png", sector: "Ingénierie, études techniques", domain: "Énergie", yearCreated: 1967,
     location: "34 pays", employees: "17 000", chiffreAffaires: "7 milliards d'euros",
     website: "https://www.ten.com/en", websiteCarriere: "https://www.ten.com/en/careers",
     profiles: "Tous types de profils.",
@@ -704,7 +704,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── VINCI Construction ──
   {
-    id: 83, name: "VINCI Construction", sector: "BTP Construction", domain: "BTP", yearCreated: 2000,
+    id: 83, name: "VINCI Construction", logo: "/logos/vinci-construction.png", sector: "BTP Construction", domain: "BTP", yearCreated: 2000,
     location: "Régionale, Nationale et Internationale", employees: "117 000", chiffreAffaires: "31,8 milliards d'euros",
     website: "https://vinci-construction.com/fr/", websiteCarriere: "https://jobs.vinci.com/fr",
     profiles: "Valeurs : Engager pour la sécurité, Engager pour l'environnement, Engagés pour l'exemplarité",
@@ -715,7 +715,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── Voltalia ──
   {
-    id: 84, name: "Voltalia", sector: "Énergies renouvelables", domain: "Énergie", yearCreated: 2005,
+    id: 84, name: "Voltalia", logo: "/logos/voltalia.png", sector: "Énergies renouvelables", domain: "Énergie", yearCreated: 2005,
     location: "Internationale", employees: "1 700", chiffreAffaires: "546 millions d'euros",
     website: "https://www.voltalia.com/fr", websiteCarriere: "https://www.voltalia.com/fr/careers",
     profiles: "Ingénieurs : électricité, énergie, construction, génie civil, matériaux…",

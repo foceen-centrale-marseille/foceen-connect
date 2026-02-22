@@ -49,10 +49,7 @@ const QuiSommesNous = () => {
     []
   );
 
-  useEffect(() => {
-    const timer = setInterval(nextSlide, 5000);
-    return () => clearInterval(timer);
-  }, [nextSlide]);
+  // Navigation manuelle uniquement — pas de défilement automatique
 
   return (
     <div>

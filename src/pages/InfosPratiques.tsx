@@ -36,13 +36,11 @@ const InfosPratiques = () => {
               <MapPin size={28} className="text-cyan mb-4" />
               <h3 className="text-lg font-heading font-semibold text-foreground mb-2">Lieu</h3>
               <p className="text-muted-foreground font-body text-sm">
-                Ecole Centrale de Marseille
+                Parc Chanot
                 <br />
-                Pôle de l'étoile, Technopôle de Château Gombert
+                114 Rond-Point du Prado
                 <br />
-                38 rue Frédéric Joliot-Curie
-                <br />
-                13451 Marseille
+                13008 Marseille
               </p>
             </motion.div>
 

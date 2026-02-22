@@ -75,11 +75,13 @@ export default function CompanyStatsSection() {
       {/* === FORCED HORIZONTAL LAYOUT ON DESKTOP === */}
       <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", gap: "3rem", alignItems: "flex-start", maxWidth: "80rem", margin: "0 auto", padding: "0 1rem" }}>
         {/* LEFT 40% */}
-        <div style={{ flex: "0 0 38%", minWidth: "280px" }}>
+        <div style={{ flex: "0 0 38%", minWidth: "280px", display: "flex", flexDirection: "column" }}>
           <h2 className="text-xl lg:text-2xl font-heading font-bold text-foreground mb-4">136 EXPOSANTS</h2>
-          <p className="text-sm leading-relaxed text-muted-foreground">
-            C'est plus de 136 entreprises qui font le déplacement chaque année pour présenter leurs activités et rencontrer les étudiants qui viennent se présenter à elles.
-          </p>
+          <div style={{ flex: 1, display: "flex", alignItems: "center" }}>
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              C'est plus de 136 entreprises qui font le déplacement chaque année pour présenter leurs activités et rencontrer les étudiants qui viennent se présenter à elles.
+            </p>
+          </div>
         </div>
 
         {/* RIGHT 60% */}

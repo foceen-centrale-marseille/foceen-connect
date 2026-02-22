@@ -119,6 +119,7 @@ export const exposantsList: Exposant[] = [
   {
     id: 5,
     name: "CEA",
+    logo: "/logos/cea.png",
     sector: "Transition énergétique, transition numérique, médecine du futur, défense et sécurité, assainissement démantèlement",
     domain: "Énergie",
     yearCreated: 1945,
@@ -142,6 +143,7 @@ export const exposantsList: Exposant[] = [
   {
     id: 50,
     name: "Groupe ADF",
+    logo: "/logos/groupe-adf.png",
     sector: "Industrie",
     domain: "Industrie",
     yearCreated: 1962,
@@ -165,8 +167,9 @@ export const exposantsList: Exposant[] = [
   {
     id: 51,
     name: "ACCEO",
+    logo: "/logos/acceo.webp",
     sector: "Ingénierie du bâtiment",
-    domain: "BTP",
+    domain: "Conseil",
     yearCreated: 2003,
     location: "Échelle nationale",
     employees: "554",
@@ -187,6 +190,7 @@ export const exposantsList: Exposant[] = [
   {
     id: 52,
     name: "AptiSkills",
+    logo: "/logos/aptiskills.png",
     sector: "Bâtiment, TP, Transport et Environnement. ENR, Nucléaire, Oil&Gas, Naval, Ferroviaire et Aéronautique",
     domain: "Conseil",
     yearCreated: 2013,
@@ -210,6 +214,7 @@ export const exposantsList: Exposant[] = [
   {
     id: 53,
     name: "Bee Engineering",
+    logo: "/logos/bee-engineering.jpg",
     sector: "Conseil en ingénierie (énergie, industrie, procédés, infrastructures, transports)",
     domain: "Conseil",
     yearCreated: 2010,
@@ -234,8 +239,9 @@ export const exposantsList: Exposant[] = [
   {
     id: 54,
     name: "BPCE Solutions Informatiques",
+    logo: "/logos/bpce.png",
     sector: "Conseil en systèmes et logiciels informatiques",
-    domain: "Numérique",
+    domain: "Conseil",
     yearCreated: 2022,
     location: "Toulouse, Aix-en-Provence, Bordeaux, Nantes, Paris, Lyon, Lille...",
     employees: "2 400",
@@ -257,6 +263,7 @@ export const exposantsList: Exposant[] = [
   {
     id: 4,
     name: "Capgemini",
+    logo: "/logos/capgemini.png",
     sector: "Consulting, Services de technologie et d'ingénierie",
     domain: "Conseil",
     yearCreated: 1967,
@@ -281,6 +288,7 @@ export const exposantsList: Exposant[] = [
   {
     id: 55,
     name: "CGI France SAS",
+    logo: "/logos/cgi.png",
     sector: "Leader mondial du conseil et des services numériques (Business consulting, Intégration de systèmes, Business solutions, Managed IT services)",
     domain: "Conseil",
     yearCreated: undefined,
@@ -305,8 +313,9 @@ export const exposantsList: Exposant[] = [
   {
     id: 56,
     name: "Deloitte",
+    logo: "/logos/deloitte.png",
     sector: "Audit & Conseil",
-    domain: "Audit & Conseil",
+    domain: "Conseil",
     yearCreated: 1845,
     location: "Internationale",
     employees: "8 000",
@@ -329,8 +338,9 @@ export const exposantsList: Exposant[] = [
   {
     id: 57,
     name: "Exiom Partners",
+    logo: "/logos/exiom.png",
     sector: "Conseil en banque / assurance",
-    domain: "Banque / Assurance",
+    domain: "Conseil",
     yearCreated: 2019,
     location: "France",
     employees: "200",

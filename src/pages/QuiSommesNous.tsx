@@ -59,7 +59,7 @@ const QuiSommesNous = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${team25})` }}
         >
-          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 bg-black/25" />
         </div>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -224,7 +224,7 @@ const QuiSommesNous = () => {
         </div>
       </section>
 
-      {/* ─── 4b. CERTIFICATIONS & ENGAGEMENTS — 2 colonnes ─── */}
+      {/* ─── 4b. CERTIFICATIONS — 2 colonnes ─── */}
       <section className="py-20 bg-muted">
         <div className="max-w-6xl mx-auto px-4">
           <motion.h2
@@ -233,7 +233,7 @@ const QuiSommesNous = () => {
             viewport={{ once: true }}
             className="text-3xl md:text-4xl font-heading font-bold text-center text-foreground mb-16"
           >
-            CERTIFICATIONS & ENGAGEMENTS
+            CERTIFICATIONS
           </motion.h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -241,23 +241,9 @@ const QuiSommesNous = () => {
             <div>
               <p className="text-sm md:text-base font-body text-muted-foreground leading-relaxed mb-6">
                 Depuis sa création, le FOCEEN s'est imposé comme un acteur incontournable du recrutement étudiant
-                dans la région Sud-Est. Cette réputation repose sur des valeurs fortes et un engagement constant
-                envers la qualité et l'innovation.
+                dans la région Sud-Est. Cette réputation repose sur un engagement constant envers la qualité
+                et l'innovation, validé par des certifications reconnues internationalement.
               </p>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                {values.map((v, i) => (
-                  <div key={v.title} className="flex gap-3 items-start">
-                    <div className="shrink-0 w-9 h-9 rounded-lg bg-cyan/10 flex items-center justify-center">
-                      <v.icon size={18} className="text-cyan" />
-                    </div>
-                    <div>
-                      <h4 className="font-heading font-semibold text-foreground text-sm">{v.title}</h4>
-                      <p className="text-xs text-muted-foreground font-body mt-0.5">{v.desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
 
               <div className="p-5 bg-card rounded-lg border border-border">
                 <h4 className="font-heading font-bold text-foreground mb-3 flex items-center gap-2">

@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from "recharts";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
@@ -6,7 +6,7 @@ const sectorData = [
   { name: "BTP / Construction", value: 22 },
   { name: "Énergie", value: 18 },
   { name: "Conseil / Ingénierie", value: 15 },
-  { name: "Informatique / Numérique", value: 14 },
+  { name: "Info / Numérique", value: 14 },
   { name: "Industrie", value: 12 },
   { name: "Transport / Logistique", value: 8 },
   { name: "Finance / Banque", value: 6 },
@@ -45,70 +45,90 @@ const CustomTooltip = ({ active, payload }: any) => {
   return null;
 };
 
-const CleanPieChart = ({
-  data,
-  colors,
-}: {
-  data: { name: string; value: number }[];
-  colors: string[];
-}) => (
-  <div className="w-full h-[380px]">
-    <ResponsiveContainer width="100%" height="100%">
-      <PieChart>
-        <Pie
-          data={data}
-          cx="50%"
-          cy="50%"
-          outerRadius={140}
-          innerRadius={60}
-          dataKey="value"
-          paddingAngle={1}
-        >
-          {data.map((_, index) => (
-            <Cell key={`cell-${index}`} fill={colors[index % colors.length]} stroke="none" />
-          ))}
-        </Pie>
-        <Tooltip content={<CustomTooltip />} />
-      </PieChart>
-    </ResponsiveContainer>
+const Legend = ({ data, colors, light = false }: { data: { name: string; value: number }[]; colors: string[]; light?: boolean }) => (
+  <div className="flex flex-col gap-1.5">
+    {data.map((entry, i) => (
+      <div key={entry.name} className="flex items-center gap-2">
+        <span
+          className="inline-block w-3 h-3 rounded-sm shrink-0"
+          style={{ backgroundColor: colors[i % colors.length] }}
+        />
+        <span className={`text-xs font-body leading-tight ${light ? "text-primary-foreground/80" : "text-foreground/80"}`}>
+          {entry.name}
+        </span>
+      </div>
+    ))}
   </div>
 );
 
-const CompanyStatsSection = () => {
-  return (
-    <section className="py-16 bg-primary text-primary-foreground">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-3xl font-heading font-bold text-center mb-10"
-        >
-          STATISTIQUES ENTREPRISES
-        </motion.h2>
+const ChartWithLegend = ({
+  data,
+  colors,
+  light = false,
+}: {
+  data: { name: string; value: number }[];
+  colors: string[];
+  light?: boolean;
+}) => (
+  <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 0.3 }}
+    className="flex flex-col md:flex-row items-center justify-center gap-6"
+  >
+    <div className="w-full md:w-auto h-[320px] min-w-[280px]">
+      <ResponsiveContainer width="100%" height="100%">
+        <PieChart>
+          <Pie
+            data={data}
+            cx="50%"
+            cy="50%"
+            outerRadius={130}
+            innerRadius={55}
+            dataKey="value"
+            paddingAngle={1}
+            label={false}
+            labelLine={false}
+          >
+            {data.map((_, index) => (
+              <Cell key={`cell-${index}`} fill={colors[index % colors.length]} stroke="none" />
+            ))}
+          </Pie>
+          <Tooltip content={<CustomTooltip />} />
+        </PieChart>
+      </ResponsiveContainer>
+    </div>
+    <Legend data={data} colors={colors} light={light} />
+  </motion.div>
+);
 
-        <Tabs defaultValue="sector" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 mb-6">
-            <TabsTrigger value="sector">Secteurs d'activités</TabsTrigger>
-            <TabsTrigger value="structure">Types de structures</TabsTrigger>
-          </TabsList>
+const CompanyStatsSection = () => (
+  <section className="py-16 bg-primary text-primary-foreground">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <motion.h2
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="text-3xl font-heading font-bold text-center mb-10"
+      >
+        STATISTIQUES ENTREPRISES
+      </motion.h2>
 
-          <AnimatePresence mode="wait">
-            <TabsContent value="sector" key="sector">
-              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
-                <CleanPieChart data={sectorData} colors={COLORS_SECTOR} />
-              </motion.div>
-            </TabsContent>
-            <TabsContent value="structure" key="structure">
-              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
-                <CleanPieChart data={structureData} colors={COLORS_STRUCTURE} />
-              </motion.div>
-            </TabsContent>
-          </AnimatePresence>
-        </Tabs>
-      </div>
-    </section>
-  );
-};
+      <Tabs defaultValue="sector" className="w-full">
+        <TabsList className="grid w-full grid-cols-2 mb-8">
+          <TabsTrigger value="sector">Secteurs d'activités</TabsTrigger>
+          <TabsTrigger value="structure">Types de structures</TabsTrigger>
+        </TabsList>
+
+        <TabsContent value="sector">
+          <ChartWithLegend data={sectorData} colors={COLORS_SECTOR} light />
+        </TabsContent>
+        <TabsContent value="structure">
+          <ChartWithLegend data={structureData} colors={COLORS_STRUCTURE} light />
+        </TabsContent>
+      </Tabs>
+    </div>
+  </section>
+);
 
 export default CompanyStatsSection;

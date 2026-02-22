@@ -72,29 +72,27 @@ const Chart = ({ data, colors }: { data: { name: string; value: number }[]; colo
 export default function CompanyStatsSection() {
   return (
     <section className="py-16 bg-background">
-      {/* === FORCED HORIZONTAL LAYOUT ON DESKTOP === */}
-      <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", gap: "3rem", alignItems: "center", maxWidth: "80rem", margin: "0 auto", padding: "0 1rem" }}>
-        {/* LEFT 40% */}
-        <div style={{ flex: "0 0 38%", minWidth: "280px" }}>
-          <div>
-            <h2 className="text-xl lg:text-2xl font-heading font-bold text-foreground mb-4">136 EXPOSANTS</h2>
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="text-4xl lg:text-5xl font-heading font-bold text-foreground text-center mb-12">STATISTIQUES ENTREPRISES</h2>
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-16 w-full py-12">
+          {/* LEFT 40% */}
+          <div className="w-full lg:w-2/5">
+            <h3 className="text-xl lg:text-2xl font-heading font-bold text-foreground mb-4">136 EXPOSANTS</h3>
             <p className="text-sm leading-relaxed text-muted-foreground">
               C'est plus de 136 entreprises qui font le déplacement chaque année pour présenter leurs activités et rencontrer les étudiants qui viennent se présenter à elles.
             </p>
           </div>
-        </div>
-
-        {/* RIGHT 60% */}
-        <div style={{ flex: "1 1 55%", minWidth: "320px" }}>
-          <h3 className="text-xl lg:text-2xl font-heading font-bold text-center text-foreground mb-6">STATISTIQUES ENTREPRISES</h3>
-          <Tabs defaultValue="sector" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 mb-6">
-              <TabsTrigger value="sector">Secteurs d'activités</TabsTrigger>
-              <TabsTrigger value="structure">Types de structures</TabsTrigger>
-            </TabsList>
-            <TabsContent value="sector"><Chart data={sectorData} colors={COLORS_SECTOR} /></TabsContent>
-            <TabsContent value="structure"><Chart data={structureData} colors={COLORS_STRUCTURE} /></TabsContent>
-          </Tabs>
+          {/* RIGHT 60% */}
+          <div className="w-full lg:w-3/5">
+            <Tabs defaultValue="sector" className="w-full">
+              <TabsList className="grid w-full grid-cols-2 mb-6">
+                <TabsTrigger value="sector">Secteurs d'activités</TabsTrigger>
+                <TabsTrigger value="structure">Types de structures</TabsTrigger>
+              </TabsList>
+              <TabsContent value="sector"><Chart data={sectorData} colors={COLORS_SECTOR} /></TabsContent>
+              <TabsContent value="structure"><Chart data={structureData} colors={COLORS_STRUCTURE} /></TabsContent>
+            </Tabs>
+          </div>
         </div>
       </div>
     </section>

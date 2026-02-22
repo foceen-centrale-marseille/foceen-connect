@@ -361,7 +361,7 @@ export const exposantsList: Exposant[] = [
 
   // ── EY ──
   {
-    id: 58, name: "EY", sector: "Audit et Conseil", domain: "Conseil", yearCreated: 1989,
+    id: 58, name: "EY", logo: "/logos/ey.png", sector: "Audit et Conseil", domain: "Conseil", yearCreated: 1989,
     location: "Paris, Lyon, Marseille, Toulouse, Lille, Strasbourg, Bordeaux, Nantes, Rennes, Nice, Rouen, Nancy, Montpellier",
     employees: "7 000", chiffreAffaires: "1,499 milliards d'euros",
     website: "https://www.ey.com/fr_fr", websiteCarriere: "https://www.ey.com/fr_fr/careers",
@@ -373,7 +373,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── Forvis Mazars ──
   {
-    id: 59, name: "Forvis Mazars", sector: "Audit / Conseil", domain: "Conseil", yearCreated: 1945,
+    id: 59, name: "Forvis Mazars", logo: "/logos/forvis-mazars.jpg", sector: "Audit / Conseil", domain: "Conseil", yearCreated: 1945,
     location: "31 bureaux en France, +100 pays", employees: "45 000", chiffreAffaires: "5,2 milliards d'euros",
     website: "https://www.forvismazars.com/fr/fr", websiteCarriere: "https://recrutement-fr.forvismazars.com/offres-emploi",
     profiles: "Stages de césure, stages de fin d'études, apprentissage et CDI. Plus de 1000 stagiaires et jeunes diplômés recrutés chaque année.",
@@ -384,7 +384,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── KPMG ──
   {
-    id: 60, name: "KPMG", sector: "Audit & Conseil", domain: "Conseil", yearCreated: 1922,
+    id: 60, name: "KPMG", logo: "/logos/kpmg.jpg", sector: "Audit & Conseil", domain: "Conseil", yearCreated: 1922,
     location: "190 bureaux en France", employees: "11 000", chiffreAffaires: "1,47 milliard d'euros",
     website: "https://kpmg.com/fr/fr.html", websiteCarriere: "https://kpmg.com/fr/fr/carrieres.html",
     profiles: "Jeune diplômé ou diplômé d'une école d'ingénieurs. Métiers innovants : D&A, cybersécurité, deal advisory, transformation digitale.",
@@ -395,7 +395,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── Mantu Group ──
   {
-    id: 61, name: "Mantu Group", sector: "Conseil", domain: "Conseil", yearCreated: 2007,
+    id: 61, name: "Mantu Group", logo: "/logos/mantu.png", sector: "Conseil", domain: "Conseil", yearCreated: 2007,
     location: "Siège social à Genève, bureaux dans 60 pays", employees: "12 000", chiffreAffaires: "1,01 milliard d'euros",
     website: "https://mantu.com/", websiteCarriere: "https://careers.mantu.com/jobs",
     profiles: "Profils business et Data/IT/IA intéressés par la transformation digitale",
@@ -406,7 +406,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── Onepoint ──
   {
-    id: 62, name: "Onepoint", sector: "Conseil", domain: "Conseil", yearCreated: 2002,
+    id: 62, name: "Onepoint", logo: "/logos/onepoint.jpg", sector: "Conseil", domain: "Conseil", yearCreated: 2002,
     location: "France : Paris, Bordeaux, Toulouse, Nantes, Rennes, Lyon, Aix-en-Provence, Strasbourg. Monde : Australie, Belgique, Canada, Malaisie, Maroc, Singapour",
     employees: "3 500", chiffreAffaires: "500 millions d'euros",
     website: "https://www.groupeonepoint.com/fr/", websiteCarriere: "https://www.groupeonepoint.com/fr/nous-rejoindre/",
@@ -418,7 +418,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── Oresys ──
   {
-    id: 63, name: "Oresys", sector: "Conseil en management, organisation et transformation", domain: "Conseil", yearCreated: 1981,
+    id: 63, name: "Oresys", logo: "/logos/oresys.png", sector: "Conseil en management, organisation et transformation", domain: "Conseil", yearCreated: 1981,
     location: "Paris, Lille, Lyon, Marseille, Nantes, Toulouse, Lausanne",
     employees: "370", chiffreAffaires: "67 millions d'euros",
     website: "https://www.oresys.eu/", websiteCarriere: "https://www.oresys-recrute.eu/",
@@ -441,7 +441,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── Randstad Digital ──
   {
-    id: 65, name: "Randstad Digital", sector: "Conseil Engineering et IT", domain: "Conseil", yearCreated: 1989,
+    id: 65, name: "Randstad Digital", logo: "/logos/randstad-digital.png", sector: "Conseil Engineering et IT", domain: "Conseil", yearCreated: 1989,
     location: "Présente sur tous les continents, toutes les grandes villes de France",
     employees: "25 000", chiffreAffaires: "24,1 milliards d'euros",
     website: "https://www.randstaddigital.fr/fr/",
@@ -453,7 +453,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── Sopra Steria (mise à jour complète) ──
   {
-    id: 14, name: "Sopra Steria",
+    id: 14, name: "Sopra Steria", logo: "/logos/sopra-steria.png",
     sector: "Conseil en transformation digitale, Intégration de systèmes, Cybersécurité, Infrastructure management, PLM",
     domain: "Conseil", yearCreated: 1968,
     location: "Europe, près de 30 pays", employees: "50 000", chiffreAffaires: "5,8 milliards d'euros",
@@ -466,7 +466,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── Viveris ──
   {
-    id: 66, name: "Viveris", sector: "Conseil et Ingénierie Informatique", domain: "Conseil", yearCreated: 1986,
+    id: 66, name: "Viveris", logo: "/logos/viveris.png", sector: "Conseil et Ingénierie Informatique", domain: "Conseil", yearCreated: 1986,
     location: "Montpellier, Aix-en-Provence, Lyon, Grenoble, Toulouse, Paris, Strasbourg, Lille, Bruxelles, Casablanca",
     employees: "930", chiffreAffaires: "97 millions d'euros",
     website: "https://www.viveris.fr/", websiteCarriere: "https://www.viveris.fr/nous-rejoindre/",

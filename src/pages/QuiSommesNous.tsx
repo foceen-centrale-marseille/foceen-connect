@@ -3,19 +3,26 @@ import { useState, useCallback, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Users, Award, Shield, Lightbulb, Heart, Leaf, Briefcase } from "lucide-react";
 import heroImg from "@/assets/hero-bg.jpg";
 
-// Team photos placeholder — replace with real uploads
+import team25 from "@/assets/teams/team25.webp";
+import team23 from "@/assets/teams/team23.jpg";
+import team22 from "@/assets/teams/team22.webp";
+import team21 from "@/assets/teams/team21.webp";
+import team20 from "@/assets/teams/team20.webp";
+import team19 from "@/assets/teams/team19.webp";
+import team18 from "@/assets/teams/team18.webp";
+import team17 from "@/assets/teams/team17.webp";
+import team16 from "@/assets/teams/team16.webp";
+
 const teamYears = [
-  { year: 2025, label: "Equipe 2025" },
-  { year: 2024, label: "Equipe 2024" },
-  { year: 2023, label: "Equipe 2023" },
-  { year: 2022, label: "Equipe 2022" },
-  { year: 2021, label: "Equipe 2021" },
-  { year: 2020, label: "Equipe 2020" },
-  { year: 2019, label: "Equipe 2019" },
-  { year: 2018, label: "Equipe 2018" },
-  { year: 2017, label: "Equipe 2017" },
-  { year: 2016, label: "Equipe 2016" },
-  { year: 2015, label: "Equipe 2015" },
+  { year: 2025, label: "Equipe 2025", img: team25 },
+  { year: 2023, label: "Equipe 2023", img: team23 },
+  { year: 2022, label: "Equipe 2022", img: team22 },
+  { year: 2021, label: "Equipe 2021", img: team21 },
+  { year: 2020, label: "Equipe 2020", img: team20 },
+  { year: 2019, label: "Equipe 2019", img: team19 },
+  { year: 2018, label: "Equipe 2018", img: team18 },
+  { year: 2017, label: "Equipe 2017", img: team17 },
+  { year: 2016, label: "Equipe 2016", img: team16 },
 ];
 
 const values = [
@@ -46,7 +53,7 @@ const QuiSommesNous = () => {
 
   return (
     <div>
-      {/* ─── 1. HERO — Photo d'équipe plein écran ─── */}
+      {/* ─── 1. HERO ─── */}
       <section className="relative h-[70vh] md:h-[80vh] overflow-hidden flex items-center justify-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -69,7 +76,7 @@ const QuiSommesNous = () => {
         </motion.div>
       </section>
 
-      {/* ─── 2. PRÉSENTATION — Données factuelles ─── */}
+      {/* ─── 2. PRÉSENTATION ─── */}
       <section className="py-20 bg-background">
         <div className="max-w-5xl mx-auto px-4">
           <motion.div
@@ -91,30 +98,24 @@ const QuiSommesNous = () => {
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-8">
               <div className="text-center">
                 <span className="block text-4xl md:text-5xl font-heading font-bold text-cyan">19e</span>
-                <span className="text-sm font-heading uppercase tracking-widest text-muted-foreground mt-1 block">
-                  Édition
-                </span>
+                <span className="text-sm font-heading uppercase tracking-widest text-muted-foreground mt-1 block">Édition</span>
               </div>
               <div className="hidden sm:block w-px h-16 bg-border" />
               <div className="text-center">
                 <span className="block text-4xl md:text-5xl font-heading font-bold text-cyan">03</span>
-                <span className="text-sm font-heading uppercase tracking-widest text-muted-foreground mt-1 block">
-                  Novembre 2026
-                </span>
+                <span className="text-sm font-heading uppercase tracking-widest text-muted-foreground mt-1 block">Novembre 2026</span>
               </div>
               <div className="hidden sm:block w-px h-16 bg-border" />
               <div className="text-center">
                 <span className="block text-4xl md:text-5xl font-heading font-bold text-cyan">28</span>
-                <span className="text-sm font-heading uppercase tracking-widest text-muted-foreground mt-1 block">
-                  Membres
-                </span>
+                <span className="text-sm font-heading uppercase tracking-widest text-muted-foreground mt-1 block">Membres</span>
               </div>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* ─── 3. HISTORIQUE — Carrousel des équipes ─── */}
+      {/* ─── 3. HISTORIQUE — Carrousel ─── */}
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="max-w-6xl mx-auto px-4">
           <motion.h2
@@ -129,7 +130,6 @@ const QuiSommesNous = () => {
             Plus de 10 ans d'engagement étudiant au service du lien entre écoles et entreprises.
           </p>
 
-          {/* Carousel */}
           <div className="relative">
             <div className="overflow-hidden rounded-lg">
               <motion.div
@@ -138,14 +138,14 @@ const QuiSommesNous = () => {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -50 }}
                 transition={{ duration: 0.4 }}
-                className="relative aspect-video bg-navy-light rounded-lg flex items-center justify-center"
+                className="relative aspect-video rounded-lg overflow-hidden"
               >
-                {/* Placeholder — replace with real team photos */}
-                <div className="flex flex-col items-center gap-4 text-primary-foreground/50">
-                  <Users size={64} />
-                  <span className="text-lg font-heading">Photo à venir</span>
-                </div>
-                {/* Year overlay */}
+                <img
+                  src={teamYears[carouselIndex].img}
+                  alt={teamYears[carouselIndex].label}
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-primary/90 to-transparent p-6">
                   <h3 className="text-xl md:text-2xl font-heading font-bold">
                     {teamYears[carouselIndex].label}
@@ -154,7 +154,6 @@ const QuiSommesNous = () => {
               </motion.div>
             </div>
 
-            {/* Arrows */}
             <button
               onClick={prevSlide}
               className="absolute left-2 md:-left-5 top-1/2 -translate-y-1/2 p-2 rounded-full bg-primary/80 hover:bg-primary text-primary-foreground transition-colors"
@@ -170,7 +169,6 @@ const QuiSommesNous = () => {
               <ChevronRight size={24} />
             </button>
 
-            {/* Dots */}
             <div className="flex justify-center gap-2 mt-6 flex-wrap">
               {teamYears.map((t, i) => (
                 <button
@@ -190,7 +188,7 @@ const QuiSommesNous = () => {
         </div>
       </section>
 
-      {/* ─── 4. VALEURS & NORMES ISO ─── */}
+      {/* ─── 4. VALEURS & CERTIFICATIONS — Layout côte à côte ─── */}
       <section className="py-20 bg-background">
         <div className="max-w-6xl mx-auto px-4">
           <motion.h2
@@ -203,14 +201,20 @@ const QuiSommesNous = () => {
           </motion.h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left — Values */}
+            {/* Gauche — Texte */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <p className="text-sm md:text-base font-body text-muted-foreground leading-relaxed mb-6">
+                Depuis sa création, le FOCEEN s'est imposé comme un acteur incontournable du recrutement étudiant
+                dans la région Sud-Est. Cette réputation repose sur des valeurs fortes et un engagement constant
+                envers la qualité et l'innovation.
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8">
                 {values.map((v, i) => (
                   <motion.div
                     key={v.title}
@@ -231,8 +235,7 @@ const QuiSommesNous = () => {
                 ))}
               </div>
 
-              {/* ISO history */}
-              <div className="mt-8 p-5 bg-muted rounded-lg border border-border">
+              <div className="p-5 bg-muted rounded-lg border border-border">
                 <h4 className="font-heading font-bold text-foreground mb-3 flex items-center gap-2">
                   <Award size={18} className="text-cyan" />
                   Certifications ISO
@@ -250,7 +253,7 @@ const QuiSommesNous = () => {
               </div>
             </motion.div>
 
-            {/* Right — ISO visual placeholder */}
+            {/* Droite — Visuel ISO */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -267,7 +270,7 @@ const QuiSommesNous = () => {
         </div>
       </section>
 
-      {/* ─── 5. POLITIQUE QUALITÉ ─── */}
+      {/* ─── 5. POLITIQUE QUALITÉ — Layout côte à côte ─── */}
       <section className="py-20 bg-muted">
         <div className="max-w-6xl mx-auto px-4">
           <motion.h2
@@ -276,11 +279,11 @@ const QuiSommesNous = () => {
             viewport={{ once: true }}
             className="text-3xl md:text-4xl font-heading font-bold text-center text-foreground mb-16"
           >
-            POLITIQUE QUALITÉ
+            NOTRE POLITIQUE QUALITÉ EN QUELQUES MOTS
           </motion.h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-            {/* Left — Piliers fondateurs */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            {/* Gauche — Piliers fondateurs */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -292,6 +295,10 @@ const QuiSommesNous = () => {
                 <Shield size={20} className="text-cyan" />
                 Piliers fondateurs
               </h3>
+              <p className="text-sm font-body text-muted-foreground mb-5 leading-relaxed">
+                Notre politique qualité repose sur quatre piliers fondateurs qui guident chaque édition du Forum FOCEEN
+                et garantissent une amélioration continue de nos services.
+              </p>
               <ul className="space-y-3 text-sm font-body text-muted-foreground">
                 <li className="flex gap-3">
                   <span className="text-cyan font-bold shrink-0">01</span>
@@ -312,7 +319,7 @@ const QuiSommesNous = () => {
               </ul>
             </motion.div>
 
-            {/* Right — Politique d'accueil */}
+            {/* Droite — Politique d'accueil */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -324,23 +331,27 @@ const QuiSommesNous = () => {
                 <Users size={20} className="text-cyan" />
                 Politique d'accueil
               </h3>
+
               <div className="space-y-5">
                 <div>
-                  <h4 className="font-heading font-semibold text-foreground text-sm mb-2">Pour les élèves</h4>
-                  <p className="text-sm font-body text-muted-foreground">
-                    Accompagnement personnalisé : ateliers de préparation CV, coaching entretien, accès à un annuaire
-                    des exposants avant l'événement. Le FOCEEN s'assure que chaque étudiant puisse aborder le forum
-                    avec confiance et préparation.
-                  </p>
+                  <h4 className="font-heading font-semibold text-foreground text-sm mb-2">Accueil des élèves</h4>
+                  <ul className="space-y-1.5 text-sm font-body text-muted-foreground list-disc pl-5">
+                    <li>Diversifier les entreprises représentées.</li>
+                    <li>Ouvrir l'accès au forum à des étudiants venant d'autres formations.</li>
+                    <li>Favoriser l'insertion des jeunes diplômés et l'obtention de stages.</li>
+                    <li>Favoriser l'insertion des étudiants en situation de handicap.</li>
+                  </ul>
                 </div>
                 <div className="w-full h-px bg-border" />
                 <div>
-                  <h4 className="font-heading font-semibold text-foreground text-sm mb-2">Pour les entreprises</h4>
-                  <p className="text-sm font-body text-muted-foreground">
-                    Logistique sur mesure : stand équipé, visibilité pré-événement, accès aux profils étudiants,
-                    et un interlocuteur dédié tout au long du processus. Nous garantissons aux exposants un
-                    environnement optimal pour rencontrer les meilleurs talents.
-                  </p>
+                  <h4 className="font-heading font-semibold text-foreground text-sm mb-2">Accueil des entreprises</h4>
+                  <ul className="space-y-1.5 text-sm font-body text-muted-foreground list-disc pl-5">
+                    <li>Assurer une grande diversité d'étudiants qualifiés.</li>
+                    <li>Proposer des services de qualité aux entreprises.</li>
+                    <li>Assurer la conservation d'une même exigence de qualité.</li>
+                    <li>Développer constamment un regard critique et un souci d'amélioration du forum.</li>
+                    <li>Pérenniser les échanges avec les médias, les professionnels et les écoles participantes.</li>
+                  </ul>
                 </div>
               </div>
             </motion.div>

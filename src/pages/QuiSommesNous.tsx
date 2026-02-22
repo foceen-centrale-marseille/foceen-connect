@@ -124,10 +124,10 @@ const QuiSommesNous = () => {
             viewport={{ once: true }}
             className="text-3xl md:text-4xl font-heading font-bold text-center mb-4"
           >
-            DEPUIS 2015
+            NOTRE HISTOIRE
           </motion.h2>
           <p className="text-center text-primary-foreground/70 font-body mb-12 max-w-2xl mx-auto">
-            Plus de 10 ans d'engagement étudiant au service du lien entre écoles et entreprises.
+            Créé en 2007, le Forum Centrale Marseille Entreprises est, depuis plusieurs années, le plus grand forum de recrutement de la Région Sud à destination des étudiants du supérieur. Il fait maintenant partie du cercle restreint des forums de recrutement ingénieur de France.
           </p>
 
           <div className="relative">

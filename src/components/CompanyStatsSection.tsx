@@ -74,16 +74,15 @@ export default function CompanyStatsSection() {
     <section className="py-16 bg-background">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-4xl lg:text-5xl font-heading font-bold text-foreground text-center mb-12">STATISTIQUES ENTREPRISES</h2>
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-16 w-full py-12">
-          {/* LEFT 40% */}
-          <div className="w-full lg:w-2/5">
+        {/* FORCED ROW on desktop */}
+        <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: "3rem" }}>
+          <div style={{ width: "40%", flexShrink: 0 }}>
             <h3 className="text-xl lg:text-2xl font-heading font-bold text-foreground mb-4">136 EXPOSANTS</h3>
             <p className="text-sm leading-relaxed text-muted-foreground">
               C'est plus de 136 entreprises qui font le déplacement chaque année pour présenter leurs activités et rencontrer les étudiants qui viennent se présenter à elles.
             </p>
           </div>
-          {/* RIGHT 60% */}
-          <div className="w-full lg:w-3/5">
+          <div style={{ width: "55%", flexShrink: 0 }}>
             <Tabs defaultValue="sector" className="w-full">
               <TabsList className="grid w-full grid-cols-2 mb-6">
                 <TabsTrigger value="sector">Secteurs d'activités</TabsTrigger>

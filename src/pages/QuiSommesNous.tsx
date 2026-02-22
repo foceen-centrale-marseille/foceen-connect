@@ -188,8 +188,44 @@ const QuiSommesNous = () => {
         </div>
       </section>
 
-      {/* ─── 4. VALEURS & CERTIFICATIONS — Layout côte à côte ─── */}
-      <section className="py-20 bg-background">
+      {/* ─── 4. NOS VALEURS — Plein écran ─── */}
+      <section className="py-24 bg-background">
+        <div className="max-w-5xl mx-auto px-4">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-3xl md:text-4xl font-heading font-bold text-center text-foreground mb-6"
+          >
+            NOS VALEURS
+          </motion.h2>
+          <p className="text-center text-muted-foreground font-body mb-16 max-w-2xl mx-auto">
+            Les principes qui guident chaque édition du Forum FOCEEN.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {values.map((v, i) => (
+              <motion.div
+                key={v.title}
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08, duration: 0.4 }}
+                className="flex flex-col items-center text-center gap-3 p-6"
+              >
+                <div className="w-14 h-14 rounded-xl bg-cyan/10 flex items-center justify-center">
+                  <v.icon size={26} className="text-cyan" />
+                </div>
+                <h4 className="font-heading font-semibold text-foreground">{v.title}</h4>
+                <p className="text-sm text-muted-foreground font-body leading-relaxed">{v.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── 4b. CERTIFICATIONS & ENGAGEMENTS — 2 colonnes ─── */}
+      <section className="py-20 bg-muted">
         <div className="max-w-6xl mx-auto px-4">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -197,39 +233,33 @@ const QuiSommesNous = () => {
             viewport={{ once: true }}
             className="text-3xl md:text-4xl font-heading font-bold text-center text-foreground mb-16"
           >
-            NOS VALEURS & CERTIFICATIONS
+            CERTIFICATIONS & ENGAGEMENTS
           </motion.h2>
 
-          <div className="flex flex-col lg:flex-row items-center gap-12">
-            <div className="lg:w-1/2">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Gauche — Texte */}
+            <div>
               <p className="text-sm md:text-base font-body text-muted-foreground leading-relaxed mb-6">
                 Depuis sa création, le FOCEEN s'est imposé comme un acteur incontournable du recrutement étudiant
                 dans la région Sud-Est. Cette réputation repose sur des valeurs fortes et un engagement constant
                 envers la qualité et l'innovation.
               </p>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                 {values.map((v, i) => (
-                  <motion.div
-                    key={v.title}
-                    initial={{ opacity: 0, y: 15 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: i * 0.08, duration: 0.4 }}
-                    className="flex gap-3 items-start"
-                  >
-                    <div className="shrink-0 w-10 h-10 rounded-lg bg-cyan/10 flex items-center justify-center">
-                      <v.icon size={20} className="text-cyan" />
+                  <div key={v.title} className="flex gap-3 items-start">
+                    <div className="shrink-0 w-9 h-9 rounded-lg bg-cyan/10 flex items-center justify-center">
+                      <v.icon size={18} className="text-cyan" />
                     </div>
                     <div>
                       <h4 className="font-heading font-semibold text-foreground text-sm">{v.title}</h4>
-                      <p className="text-xs text-muted-foreground font-body mt-1">{v.desc}</p>
+                      <p className="text-xs text-muted-foreground font-body mt-0.5">{v.desc}</p>
                     </div>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
 
-              <div className="p-5 bg-muted rounded-lg border border-border">
+              <div className="p-5 bg-card rounded-lg border border-border">
                 <h4 className="font-heading font-bold text-foreground mb-3 flex items-center gap-2">
                   <Award size={18} className="text-cyan" />
                   Certifications ISO
@@ -247,7 +277,8 @@ const QuiSommesNous = () => {
               </div>
             </div>
 
-            <div className="lg:w-1/2 flex justify-center">
+            {/* Droite — Image */}
+            <div className="flex justify-center">
               <img
                 src={isoCertification}
                 alt="Certification ISO 9001 et ISO 20121 - Bureau Veritas"

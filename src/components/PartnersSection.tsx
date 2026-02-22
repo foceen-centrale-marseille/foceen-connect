@@ -1,24 +1,32 @@
 import { motion } from "framer-motion";
 
 const parrain = {
-  name: "Vinci Énergies",
+  name: "VINCI Energies",
   logo: "https://logo.clearbit.com/vinci-energies.com",
 };
 
 const partenaires = [
-  { name: "Métropole Aix-Marseille-Provence", logo: null },
+  { name: "Métropole Aix-Marseille Provence", logo: "https://upload.wikimedia.org/wikipedia/fr/0/0f/Logo_M%C3%A9tropole_Aix-Marseille-Provence.png" },
   { name: "Batiactu", logo: "https://logo.clearbit.com/batiactu.com" },
   { name: "Haribo", logo: "https://logo.clearbit.com/haribo.com" },
-  { name: "Min. Enseignement Sup.", logo: null },
+  { name: "Min. Enseignement Sup.", logo: "https://upload.wikimedia.org/wikipedia/fr/thumb/3/37/Logo_MESRI.svg/512px-Logo_MESRI.svg.png" },
   { name: "La Mie Câline", logo: "https://logo.clearbit.com/lamiecaline.com" },
-  { name: "Cafés Richard", logo: null },
+  { name: "Cafés Richard", logo: "https://logo.clearbit.com/cafesrichard.com" },
   { name: "Gomet'", logo: null },
   { name: "Studyrama", logo: "https://logo.clearbit.com/studyrama.com" },
 ];
 
-const LogoBadge = ({ name }: { name: string }) => (
-  <div className="w-36 h-20 bg-muted/60 rounded-lg flex items-center justify-center border border-border px-3">
-    <span className="text-xs font-heading font-bold text-foreground/70 text-center leading-tight">
+const LogoBadge = ({ name, large = false }: { name: string; large?: boolean }) => (
+  <div
+    className={`${
+      large ? "w-56 h-28" : "w-36 h-20"
+    } bg-muted/60 rounded-lg flex items-center justify-center border border-border px-3`}
+  >
+    <span
+      className={`${
+        large ? "text-sm" : "text-xs"
+      } font-heading font-bold text-foreground/70 text-center leading-tight`}
+    >
       {name}
     </span>
   </div>
@@ -43,13 +51,14 @@ const LogoImage = ({
       alt={name}
       className="max-h-full max-w-full object-contain"
       onError={(e) => {
-        // Hide broken image, show name instead
         const target = e.currentTarget;
         target.style.display = "none";
         const parent = target.parentElement;
         if (parent) {
           const span = document.createElement("span");
-          span.className = "text-xs font-heading font-bold text-foreground/70 text-center leading-tight";
+          span.className =
+            "text-xs font-heading font-bold text-center leading-tight";
+          span.style.color = "hsl(var(--foreground) / 0.7)";
           span.textContent = name;
           parent.appendChild(span);
         }
@@ -68,15 +77,7 @@ const PartnerLogo = ({
   large?: boolean;
 }) => {
   if (logo) return <LogoImage name={name} logo={logo} large={large} />;
-  if (large)
-    return (
-      <div className="w-56 h-28 bg-muted/60 rounded-lg flex items-center justify-center border border-border px-4">
-        <span className="text-sm font-heading font-bold text-foreground/70 text-center leading-tight">
-          {name}
-        </span>
-      </div>
-    );
-  return <LogoBadge name={name} />;
+  return <LogoBadge name={name} large={large} />;
 };
 
 const PartnersSection = () => {

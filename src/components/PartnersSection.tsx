@@ -4,8 +4,14 @@ const parrain = {
 };
 
 const partenaires = [
-  { name: "Groupe ADF", src: "/logos/groupe-adf.png" },
-  { name: "CEA", src: "/logos/cea.png" },
+  { name: "Métropole Aix-Marseille Provence", src: "/logo-metropole-aix-marseille.png" },
+  { name: "Batiactu", src: "/81792a_3e8f982fc8a6497ca46a98b487517d35~mv2.png" },
+  { name: "Haribo", src: "/png-clipart-logo-haribo-of-america-brand-bear-bear-animals-text.png" },
+  { name: "Min. Enseignement Sup.", src: "/logo-ministere.png" },
+  { name: "La Mie Câline", src: "/logo-la-mie-caline.png" },
+  { name: "Cafés Richard", src: "/logo-cafes-richard.png" },
+  { name: "Gomet'", src: "/logo-gomet.png" },
+  { name: "Studyrama", src: "/752_ckeditor_agenda_53966_637f4194bed9f_1.png" },
 ];
 
 export default function PartnersSection() {

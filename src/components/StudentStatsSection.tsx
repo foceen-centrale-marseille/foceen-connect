@@ -3,7 +3,7 @@ import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from "recharts";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
 const schoolData = [
-  { name: "ECM", value: 986 },
+  { name: "Ecole Centrale Méditerranée", value: 986 },
   { name: "Polytech", value: 185 },
   { name: "ISBA TP", value: 184 },
   { name: "Autres", value: 162 },

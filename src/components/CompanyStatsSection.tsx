@@ -70,17 +70,17 @@ const ChartWithLegend = ({
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 0.3 }}
-    className="flex flex-col md:flex-row items-center justify-center gap-6"
+    className="flex flex-col sm:flex-row items-center justify-center gap-6"
   >
-    <div className="w-full md:w-auto h-[280px] min-w-[240px]">
+    <div className="w-full sm:w-auto h-[260px] min-w-[220px]">
       <ResponsiveContainer width="100%" height="100%">
         <PieChart>
           <Pie
             data={data}
             cx="50%"
             cy="50%"
-            outerRadius={110}
-            innerRadius={45}
+            outerRadius={100}
+            innerRadius={40}
             dataKey="value"
             paddingAngle={1}
             label={false}
@@ -101,44 +101,46 @@ const ChartWithLegend = ({
 const CompanyStatsSection = () => (
   <section className="py-16 bg-background">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
-        {/* Left column - Text (40%) */}
-        <motion.div
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="w-full lg:w-[40%] lg:shrink-0"
-        >
-          <h2 className="text-xl lg:text-2xl font-heading font-bold text-foreground mb-4">136 EXPOSANTS</h2>
-          <p className="text-sm font-body text-muted-foreground leading-relaxed">
-            C'est plus de 136 entreprises qui font le déplacement chaque année pour présenter leurs activités et rencontrer les étudiants qui viennent se présenter à elles.
-          </p>
-        </motion.div>
+      {/* FORCED FLEX ROW on lg */}
+      <div className="flex flex-col lg:flex-row items-center gap-8">
+        {/* LEFT: Text — 40% on desktop */}
+        <div className="w-full lg:w-[40%]">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="text-xl lg:text-2xl font-heading font-bold text-foreground mb-4">136 EXPOSANTS</h2>
+            <p className="text-sm leading-relaxed font-body text-muted-foreground">
+              C'est plus de 136 entreprises qui font le déplacement chaque année pour présenter leurs activités et rencontrer les étudiants qui viennent se présenter à elles.
+            </p>
+          </motion.div>
+        </div>
 
-        {/* Right column - Charts (60%) */}
-        <motion.div
-          initial={{ opacity: 0, x: 30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-          className="w-full lg:w-[60%]"
-        >
-          <h3 className="text-2xl font-heading font-bold text-center text-foreground mb-6">STATISTIQUES ENTREPRISES</h3>
-          <Tabs defaultValue="sector" className="w-full">
-            <TabsList className="grid w-full grid-cols-2 mb-6">
-              <TabsTrigger value="sector">Secteurs d'activités</TabsTrigger>
-              <TabsTrigger value="structure">Types de structures</TabsTrigger>
-            </TabsList>
-
-            <TabsContent value="sector">
-              <ChartWithLegend data={sectorData} colors={COLORS_SECTOR} />
-            </TabsContent>
-            <TabsContent value="structure">
-              <ChartWithLegend data={structureData} colors={COLORS_STRUCTURE} />
-            </TabsContent>
-          </Tabs>
-        </motion.div>
+        {/* RIGHT: Charts — 60% on desktop */}
+        <div className="w-full lg:w-[60%]">
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <h3 className="text-xl lg:text-2xl font-heading font-bold text-center text-foreground mb-6">STATISTIQUES ENTREPRISES</h3>
+            <Tabs defaultValue="sector" className="w-full">
+              <TabsList className="grid w-full grid-cols-2 mb-6">
+                <TabsTrigger value="sector">Secteurs d'activités</TabsTrigger>
+                <TabsTrigger value="structure">Types de structures</TabsTrigger>
+              </TabsList>
+              <TabsContent value="sector">
+                <ChartWithLegend data={sectorData} colors={COLORS_SECTOR} />
+              </TabsContent>
+              <TabsContent value="structure">
+                <ChartWithLegend data={structureData} colors={COLORS_STRUCTURE} />
+              </TabsContent>
+            </Tabs>
+          </motion.div>
+        </div>
       </div>
     </div>
   </section>

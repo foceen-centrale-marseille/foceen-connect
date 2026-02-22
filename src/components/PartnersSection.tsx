@@ -2,18 +2,18 @@ import { motion } from "framer-motion";
 
 const parrain = {
   name: "VINCI Energies",
-  logo: "https://logo.clearbit.com/vinci-energies.com",
+  logo: "/logos/Logo_VE_bleu_Rouge.png",
 };
 
 const partenaires = [
-  { name: "Métropole Aix-Marseille Provence", logo: "https://upload.wikimedia.org/wikipedia/fr/0/0f/Logo_M%C3%A9tropole_Aix-Marseille-Provence.png" },
-  { name: "Batiactu", logo: "https://logo.clearbit.com/batiactu.com" },
-  { name: "Haribo", logo: "https://logo.clearbit.com/haribo.com" },
-  { name: "Min. Enseignement Sup.", logo: "https://upload.wikimedia.org/wikipedia/fr/thumb/3/37/Logo_MESRI.svg/512px-Logo_MESRI.svg.png" },
-  { name: "La Mie Câline", logo: "https://logo.clearbit.com/lamiecaline.com" },
-  { name: "Cafés Richard", logo: "https://logo.clearbit.com/cafesrichard.com" },
-  { name: "Gomet'", logo: null },
-  { name: "Studyrama", logo: "https://logo.clearbit.com/studyrama.com" },
+  { name: "Métropole Aix-Marseille Provence", logo: "/logos/960px-Logo_Métropole_Aix_Marseille_Provence.svg.png" },
+  { name: "Batiactu", logo: "/logos/81792a_3e8f982fc8a6497ca46a98b487517d35~mv2.png" },
+  { name: "Haribo", logo: "/logos/png-clipart-logo-haribo-of-america-brand-bear-bear-animals-text.png" },
+  { name: "Min. Enseignement Sup.", logo: "/logos/3840px-Logo_du_Ministère_de_l'Enseignement_Supérieur_et_de_la_Recherche_(2022).svg.png" },
+  { name: "La Mie Câline", logo: "/logos/logo-la-mie-caline.png" },
+  { name: "Cafés Richard", logo: "/logos/logo-cafes-richard.png" },
+  { name: "Gomet'", logo: "/logos/logo.png" },
+  { name: "Studyrama", logo: "/logos/752_ckeditor_agenda_53966_637f4194bed9f_1.png" },
 ];
 
 const LogoBadge = ({ name, large = false }: { name: string; large?: boolean }) => (
@@ -32,7 +32,7 @@ const LogoBadge = ({ name, large = false }: { name: string; large?: boolean }) =
   </div>
 );
 
-const LogoImage = ({
+const PartnerLogo = ({
   name,
   logo,
   large = false,
@@ -40,44 +40,34 @@ const LogoImage = ({
   name: string;
   logo: string;
   large?: boolean;
-}) => (
-  <div
-    className={`${
-      large ? "w-56 h-28" : "w-36 h-20"
-    } bg-white rounded-lg flex items-center justify-center border border-border p-3`}
-  >
-    <img
-      src={logo}
-      alt={name}
-      className="max-h-full max-w-full object-contain"
-      onError={(e) => {
-        const target = e.currentTarget;
-        target.style.display = "none";
-        const parent = target.parentElement;
-        if (parent) {
-          const span = document.createElement("span");
-          span.className =
-            "text-xs font-heading font-bold text-center leading-tight";
-          span.style.color = "hsl(var(--foreground) / 0.7)";
-          span.textContent = name;
-          parent.appendChild(span);
-        }
-      }}
-    />
-  </div>
-);
-
-const PartnerLogo = ({
-  name,
-  logo,
-  large = false,
-}: {
-  name: string;
-  logo: string | null;
-  large?: boolean;
 }) => {
-  if (logo) return <LogoImage name={name} logo={logo} large={large} />;
-  return <LogoBadge name={name} large={large} />;
+  return (
+    <div
+      className={`${
+        large ? "w-56 h-28" : "w-36 h-20"
+      } bg-white rounded-lg flex items-center justify-center border border-border p-3`}
+    >
+      <img
+        src={logo}
+        alt={name}
+        className="max-h-full max-w-full object-contain"
+        onError={(e) => {
+          // Replace with badge on error
+          const target = e.currentTarget;
+          const parent = target.parentElement;
+          if (parent) {
+            target.style.display = "none";
+            const span = document.createElement("span");
+            span.className =
+              "text-xs font-bold text-center leading-tight";
+            span.style.color = "hsl(var(--foreground) / 0.7)";
+            span.textContent = name;
+            parent.appendChild(span);
+          }
+        }}
+      />
+    </div>
+  );
 };
 
 const PartnersSection = () => {

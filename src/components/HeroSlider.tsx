@@ -36,7 +36,10 @@ const slides = [
 ];
 
 const HeroSlider = () => {
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(() => 0);
+
+  // Clamp index if slides array changed (e.g. HMR)
+  const safeIndex = current >= slides.length ? 0 : current;
 
   const next = useCallback(() => setCurrent((c) => (c + 1) % slides.length), []);
   const prev = useCallback(() => setCurrent((c) => (c - 1 + slides.length) % slides.length), []);
@@ -60,14 +63,14 @@ const HeroSlider = () => {
       <div className="relative h-full flex items-center justify-center px-4">
         <AnimatePresence mode="wait">
           <motion.div
-            key={current}
+            key={safeIndex}
             initial={{ opacity: 0, x: 60 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -60 }}
             transition={{ duration: 0.5 }}
             className="w-full max-w-6xl"
           >
-            {slides[current].content}
+            {slides[safeIndex].content}
           </motion.div>
         </AnimatePresence>
       </div>
@@ -95,7 +98,7 @@ const HeroSlider = () => {
             key={i}
             onClick={() => setCurrent(i)}
             className={`slide-indicator ${
-              i === current ? "slide-indicator-active" : "slide-indicator-inactive"
+              i === safeIndex ? "slide-indicator-active" : "slide-indicator-inactive"
             }`}
             aria-label={`Aller à la slide ${i + 1}`}
           />

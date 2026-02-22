@@ -134,26 +134,28 @@ const ChartWithLegend = ({
 const StudentStatsSection = () => (
   <section className="py-16 bg-background">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-8 lg:gap-12 items-center">
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
         {/* Left column - Text (40%) */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
+          className="w-full lg:w-[40%] lg:shrink-0"
         >
-          <h2 className="text-2xl lg:text-3xl font-heading font-bold text-foreground mb-4">FORUM FOCÉEN</h2>
-          <p className="text-sm lg:text-base font-body text-muted-foreground leading-relaxed">
+          <h2 className="text-xl lg:text-2xl font-heading font-bold text-foreground mb-4">FORUM FOCÉEN</h2>
+          <p className="text-sm font-body text-muted-foreground leading-relaxed">
             Attirant plus de 2500 visiteurs et 136 entreprises, le FOCÉEN est le plus grand forum de recrutement de la région Sud-Est. Notre but est de trouver les meilleures offres de stages et d'emplois pour les élèves de la région d'Aix-Marseille. Certifiée par la norme ISO 9001 et ISO 20121, notre association prône la qualité ainsi que l'excellence, le professionnalisme et l'autonomie mais aussi l'éco-responsabilité et la solidarité.
           </p>
         </motion.div>
 
-        {/* Right column - Charts */}
+        {/* Right column - Charts (60%) */}
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
+          className="w-full lg:w-[60%]"
         >
           <h3 className="text-2xl font-heading font-bold text-center text-foreground mb-6">PROFILS ÉTUDIANTS</h3>
           <Tabs defaultValue="school" className="w-full">

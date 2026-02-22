@@ -101,26 +101,28 @@ const ChartWithLegend = ({
 const CompanyStatsSection = () => (
   <section className="py-16 bg-background">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-8 lg:gap-12 items-center">
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
         {/* Left column - Text (40%) */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
+          className="w-full lg:w-[40%] lg:shrink-0"
         >
-          <h2 className="text-2xl lg:text-3xl font-heading font-bold text-foreground mb-4">136 EXPOSANTS</h2>
-          <p className="text-sm lg:text-base font-body text-muted-foreground leading-relaxed">
+          <h2 className="text-xl lg:text-2xl font-heading font-bold text-foreground mb-4">136 EXPOSANTS</h2>
+          <p className="text-sm font-body text-muted-foreground leading-relaxed">
             C'est plus de 136 entreprises qui font le déplacement chaque année pour présenter leurs activités et rencontrer les étudiants qui viennent se présenter à elles.
           </p>
         </motion.div>
 
-        {/* Right column - Charts */}
+        {/* Right column - Charts (60%) */}
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
+          className="w-full lg:w-[60%]"
         >
           <h3 className="text-2xl font-heading font-bold text-center text-foreground mb-6">STATISTIQUES ENTREPRISES</h3>
           <Tabs defaultValue="sector" className="w-full">

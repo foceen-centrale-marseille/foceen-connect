@@ -477,6 +477,162 @@ export const exposantsList: Exposant[] = [
     highlights: ["30+ ans d'expertise en transformation numérique", "Systèmes embarqués, SI, Infrastructures", "Présence en France, Belgique et Maroc"],
   },
 
+  // ── Yélé ──
+  {
+    id: 67, name: "Yélé Consulting", sector: "Conseil dans la transition énergétique et environnementale et en transformation digitale", domain: "Conseil", yearCreated: 2010,
+    location: "Paris et Lyon", employees: "130", chiffreAffaires: "16 millions d'euros",
+    website: "https://www.yele.fr/", websiteCarriere: "https://carrieres.yele.fr/",
+    profiles: "Profils motivés et curieux intéressés par les métiers du conseil. Stages de fin d'études (6 mois) – Conseil en transformation digitale, transition énergétique & environnementale. Jeunes diplômés – Consultants juniors. Alternances (selon les besoins des missions).",
+    postTypes: ["Alternance", "CDI", "Stage"],
+    applicationMethod: "Rencontre sur stand : échanges informels (pensez à venir avec un CV à jour). Les candidatures retenues seront contactées pour un process en 2 à 3 étapes (préqualification téléphonique, entretien RH et opérationnel).",
+    description: "Yélé Consulting est un cabinet de conseil et d'ingénierie indépendant, spécialiste de la transition énergétique et environnementale. Nous intervenons dans les domaines de l'Énergie & Utilities, du Transport & Mobilité et de l'Industrie. Nos clients sont RTE, Enedis, TotalEnergies, RATP, SNCF… Créé en 2010, Yélé Consulting fait partie du groupe JAD.",
+    highlights: [
+      "Missions de mécénat de compétences ouvertes à tous",
+      "Actions citoyennes",
+      "Activités FunY pour la convivialité et l'esprit d'équipe",
+      "Valeurs : Audacieux, accessibles, éclairants et engagés",
+    ],
+  },
+  // ── Bouygues Bâtiment Sud-Est ──
+  {
+    id: 68, name: "Bouygues Bâtiment Sud-Est", sector: "Construction", domain: "BTP", yearCreated: 1973,
+    location: "Sud-Est de la France", employees: "950", chiffreAffaires: "380 millions d'euros",
+    website: "https://www.bouygues-batiment-sud-est.fr/",
+    profiles: "Dynamisme, curiosité, envie d'apprendre, esprit d'équipe",
+    postTypes: ["CDI", "Stage"],
+    applicationMethod: "CV",
+    description: "Bouygues Bâtiment Sud-Est exerce son activité en développement, conception, construction et rénovation dans tous les domaines de l'habitat, des ouvrages fonctionnels et tertiaires, des opérations multi-produits, de l'industrie et de la logistique. Nous sommes engagés en faveur de la diversité et ouverts à tous les talents.",
+    highlights: [
+      "Filiale de Bouygues Construction",
+      "Habitat, tertiaire, industrie et logistique",
+      "Engagement en faveur de la diversité",
+    ],
+  },
+  // ── Colas ──
+  {
+    id: 69, name: "Colas", sector: "BTP", domain: "BTP", yearCreated: 1929,
+    location: "Internationale", employees: "70 000", chiffreAffaires: "16 milliards d'euros",
+    website: "https://careers.colasjobs.com/",
+    profiles: "Ingénieurs travaux : responsables de la planification et de la supervision des chantiers. Conducteurs de travaux : chargés de la gestion opérationnelle des projets sur le terrain. Techniciens de laboratoire : effectuent des tests sur les matériaux utilisés dans la construction.",
+    postTypes: ["Alternance", "CDD", "CDI", "Stage"],
+    applicationMethod: "Préqualification téléphonique / entretien",
+    description: "Colas, filiale du groupe Bouygues, a pour mission d'imaginer, de construire et d'entretenir des infrastructures de transport de façon responsable. Implanté dans plus de 50 pays sur les cinq continents, à travers un réseau de 800 entités locales et 3 000 unités de production et de recyclage de matériaux, Colas rassemble 70 000 collaborateurs engagés dans leur territoire.",
+    highlights: [
+      "Présence dans plus de 50 pays",
+      "800 entités locales",
+      "Leader mondial des solutions de mobilité",
+    ],
+  },
+  // ── EDF ──
+  {
+    id: 70, name: "EDF", sector: "Énergie", domain: "Énergie", yearCreated: 1949,
+    location: "Internationale", employees: "191 000", chiffreAffaires: "118,7 milliards d'euros",
+    website: "https://www.edf.fr", websiteCarriere: "https://www.edf.fr/edf-recrute",
+    profiles: "Tous profils d'ingénierie",
+    postTypes: ["Alternance", "CDI", "Stage"],
+    applicationMethod: "Site https://www.edf.fr/edf-recrute",
+    description: "Le Groupe EDF, acteur majeur de la transition énergétique est un énergéticien intégré, présent sur l'ensemble des métiers : la production, le transport, la distribution, le négoce, la vente d'énergies et les services énergétiques. De par sa position de référent sur le marché de l'énergie et des services énergétiques, le groupe EDF offre un large panel de métiers et des parcours de carrière variés en France et à l'international. 230 métiers sont exercés chez EDF.",
+    highlights: [
+      "Acteur majeur de la transition énergétique",
+      "191 000 salariés dans le monde",
+      "230 métiers exercés",
+      "Évolution vers des postes d'expertise ou de management",
+    ],
+  },
+  // ── Eiffage ──
+  {
+    id: 71, name: "Eiffage", sector: "BTP, Énergie et Systèmes et Concessions", domain: "BTP", yearCreated: 1884,
+    location: "Présent dans 50 pays sur les 5 continents", employees: "84 400", chiffreAffaires: "23,4 milliards d'euros",
+    website: "https://www.eiffage.com/", websiteCarriere: "https://www.eiffage.com/carrieres",
+    profiles: "Travaux (Bâtiment, Génie Civil, Route, Rail, Métal), Études (Prix, Méthodes et/ou Structures), Gestion de Projets, Prévention, Affaires. Candidats motivés ayant une réelle appétence pour le BTP, les Énergies et Systèmes et/ou des Concessions.",
+    postTypes: ["Alternance", "CDD", "CDI", "Stage"],
+    applicationMethod: "Sélection des CV par les RH et échange téléphonique suivi d'une rencontre avec l'opérationnel qui est amené à recruter.",
+    description: "Acteur de référence d'une Europe bas carbone, Eiffage est l'un des leaders européens du BTP et des concessions. Nous exerçons nos activités au travers de 8 métiers (construction, immobilier, aménagement, route, génie civil, métal, énergie systèmes et concessions) répartis au sein de 4 branches. Les 84 400 collaborateurs du groupe sont pleinement engagés pour innover, concevoir, construire, maintenir et rénover les villes et les infrastructures de demain.",
+    highlights: [
+      "Leader européen du BTP et des concessions",
+      "Plus de 100 000 chantiers par an",
+      "8 métiers répartis en 4 branches",
+      "Engagement dans la transition écologique et digitale",
+    ],
+  },
+  // ── Fauché ──
+  {
+    id: 72, name: "Fauché", sector: "Solutions et services à l'énergie", domain: "Énergie", yearCreated: 1963,
+    location: "Marseille, Vitrolles, Avignon, Aix en Provence, Nice, Fos sur mer, Bagnols-sur-Cèze", employees: "3 200", chiffreAffaires: "400 millions d'euros (2023)",
+    website: "https://www.fauche.com", websiteCarriere: "https://groupefauche-career.talent-soft.com",
+    profiles: "Softskills : Travail en équipe, Sens de l'organisation. Hardskills : Électricité, Plomberie, CVC.",
+    postTypes: ["CDI", "Alternance", "Stage"],
+    applicationMethod: "CV et entretiens",
+    description: "Fauché est n°1 français indépendant des solutions et services à l'énergie. Ses 3 200 collaborateurs imaginent, réalisent et assurent la maintenance de vos projets électriques dans les domaines tertiaires, industriels et les infrastructures de transport.",
+    highlights: [
+      "N°1 français indépendant des solutions et services à l'énergie",
+      "Évolution de carrière : Assistant chargé d'affaires, Chargé d'affaires, Responsable d'activités",
+    ],
+  },
+  // ── GCC ──
+  {
+    id: 73, name: "GCC", sector: "Construction", domain: "BTP", yearCreated: 1921,
+    location: "Nationale", employees: "3 000", chiffreAffaires: "1,2 milliards d'euros",
+    website: "https://www.gcc-groupe.com/",
+    profiles: "Conducteur de travaux, Études de prix",
+    postTypes: ["Alternance", "CDI", "Stage"],
+    applicationMethod: "CV, moins de 3 entretiens",
+    description: "GCC est un Groupe de BTP indépendant à taille humaine. Salaire selon profil et expérience. Prime Intéressement & Participation, Prime Vacances, Mutuelle avec options complémentaires de couverture PEG avec abondement. Engagements RSE répartis sur 4 domaines : offrir des solutions sobres et durables, garantir de bonnes conditions de travail en toute sécurité, limiter l'empreinte environnementale, fédérer autour des engagements RSE.",
+    highlights: [
+      "Partenariat avec Hoffman pour un béton bas carbone",
+      "50% du CA en réhabilitation/rénovation d'ici 2028",
+      "Programme intrapreneuriat « Licorne »",
+      "100% du personnel encadrant formé à la RSE",
+    ],
+  },
+  // ── NGE ──
+  {
+    id: 74, name: "NGE", sector: "Travaux Publics", domain: "BTP", yearCreated: 2002,
+    location: "Échelle Internationale", employees: "23 000", chiffreAffaires: "4,3 millions d'euros",
+    website: "https://www.nge.fr/", websiteCarriere: "https://www.nge-recrute.fr/",
+    profiles: "Conducteur de travaux, Chef de chantier, Géomètre, Ingénieur études de prix",
+    postTypes: ["Alternance", "CDI", "Stage"],
+    applicationMethod: "CV + 2 entretiens (RH + Opérationnels)",
+    description: "S'appeler NGE, Nouvelles Générations d'Entrepreneurs, c'est avoir l'audace nécessaire à la prise de risques. Nous sommes cette entreprise de BTP. Chaque jour, nous réinventons nos métiers pour concevoir, réaliser et rénover des projets d'envergure et des ouvrages de proximité. Nos équipes sont engagées aux côtés des territoires et des communautés pour créer des ponts, des routes, des voies ferrées, des réseaux de fibre optique, des espaces de vie culturels, sociaux, éducatifs…",
+    highlights: [
+      "Nouvelles Générations d'Entrepreneurs",
+      "Construire ENSEMBLE est la marque de fabrique de NGE",
+      "Transition écologique au cœur des projets",
+      "L'humain au cœur de chacun des projets",
+    ],
+  },
+  // ── Orano Support ──
+  {
+    id: 75, name: "Orano Support", sector: "Secteur de l'énergie nucléaire", domain: "Énergie", yearCreated: 2018,
+    location: "Internationale", employees: "17 500", chiffreAffaires: "4,7 milliards d'euros",
+    website: "https://www.orano.group/fr", websiteCarriere: "https://www.orano.group/jobs/fr",
+    profiles: "Soft Skills : Gestion du temps, Communication, Adaptabilité, Initiative, Organisation, Curiosité, Polyvalence, Autonomie",
+    postTypes: ["Alternance", "Stage"],
+    applicationMethod: "1. Dépôt de candidature : envoi du CV et parfois d'une lettre de motivation. 2. Entretien avec un recruteur. 3. Entretien avec un manager.",
+    description: "Groupe international de référence, Orano est un acteur majeur de l'énergie nucléaire. Avec 17 500 collaborateurs dans le monde, le groupe s'engage au quotidien pour répondre aux enjeux énergétiques mondiaux et fournir une électricité puissante, sécurisée, bas carbone et compétitive. Chez Orano, nous sommes engagés pour le climat, pour l'économie des ressources et la santé.",
+    highlights: [
+      "Acteur majeur de l'énergie nucléaire",
+      "17 sites en France et forte culture de mobilité professionnelle",
+      "Métiers : Maintenance, Data, Santé et médecine, Exploitation, R&D et innovation",
+      "Nombreuses possibilités d'évolution via écoles des métiers et formations",
+    ],
+  },
+  // ── Paprec ──
+  {
+    id: 76, name: "Paprec", sector: "Recyclage et valorisation énergétique des déchets", domain: "Environnement", yearCreated: 1994,
+    location: "La Seyne sur Mer, Paris, Nantes, Toulouse, Lyon", employees: "16 000", chiffreAffaires: "3 milliards d'euros",
+    website: "http://www.paprec.com", websiteCarriere: "https://recrutement.paprec.com/fr",
+    profiles: "Ingénieurs (process, calcul, chaudière, planning, électricité, génie civil…)",
+    postTypes: ["Alternance", "CDI", "Stage"],
+    applicationMethod: "CV + LM + 2 voire 3 entretiens - Anglais professionnel. Entretiens en visio ou à la Seyne sur Mer.",
+    description: "En Juillet 2021, le groupe PAPREC crée sa division Energies dédiée à la valorisation énergétique des déchets à la suite des acquisitions de Dalkia Wastenergy, CNIM E&E O&M, Inova Opérations et en avril 2022 la Division EPC du Secteur Environnement & Énergie du Groupe CNIM. Paprec Energies détient à présent toutes les ressources nécessaires pour concevoir, construire et/ou exploiter des usines de valorisation énergétique et organique.",
+    highlights: [
+      "30 Usines et projets en France et à l'international",
+      "Division Energies dédiée à la valorisation énergétique",
+      "Évolution de carrière en entreprise",
+    ],
+  },
+
   // ── Exposants existants (non encore mis à jour via fiches) ──
   { id: 1, name: "Accenture", sector: "Conseil & Technologie", domain: "Conseil", yearCreated: 1989, location: "Paris, France", employees: "738 000+", website: "https://www.accenture.com", profiles: "Consultants, ingénieurs IT", postTypes: ["CDI", "Stage", "Alternance"], applicationMethod: "Candidature en ligne", description: "Accenture est une entreprise mondiale de services professionnels, spécialisée dans le conseil, la technologie et l'externalisation.", highlights: ["Fortune Global 500", "Présence mondiale", "Innovation digitale"] },
   { id: 15, name: "Thales", sector: "Défense & Technologie", domain: "Défense", yearCreated: 2000, location: "Paris, France", employees: "81 000+", website: "https://www.thalesgroup.com", profiles: "Ingénieurs systèmes, cybersécurité", postTypes: ["CDI", "Stage", "Alternance"], applicationMethod: "Portail carrières Thales", description: "Thales est un leader mondial des hautes technologies pour les marchés de la Défense, de l'Aéronautique et du Spatial.", highlights: ["Cybersécurité", "Identité numérique", "Spatial & défense"] },

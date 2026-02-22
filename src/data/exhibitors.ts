@@ -479,7 +479,7 @@ export const exposantsList: Exposant[] = [
 
   // ── Yélé ──
   {
-    id: 67, name: "Yélé Consulting", sector: "Conseil dans la transition énergétique et environnementale et en transformation digitale", domain: "Conseil", yearCreated: 2010,
+    id: 67, name: "Yélé Consulting", logo: "/logos/yele.png", sector: "Conseil dans la transition énergétique et environnementale et en transformation digitale", domain: "Conseil", yearCreated: 2010,
     location: "Paris et Lyon", employees: "130", chiffreAffaires: "16 millions d'euros",
     website: "https://www.yele.fr/", websiteCarriere: "https://carrieres.yele.fr/",
     profiles: "Profils motivés et curieux intéressés par les métiers du conseil. Stages de fin d'études (6 mois) – Conseil en transformation digitale, transition énergétique & environnementale. Jeunes diplômés – Consultants juniors. Alternances (selon les besoins des missions).",
@@ -495,7 +495,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── Bouygues Bâtiment Sud-Est ──
   {
-    id: 68, name: "Bouygues Bâtiment Sud-Est", sector: "Construction", domain: "BTP", yearCreated: 1973,
+    id: 68, name: "Bouygues Bâtiment Sud-Est", logo: "/logos/bouygues-batiment.jpg", sector: "Construction", domain: "BTP", yearCreated: 1973,
     location: "Sud-Est de la France", employees: "950", chiffreAffaires: "380 millions d'euros",
     website: "https://www.bouygues-batiment-sud-est.fr/",
     profiles: "Dynamisme, curiosité, envie d'apprendre, esprit d'équipe",
@@ -510,7 +510,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── Colas ──
   {
-    id: 69, name: "Colas", sector: "BTP", domain: "BTP", yearCreated: 1929,
+    id: 69, name: "Colas", logo: "/logos/colas.png", sector: "BTP", domain: "BTP", yearCreated: 1929,
     location: "Internationale", employees: "70 000", chiffreAffaires: "16 milliards d'euros",
     website: "https://careers.colasjobs.com/",
     profiles: "Ingénieurs travaux : responsables de la planification et de la supervision des chantiers. Conducteurs de travaux : chargés de la gestion opérationnelle des projets sur le terrain. Techniciens de laboratoire : effectuent des tests sur les matériaux utilisés dans la construction.",
@@ -525,7 +525,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── EDF ──
   {
-    id: 70, name: "EDF", sector: "Énergie", domain: "Énergie", yearCreated: 1949,
+    id: 70, name: "EDF", logo: "/logos/edf.png", sector: "Énergie", domain: "Énergie", yearCreated: 1949,
     location: "Internationale", employees: "191 000", chiffreAffaires: "118,7 milliards d'euros",
     website: "https://www.edf.fr", websiteCarriere: "https://www.edf.fr/edf-recrute",
     profiles: "Tous profils d'ingénierie",
@@ -541,7 +541,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── Eiffage ──
   {
-    id: 71, name: "Eiffage", sector: "BTP, Énergie et Systèmes et Concessions", domain: "BTP", yearCreated: 1884,
+    id: 71, name: "Eiffage", logo: "/logos/eiffage.png", sector: "BTP, Énergie et Systèmes et Concessions", domain: "BTP", yearCreated: 1884,
     location: "Présent dans 50 pays sur les 5 continents", employees: "84 400", chiffreAffaires: "23,4 milliards d'euros",
     website: "https://www.eiffage.com/", websiteCarriere: "https://www.eiffage.com/carrieres",
     profiles: "Travaux (Bâtiment, Génie Civil, Route, Rail, Métal), Études (Prix, Méthodes et/ou Structures), Gestion de Projets, Prévention, Affaires. Candidats motivés ayant une réelle appétence pour le BTP, les Énergies et Systèmes et/ou des Concessions.",
@@ -557,7 +557,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── Fauché ──
   {
-    id: 72, name: "Fauché", sector: "Solutions et services à l'énergie", domain: "Énergie", yearCreated: 1963,
+    id: 72, name: "Fauché", logo: "/logos/fauche.png", sector: "Solutions et services à l'énergie", domain: "Énergie", yearCreated: 1963,
     location: "Marseille, Vitrolles, Avignon, Aix en Provence, Nice, Fos sur mer, Bagnols-sur-Cèze", employees: "3 200", chiffreAffaires: "400 millions d'euros (2023)",
     website: "https://www.fauche.com", websiteCarriere: "https://groupefauche-career.talent-soft.com",
     profiles: "Softskills : Travail en équipe, Sens de l'organisation. Hardskills : Électricité, Plomberie, CVC.",
@@ -571,7 +571,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── GCC ──
   {
-    id: 73, name: "GCC", sector: "Construction", domain: "BTP", yearCreated: 1921,
+    id: 73, name: "GCC", logo: "/logos/gcc.png", sector: "Construction", domain: "BTP", yearCreated: 1921,
     location: "Nationale", employees: "3 000", chiffreAffaires: "1,2 milliards d'euros",
     website: "https://www.gcc-groupe.com/",
     profiles: "Conducteur de travaux, Études de prix",
@@ -587,7 +587,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── NGE ──
   {
-    id: 74, name: "NGE", sector: "Travaux Publics", domain: "BTP", yearCreated: 2002,
+    id: 74, name: "NGE", logo: "/logos/nge.png", sector: "Travaux Publics", domain: "BTP", yearCreated: 2002,
     location: "Échelle Internationale", employees: "23 000", chiffreAffaires: "4,3 millions d'euros",
     website: "https://www.nge.fr/", websiteCarriere: "https://www.nge-recrute.fr/",
     profiles: "Conducteur de travaux, Chef de chantier, Géomètre, Ingénieur études de prix",
@@ -603,7 +603,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── Orano Support ──
   {
-    id: 75, name: "Orano Support", sector: "Secteur de l'énergie nucléaire", domain: "Énergie", yearCreated: 2018,
+    id: 75, name: "Orano Support", logo: "/logos/orano.png", sector: "Secteur de l'énergie nucléaire", domain: "Énergie", yearCreated: 2018,
     location: "Internationale", employees: "17 500", chiffreAffaires: "4,7 milliards d'euros",
     website: "https://www.orano.group/fr", websiteCarriere: "https://www.orano.group/jobs/fr",
     profiles: "Soft Skills : Gestion du temps, Communication, Adaptabilité, Initiative, Organisation, Curiosité, Polyvalence, Autonomie",
@@ -619,7 +619,7 @@ export const exposantsList: Exposant[] = [
   },
   // ── Paprec ──
   {
-    id: 76, name: "Paprec", sector: "Recyclage et valorisation énergétique des déchets", domain: "Environnement", yearCreated: 1994,
+    id: 76, name: "Paprec", logo: "/logos/paprec.png", sector: "Recyclage et valorisation énergétique des déchets", domain: "Environnement", yearCreated: 1994,
     location: "La Seyne sur Mer, Paris, Nantes, Toulouse, Lyon", employees: "16 000", chiffreAffaires: "3 milliards d'euros",
     website: "http://www.paprec.com", websiteCarriere: "https://recrutement.paprec.com/fr",
     profiles: "Ingénieurs (process, calcul, chaudière, planning, électricité, génie civil…)",

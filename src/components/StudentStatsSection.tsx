@@ -103,11 +103,11 @@ export default function StudentStatsSection() {
   return (
     <section className="py-16 bg-background">
       {/* === FORCED HORIZONTAL LAYOUT ON DESKTOP === */}
-      <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", gap: "3rem", alignItems: "flex-start", maxWidth: "80rem", margin: "0 auto", padding: "0 1rem" }}>
+      <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", gap: "3rem", alignItems: "center", maxWidth: "80rem", margin: "0 auto", padding: "0 1rem" }}>
         {/* LEFT 40% */}
-        <div style={{ flex: "0 0 38%", minWidth: "280px", display: "flex", flexDirection: "column" }}>
-          <h2 className="text-xl lg:text-2xl font-heading font-bold text-foreground mb-4">FORUM FOCEEN</h2>
-          <div style={{ flex: 1, display: "flex", alignItems: "center" }}>
+        <div style={{ flex: "0 0 38%", minWidth: "280px" }}>
+          <div>
+            <h2 className="text-xl lg:text-2xl font-heading font-bold text-foreground mb-4">FORUM FOCEEN</h2>
             <p className="text-sm leading-relaxed text-muted-foreground">
               Attirant plus de 2500 visiteurs et 136 entreprises, le FOCEEN est le plus grand forum de recrutement de la région Sud-Est. Notre but est de trouver les meilleures offres de stages et d'emplois pour les élèves de la région d'Aix-Marseille. Certifiée par la norme ISO 9001 et ISO 20121, notre association prône la qualité ainsi que l'excellence, le professionnalisme et l'autonomie mais aussi l'éco-responsabilité et la solidarité.
             </p>

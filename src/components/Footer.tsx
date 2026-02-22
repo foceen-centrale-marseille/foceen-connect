@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="flex flex-col items-start gap-4">
-            <img src={logoWhite} alt="FOCEEN" className="h-10" />
+            <img src={logoWhite} alt="FOCEEN" className="h-20 w-auto" />
             <p className="text-sm text-primary-foreground/70 font-body">
               Forum Centrale Méditerranée Entreprises
             </p>
@@ -16,11 +16,16 @@ const Footer = () => {
             <h4 className="font-heading font-semibold text-sm uppercase tracking-wider">Contact</h4>
             <div className="flex items-center gap-2 text-sm text-primary-foreground/70">
               <Mail size={14} />
-              <a href="mailto:contact@foceen.com">contact@foceen.com</a>
+              <a href="mailto:forumentreprises@centrale-med.fr">forumentreprises@centrale-med.fr</a>
             </div>
-            <div className="flex items-center gap-2 text-sm text-primary-foreground/70">
-              <MapPin size={14} />
-              <span>Parc Chanot, Marseille</span>
+            <div className="flex items-start gap-2 text-sm text-primary-foreground/70">
+              <MapPin size={14} className="mt-1 shrink-0" />
+              <span>
+                Ecole Centrale de Marseille<br />
+                Pôle de l'étoile, Technopôle de Château Gombert<br />
+                38 rue Frédéric Joliot-Curie<br />
+                13451 Marseille
+              </span>
             </div>
           </div>
           <div className="space-y-3">

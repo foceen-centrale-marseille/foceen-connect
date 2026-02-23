@@ -126,8 +126,8 @@ const QuiSommesNous = () => {
             NOTRE HISTOIRE
           </motion.h2>
           <div className="w-20 h-1 bg-cyan mx-auto rounded-full mb-8" />
-          <p className="text-center text-primary-foreground/70 font-body mb-12 max-w-2xl mx-auto">
-            Créé en 2007, le Forum Centrale Marseille Entreprises est, depuis plusieurs années, le plus grand forum de recrutement de la Région Sud à destination des étudiants du supérieur. Il fait maintenant partie du cercle restreint des forums de recrutement ingénieur de France.
+          <p className="text-center text-primary-foreground/70 font-body mb-12 max-w-2xl mx-auto">Créé en 2007, le Forum Centrale Méditerranée Entreprises est, depuis plusieurs années, le plus grand forum de recrutement de la Région Sud à destination des étudiants du supérieur. Il fait maintenant partie du cercle restreint des forums de recrutement ingénieur de France.
+
           </p>
 
           <div className="relative">

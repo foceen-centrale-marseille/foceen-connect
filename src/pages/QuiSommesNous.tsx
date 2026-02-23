@@ -200,8 +200,8 @@ const QuiSommesNous = () => {
 
             NOS VALEURS
           </motion.h2>
-          <p className="text-center text-muted-foreground font-body mb-16 max-w-2xl mx-auto">
-            Les principes qui guident chaque édition du Forum FOCEEN.
+          <p className="text-center text-muted-foreground font-body mb-16 max-w-2xl mx-auto">Les principes qui guident chaque édition du Forum FOCEEN :
+
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -89,9 +89,9 @@ const QuiSommesNous = () => {
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-8">FOCEEN
               <span className="text-cyan">FOCEEN</span>
             </h2>
-            <p className="text-base md:text-lg font-body text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              Le FOCEEN (Forum Centrale Méditerranée Entreprises) est une association de l'École Centrale de Marseille
-              composée de <strong className="text-cyan-500">28 étudiants-ingénieurs</strong> passionnés. Chaque année,
+            <p className="text-base md:text-lg font-body text-muted-foreground leading-relaxed max-w-3xl mx-auto">Le FOCEEN (Forum Centrale Méditerranée Entreprises) est une association de l'École Centrale de Méditerranée composée de 28 étudiants-ingénieurs passionnés. Chaque année, ces étudiants organisent le plus grand forum de recrutement ingénieur de la région Sud-Est, réunissant entreprises, écoles et talents autour d'un événement unique.
+
+              <strong className="text-cyan-500">28 étudiants-ingénieurs</strong> passionnés. Chaque année,
               ces étudiants organisent le plus grand forum de recrutement ingénieur de la région Sud-Est, réunissant
               entreprises, écoles et talents autour d'un événement unique.
             </p>

@@ -3,7 +3,7 @@ import { Calendar, Award, Users, School, Building2 } from "lucide-react";
 
 const figures = [
   { icon: Calendar, value: "03/11/2026", label: "PARC CHANOT" },
-  { icon: Award, value: "ISO 9001, ISO 20121", label: "NORMES DE QUALITÉ" },
+  { icon: Award, value: "ISO 9001 ISO 20121", label: "NORMES DE QUALITÉ" },
   { icon: Users, value: "2500", label: "VISITEURS" },
   { icon: School, value: "14", label: "ÉCOLES" },
   { icon: Building2, value: "136", label: "ENTREPRISES" },

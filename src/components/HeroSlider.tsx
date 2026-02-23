@@ -45,13 +45,14 @@ const HeroSlider = () => {
           <div className="flex flex-col items-center text-center text-primary-foreground gap-8">
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
               <img src={logoWhite} alt="FOCEEN" className="h-48 md:h-64 lg:h-80 w-auto" />
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold uppercase tracking-wide leading-tight text-cyan drop-shadow-md">
-                PLUS GRAND
-                <br />
-                FORUM INGENIEUR
-                <br />
-                DE LA REGION SUD-EST
-              </h1>
+              <div className="flex flex-col items-center md:items-start">
+                <h1 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold uppercase tracking-wide leading-tight text-primary-foreground drop-shadow-md">
+                  PLUS GRAND FORUM INGENIEUR
+                  <br />
+                  DE LA REGION SUD-EST
+                </h1>
+                <div className="mt-4 w-20 h-1 bg-cyan mx-auto md:mx-0 rounded-full" />
+              </div>
             </div>
 
             {/* Countdown — centered below */}

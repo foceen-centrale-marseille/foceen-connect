@@ -15,10 +15,10 @@ const entrepriseLinks = [
 { label: "Exposants", path: "/exposants" },
 { label: "S'inscrire", path: "/inscrire", external: true }];
 
-
 const visiteurLinks = [
 { label: "Accueil", path: "/" },
 { label: "Qui sommes-nous ?", path: "/qui-sommes-nous" },
+{ label: "Exposants", path: "/exposants" },
 { label: "Infos Pratiques", path: "/infos-pratiques" },
 { label: "S'inscrire", path: "/inscrire", external: true }];
 
@@ -35,7 +35,7 @@ const Navbar = ({ mode, onModeChange }: NavbarProps) => {
           {/* Logo + Mode toggle */}
           <div className="flex items-center gap-6">
             <Link to="/">
-              <img alt="FOCEEN" className="h-20 w-auto" src="/lovable-uploads/4b833b5e-891d-4c0f-aa5b-e8bb2b5a17d5.png" />
+              <img alt="FOCEEN" className="h-20 w-auto" src={logoWhite} />
             </Link>
             <div className="hidden sm:flex items-center gap-1 text-sm font-heading">
               <button

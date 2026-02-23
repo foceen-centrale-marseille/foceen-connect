@@ -42,33 +42,33 @@ const HeroSlider = () => {
           transition={{ duration: 0.6 }}
           className="w-full max-w-6xl"
         >
-          <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 text-primary-foreground">
-            <img src={logoWhite} alt="FOCEEN" className="h-40 md:h-56 lg:h-64 w-auto" />
-            <div className="text-center md:text-left">
-              <h1 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold leading-tight mb-8">
+          <div className="flex flex-col items-center text-center text-primary-foreground gap-8">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
+              <img src={logoWhite} alt="FOCEEN" className="h-48 md:h-64 lg:h-80 w-auto" />
+              <h1 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold leading-tight">
                 <span className="bg-cyan/80 px-3 py-1 inline-block mb-2">PLUS GRAND</span>
                 <br />
                 <span className="bg-cyan/80 px-3 py-1 inline-block mb-2">FORUM INGENIEUR</span>
                 <br />
                 <span className="bg-cyan/80 px-3 py-1 inline-block">DE LA REGION SUD-EST</span>
               </h1>
+            </div>
 
-              {/* Countdown */}
-              <p className="text-sm md:text-base font-heading tracking-widest uppercase text-primary-foreground/80 mb-4">
-                Nous nous retrouvons dans :
-              </p>
-              <div className="flex gap-4 md:gap-6 justify-center md:justify-start">
-                {Object.entries(timeLeft).map(([label, value]) => (
-                  <div key={label} className="flex flex-col items-center">
-                    <span className="text-3xl md:text-5xl font-heading font-bold tabular-nums">
-                      {String(value).padStart(2, "0")}
-                    </span>
-                    <span className="text-xs md:text-sm font-body uppercase tracking-wider text-primary-foreground/70 mt-1">
-                      {label}
-                    </span>
-                  </div>
-                ))}
-              </div>
+            {/* Countdown — centered below */}
+            <p className="text-sm md:text-base font-heading tracking-widest uppercase text-primary-foreground/80">
+              Nous nous retrouvons dans :
+            </p>
+            <div className="flex gap-4 md:gap-6 justify-center">
+              {Object.entries(timeLeft).map(([label, value]) => (
+                <div key={label} className="flex flex-col items-center">
+                  <span className="text-3xl md:text-5xl font-heading font-bold tabular-nums">
+                    {String(value).padStart(2, "0")}
+                  </span>
+                  <span className="text-xs md:text-sm font-body uppercase tracking-wider text-primary-foreground/70 mt-1">
+                    {label}
+                  </span>
+                </div>
+              ))}
             </div>
           </div>
         </motion.div>

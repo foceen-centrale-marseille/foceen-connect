@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useState, useCallback, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Users, Award, Shield, Lightbulb, Heart, Leaf, Briefcase } from "lucide-react";
+import team26 from "@/assets/teams/team26.jpg";
 import team25 from "@/assets/teams/team25.webp";
 import team24 from "@/assets/teams/team24.jpg";
 import team23 from "@/assets/teams/team23.jpg";
@@ -15,6 +16,7 @@ import team15 from "@/assets/teams/team15.webp";
 import isoCertification from "@/assets/iso-certification.jpg";
 
 const teamYears = [
+{ year: 2026, label: "Equipe 2026", img: team26 },
 { year: 2025, label: "Equipe 2025", img: team25 },
 { year: 2024, label: "Equipe 2024", img: team24 },
 { year: 2023, label: "Equipe 2023", img: team23 },
@@ -57,7 +59,7 @@ const QuiSommesNous = () => {
       <section className="relative h-[70vh] md:h-[80vh] overflow-hidden flex items-center justify-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${team25})` }}>
+          style={{ backgroundImage: `url(${team26})` }}>
 
           <div className="absolute inset-0 bg-black/25" />
         </div>
@@ -86,14 +88,11 @@ const QuiSommesNous = () => {
             transition={{ duration: 0.6 }}
             className="text-center">
 
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-8">FOCEEN
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-8">
               <span className="text-cyan">FOCEEN</span>
             </h2>
-            <p className="text-base md:text-lg font-body text-muted-foreground leading-relaxed max-w-3xl mx-auto">Le FOCEEN (Forum Centrale Méditerranée Entreprises) est une association composée de 28 étudiants-ingénieurs passionnés. Ensemble, nous orchestrons un événement de recrutement incontournable dans le Sud-Est, réunissant entreprises et étudiants pour bâtir les carrières de demain.
-
-              <strong className="text-cyan-500">28 étudiants-ingénieurs</strong> passionnés. Chaque année,
-              ces étudiants organisent le plus grand forum de recrutement ingénieur de la région Sud-Est, réunissant
-              entreprises, écoles et talents autour d'un événement unique.
+            <p className="text-base md:text-lg font-body text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+              Le FOCEEN (Forum Centrale Méditerranée Entreprises) est une association composée de 28 étudiants-ingénieurs passionnés. Ensemble, nous orchestrons un événement de recrutement incontournable dans le Sud-Est, réunissant entreprises et étudiants pour bâtir les carrières de demain.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-8">
               <div className="text-center">

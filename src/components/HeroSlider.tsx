@@ -45,12 +45,12 @@ const HeroSlider = () => {
           <div className="flex flex-col items-center text-center text-primary-foreground gap-8">
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
               <img src={logoWhite} alt="FOCEEN" className="h-48 md:h-64 lg:h-80 w-auto" />
-              <h1 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold leading-tight">
-                <span className="bg-cyan/80 px-3 py-1 inline-block mb-2">PLUS GRAND</span>
+              <h1 className="text-xl md:text-2xl lg:text-3xl font-heading font-bold leading-relaxed text-cyan drop-shadow-md">
+                PLUS GRAND
                 <br />
-                <span className="bg-cyan/80 px-3 py-1 inline-block mb-2">FORUM INGENIEUR</span>
+                FORUM INGENIEUR
                 <br />
-                <span className="bg-cyan/80 px-3 py-1 inline-block">DE LA REGION SUD-EST</span>
+                DE LA REGION SUD-EST
               </h1>
             </div>
 

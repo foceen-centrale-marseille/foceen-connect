@@ -1,53 +1,28 @@
-import { useState, useEffect, useCallback } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import heroImg from "@/assets/hero-bg.jpg";
 import logoWhite from "@/assets/logo_foceen_white.png";
 
-const slides = [
-  {
-    id: 1,
-    content: (
-      <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 text-primary-foreground">
-        <img src={logoWhite} alt="FOCEEN" className="h-40 md:h-56 lg:h-64 w-auto" />
-        <div>
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold leading-tight">
-            <span className="bg-cyan/80 px-3 py-1 inline-block mb-2">PLUS GRAND</span>
-            <br />
-            <span className="bg-cyan/80 px-3 py-1 inline-block mb-2">FORUM INGÉNIEUR</span>
-            <br />
-            <span className="bg-cyan/80 px-3 py-1 inline-block">DE LA RÉGION SUD-EST</span>
-          </h1>
-        </div>
-      </div>
-    ),
-  },
-  {
-    id: 2,
-    content: (
-      <div className="text-center text-primary-foreground max-w-3xl mx-auto">
-        <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6">PRÈS DE 2500 VISITEURS</h2>
-        <p className="text-base md:text-lg font-body leading-relaxed text-primary-foreground/90">
-          Chaque année, le souhait du Forum Centrale Méditerranée Entreprises est de proposer des profils variés aux recruteurs présents au Palais des Congrès de Marseille. Pour cela, nous avons développé des partenariats avec de multiples écoles dans toute la France. Provenant à la fois d'écoles d'ingénieurs généralistes (Centrale Méditerranée, Polytech, Mines Saint Etienne, Arts et Métiers) mais aussi d'écoles plus spécialisées (Institut G4, ISBA TP) ou encore d'écoles de management (Kedge BS) ainsi que de l'IAE d'Aix-en-Provence et l'Université d'Aix-Marseille, le panel d'étudiants est grand et nous espérons, année après année, le diversifier.
-        </p>
-      </div>
-    ),
-  },
-];
+const TARGET_DATE = new Date("2026-11-03T09:00:00").getTime();
+
+function getTimeLeft() {
+  const now = Date.now();
+  const diff = Math.max(0, TARGET_DATE - now);
+  return {
+    jours: Math.floor(diff / (1000 * 60 * 60 * 24)),
+    heures: Math.floor((diff / (1000 * 60 * 60)) % 24),
+    minutes: Math.floor((diff / (1000 * 60)) % 60),
+    secondes: Math.floor((diff / 1000) % 60),
+  };
+}
 
 const HeroSlider = () => {
-  const [current, setCurrent] = useState(() => 0);
-
-  // Clamp index if slides array changed (e.g. HMR)
-  const safeIndex = current >= slides.length ? 0 : current;
-
-  const next = useCallback(() => setCurrent((c) => (c + 1) % slides.length), []);
-  const prev = useCallback(() => setCurrent((c) => (c - 1 + slides.length) % slides.length), []);
+  const [timeLeft, setTimeLeft] = useState(getTimeLeft);
 
   useEffect(() => {
-    const timer = setInterval(next, 16000);
+    const timer = setInterval(() => setTimeLeft(getTimeLeft()), 1000);
     return () => clearInterval(timer);
-  }, [next]);
+  }, []);
 
   return (
     <section className="relative h-screen overflow-hidden">
@@ -61,48 +36,42 @@ const HeroSlider = () => {
 
       {/* Content */}
       <div className="relative h-full flex items-center justify-center px-4">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={safeIndex}
-            initial={{ opacity: 0, x: 60 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -60 }}
-            transition={{ duration: 0.5 }}
-            className="w-full max-w-6xl"
-          >
-            {slides[safeIndex].content}
-          </motion.div>
-        </AnimatePresence>
-      </div>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="w-full max-w-6xl"
+        >
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 text-primary-foreground">
+            <img src={logoWhite} alt="FOCEEN" className="h-40 md:h-56 lg:h-64 w-auto" />
+            <div className="text-center md:text-left">
+              <h1 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold leading-tight mb-8">
+                <span className="bg-cyan/80 px-3 py-1 inline-block mb-2">PLUS GRAND</span>
+                <br />
+                <span className="bg-cyan/80 px-3 py-1 inline-block mb-2">FORUM INGENIEUR</span>
+                <br />
+                <span className="bg-cyan/80 px-3 py-1 inline-block">DE LA REGION SUD-EST</span>
+              </h1>
 
-      {/* Navigation arrows */}
-      <button
-        onClick={prev}
-        className="absolute left-4 top-1/2 -translate-y-1/2 p-2 text-primary-foreground/60 hover:text-primary-foreground transition-colors"
-        aria-label="Slide précédente"
-      >
-        <ChevronLeft size={36} />
-      </button>
-      <button
-        onClick={next}
-        className="absolute right-4 top-1/2 -translate-y-1/2 p-2 text-primary-foreground/60 hover:text-primary-foreground transition-colors"
-        aria-label="Slide suivante"
-      >
-        <ChevronRight size={36} />
-      </button>
-
-      {/* Dots */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3">
-        {slides.map((_, i) => (
-          <button
-            key={i}
-            onClick={() => setCurrent(i)}
-            className={`slide-indicator ${
-              i === safeIndex ? "slide-indicator-active" : "slide-indicator-inactive"
-            }`}
-            aria-label={`Aller à la slide ${i + 1}`}
-          />
-        ))}
+              {/* Countdown */}
+              <p className="text-sm md:text-base font-heading tracking-widest uppercase text-primary-foreground/80 mb-4">
+                Nous nous retrouvons dans :
+              </p>
+              <div className="flex gap-4 md:gap-6 justify-center md:justify-start">
+                {Object.entries(timeLeft).map(([label, value]) => (
+                  <div key={label} className="flex flex-col items-center">
+                    <span className="text-3xl md:text-5xl font-heading font-bold tabular-nums">
+                      {String(value).padStart(2, "0")}
+                    </span>
+                    <span className="text-xs md:text-sm font-body uppercase tracking-wider text-primary-foreground/70 mt-1">
+                      {label}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

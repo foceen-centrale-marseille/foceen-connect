@@ -11,7 +11,7 @@ const Layout = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar mode={mode} onModeChange={setMode} />
-      <main className="flex-1 pt-20">
+      <main className="flex-1 pt-24">
         <Outlet context={{ mode }} />
       </main>
       <Footer />

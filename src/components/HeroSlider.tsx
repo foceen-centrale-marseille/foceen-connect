@@ -45,7 +45,7 @@ const HeroSlider = () => {
           <div className="flex flex-col items-center text-center text-primary-foreground gap-8">
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
               <img src={logoWhite} alt="FOCEEN" className="h-48 md:h-64 lg:h-80 w-auto" />
-              <h1 className="text-xl md:text-2xl lg:text-3xl font-heading font-bold leading-relaxed text-cyan drop-shadow-md">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold uppercase tracking-wide leading-tight text-cyan drop-shadow-md">
                 PLUS GRAND
                 <br />
                 FORUM INGENIEUR

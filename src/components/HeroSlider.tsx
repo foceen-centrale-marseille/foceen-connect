@@ -45,14 +45,22 @@ const HeroSlider = () => {
           <div className="flex flex-col items-center text-center text-primary-foreground gap-8">
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
               <img src={logoWhite} alt="FOCEEN" className="h-48 md:h-64 lg:h-80 w-auto" />
-              <div className="flex flex-col items-center md:items-start">
-                <h1 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold uppercase tracking-wide leading-tight text-primary-foreground drop-shadow-md">
-                  PLUS GRAND FORUM INGENIEUR
-                  <br />
-                  DE LA REGION SUD-EST
-                </h1>
-                <div className="mt-4 w-20 h-1 bg-cyan mx-auto md:mx-0 rounded-full" />
-              </div>
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-heading font-bold uppercase tracking-wide leading-relaxed text-primary-foreground">
+                <span className="relative inline-block px-3 py-1 mb-2">
+                  <span className="absolute inset-0 top-[40%] bg-cyan/80 -skew-x-1" />
+                  <span className="relative">PLUS GRAND</span>
+                </span>
+                <br />
+                <span className="relative inline-block px-3 py-1 mb-2">
+                  <span className="absolute inset-0 top-[40%] bg-cyan/80 -skew-x-1" />
+                  <span className="relative">FORUM INGENIEUR</span>
+                </span>
+                <br />
+                <span className="relative inline-block px-3 py-1">
+                  <span className="absolute inset-0 top-[40%] bg-cyan/80 -skew-x-1" />
+                  <span className="relative">DE LA REGION SUD-EST</span>
+                </span>
+              </h1>
             </div>
 
             {/* Countdown — centered below */}

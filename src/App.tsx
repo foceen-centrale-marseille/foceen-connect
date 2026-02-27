@@ -32,7 +32,7 @@ const App = () => (
             <Route path="/notre-equipe/:slug" element={<NosEquipePole />} />
             <Route path="/infos-pratiques" element={<InfosPratiques />} />
           </Route>
-          <Route path="/redirect" element={<Redirect />} />
+          <Route path="/redirect-linkedin" element={<Redirect />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

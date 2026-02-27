@@ -784,6 +784,136 @@ export const exposantsList: Exposant[] = [
     description: "Chez Assystem, nous accordons une importance capitale au développement de vos compétences tout au long de votre carrière. Assystem met au cœur de sa politique formation la volonté de créer une dynamique apprenante. Trouver des solutions au dérèglement climatique est la priorité du 21ème siècle, et implique de switcher à l'énergie bas-carbone. Chez Assystem, on s'est donné pour mission d'accélérer la transition énergétique partout dans le monde. Présent dans 12 pays, nous travaillons sur la production et la distribution d'électricité bas-carbone, à travers le développement des énergies nucléaires et renouvelables.",
     highlights: ["Accélérateur de la transition énergétique", "8 000 Switchers dans 12 pays", "Expertise nucléaire et renouvelables"],
   },
+
+  // ── Axone Group ──
+  {
+    id: 105, name: "Axone Group", sector: "Ingénierie, études techniques", domain: "Ingénierie", yearCreated: 2016,
+    location: "Aix-en-Provence / Toulon / Lyon / Paris / Tours",
+    employees: "65", chiffreAffaires: "5 millions d'euros",
+    website: "https://www.axonegroup.com/", websiteCarriere: "https://www.axonegroup.com/offres-demploi/",
+    profiles: "Ingénieur(e) Système Industriel / Ingénieur Sûreté Nucléaire / Ingénieur Sûreté de Fonctionnement",
+    postTypes: ["Alternance", "CDI", "Stage"],
+    applicationMethod: "CV, 3 entretiens (RH, managérial et technique), en visio ou physique.",
+    description: "Axone est un acteur incontournable dans la maîtrise des risques liés aux systèmes complexes, principalement dans les secteurs du nucléaire et de la défense. Chez AXONE, on vit dans le monde réel : un bon salaire avec 13 RTT par an, une équipe sympa, des petits déjeuners et activités en tout genre, un séminaire annuel original avec un thème secret et des activités époustouflantes. Une vraie politique RSE – pas pipo ! Nous sommes Entreprise à Mission depuis 2024. Des formations régulières prises en charge par AXONE Institute. Une organisation vraiment flexible.",
+    highlights: ["Entreprise à Mission depuis 2024", "13 RTT par an + avantages équipe", "Formation continue via AXONE Institute", "Maîtrise des risques : nucléaire et défense"],
+  },
+
+  // ── Bertin Technologies ──
+  {
+    id: 106, name: "Bertin Technologies", sector: "Instrumentation industrielle et scientifique", domain: "Industrie", yearCreated: 1956,
+    location: "155, rue Louis Armand – 13290 Aix-en-Provence",
+    employees: "1 000", chiffreAffaires: "178 millions d'euros",
+    website: "https://www.bertin-technologies.com/",
+    profiles: "Ingénieurs électronique, photonique, optronique, systèmes embarqués, informatique",
+    postTypes: ["CDD", "CDI", "Stage"],
+    applicationMethod: "CV, lettre de motivation, 2 à 3 entretiens dont 1 minimum en présentiel.",
+    description: "BERTIN TECHNOLOGIES est un groupe industriel européen de l'instrumentation pour des applications critiques ou scientifiques. Chaque jour, nous poursuivons les avancées technologiques dans des domaines variés : le Spatial, la Défense et la sécurité, les Grands Instruments Scientifiques, le Nucléaire Civil et les Sciences de la Vie et la Santé.",
+    highlights: ["Groupe industriel européen de l'instrumentation", "Secteurs : Spatial, Défense, Nucléaire, Sciences de la Vie", "Applications critiques et scientifiques"],
+  },
+
+  // ── Bertrandt Technology France ──
+  {
+    id: 107, name: "Bertrandt Technology France", sector: "Ingénierie automobile, aéronautique, Défense et spatial", domain: "Ingénierie", yearCreated: 1974,
+    location: "7 sites en France + 50 sites à l'international (États-Unis, Europe, Afrique, Chine)",
+    employees: "13 000", chiffreAffaires: "1,1 milliard d'euros",
+    website: "https://www.bertrandt.com/", websiteCarriere: "https://www.bertrandt.com/en/career",
+    profiles: "Ingénieurs généralistes, ingénieurs mécaniques, Data analystes",
+    postTypes: ["Alternance", "CDI", "Stage"],
+    applicationMethod: "CV, 2 entretiens (technique et RH), niveau d'anglais testé, lieux d'entretien : Vitrolles, Nice, Paris et Toulouse.",
+    description: "Numéro 1 en Europe sur le marché de l'ingénierie automobile, le groupe Bertrandt, fort de 13 000 collaborateurs et d'une expérience de plus de 50 ans dans le développement de sous-systèmes/systèmes/véhicules complets, est le partenaire de confiance de tous les grands donneurs d'ordres européens, y compris dans l'aéronautique depuis plus de 20 ans. Avec ses ingénieurs et de nombreux partenaires, les entités de Bertrandt en France sont capables de mobiliser d'importantes ressources pour vous accompagner dans l'innovation et le maquettage de nouveaux concepts.",
+    highlights: ["N°1 européen de l'ingénierie automobile", "50+ ans d'expérience", "7 sites en France, présence mondiale"],
+  },
+
+  // ── ERAS (Equans) ──
+  {
+    id: 108, name: "ERAS", sector: "Ingénierie de Conception et de Réalisation (EPCm, EPC)", domain: "Ingénierie", yearCreated: 1994,
+    location: "Lyon, Marseille, Montoir-de-Bretagne, Mulhouse, La Garenne-Colombes, Orléans, Dunkerque, Rouen, Tavaux, Avignon, Compiègne",
+    employees: "350", chiffreAffaires: "42 millions d'euros",
+    website: "https://eras.com", websiteCarriere: "https://www.equans.com/join-us",
+    profiles: "Ingénieur d'études, Ingénieur calculs",
+    postTypes: ["Alternance", "CDI", "Stage"],
+    applicationMethod: "CV, entretien technique et RH.",
+    description: "Depuis plus de 30 ans, ERAS Ingénierie accompagne les industriels dans la réussite de leurs projets pour des missions tous corps d'état en avant-projets, maîtrise d'œuvre globale (EPCm) et clé-en-main (EPC). Ingénierie de Conception et de Réalisation dédiée aux procédés industriels.",
+    highlights: ["30+ ans d'expertise en ingénierie industrielle", "Maîtrise d'œuvre globale EPCm et EPC", "Marque du groupe Equans", "Présente dans 11 villes françaises"],
+  },
+
+  // ── Exail SAS ──
+  {
+    id: 109, name: "Exail SAS", sector: "Technologies de pointe (robotique, maritime, navigation, aéronautique, spatial, photonique)", domain: "Industrie", yearCreated: 2000,
+    location: "Saint-Germain-en-Laye 78100 – Échelle internationale (80+ pays)",
+    employees: "2 000",
+    website: "https://www.exail.com", websiteCarriere: "https://www.exail.com/careers",
+    profiles: "Ingénieurs et autres profils techniques",
+    postTypes: ["Alternance", "CDD", "CDI"],
+    applicationMethod: "CV, entretiens.",
+    description: "Exail est un groupe industriel spécialisé dans les technologies de pointe dans les domaines de la robotique, du maritime, de la navigation, de l'aéronautique, du spatial et de la photonique. S'appuyant sur une forte culture entrepreneuriale, Exail assure performance, fiabilité et sécurité à ses clients civils et militaires opérant dans des environnements sévères. Depuis le fond des océans jusqu'aux confins de l'espace, Exail augmente les capacités de ses clients. Exail est né en 2022 après qu'ECA Group et iXblue ont uni leurs forces.",
+    highlights: ["Présence dans 80+ pays", "Groupe né de la fusion ECA Group & iXblue (2022)", "Technologies dual-use : civil et militaire"],
+  },
+
+  // ── IKOS ──
+  {
+    id: 110, name: "IKOS", sector: "Ingénierie Ferroviaire & Energie", domain: "Ingénierie", yearCreated: 2005,
+    location: "28 bureaux dans 13 pays (France, Espagne, Belgique, Allemagne, Suisse, Suède, Italie, Angleterre, États-Unis, Canada, Maroc, Portugal, Israël)",
+    employees: "1 750", chiffreAffaires: "11 368 millions d'euros",
+    website: "https://www.ikosconsulting.com/",
+    profiles: "Ingénieurs grandes écoles, masters spécialisés et docteurs dans les secteurs ferroviaire et énergie",
+    postTypes: ["CDI", "Stage"],
+    applicationMethod: "CV, 1 entretien RH, 1 entretien technique avec le futur manager.",
+    description: "IKOS est la société d'ingénierie spécialisée dans les domaines du ferroviaire et des énergies. À travers nos valeurs, nous nous engageons à participer à la transition énergétique en développant les modes de transport du futur, qui seront sûrs et durables, ainsi qu'une énergie plus verte. Nos 1 650 ingénieurs réalisent des projets avec le support de notre entité IKOS LAB, qui pilote également nos programmes de recherches et de formations.",
+    highlights: ["Spécialiste ferroviaire et énergie", "28 bureaux dans 13 pays", "IKOS LAB : R&D et formation interne"],
+  },
+
+  // ── Onet Technologies ──
+  {
+    id: 111, name: "Onet Technologies", sector: "Ingénierie et maintenance nucléaire", domain: "Ingénierie", yearCreated: 1999,
+    location: "France, USA, Angleterre, Italie, Canada, Japon – 30 implantations en France",
+    employees: "3 000", chiffreAffaires: "280 millions d'euros",
+    website: "https://www.groupeonet.com/", websiteCarriere: "https://www.onetrecrute.com/offre-de-emploi/liste-offres.aspx",
+    profiles: "Ingénieur projet, Ingénieur d'étude sûreté, Ingénieur démantèlement nucléaire, Ingénieur mécanique et contrôle commande",
+    postTypes: ["Alternance", "CDI"],
+    applicationMethod: "1) Réponse aux offres du site carrière Onet recrute. 2) Entretien RH visio. 3) Entretien technique / manager.",
+    description: "Onet Technologies est un acteur reconnu de l'ingénierie, de la maintenance et des opérations sur site pour l'industrie du nucléaire. Nous proposons à nos clients des solutions globales, allant des études d'ingénierie au déploiement sur site industriel en passant par l'exploitation d'installations ou la fabrication. Onet Technologies fait partie du groupe Onet, groupe de services et d'ingénierie.",
+    highlights: ["Acteur reconnu du nucléaire", "Solutions globales : études, déploiement, exploitation", "30 implantations en France"],
+  },
+
+  // ── Ortec Group ──
+  {
+    id: 112, name: "Ortec Group", sector: "Ingénierie et services industriels (Engineering, Contracting, Global Services, Energies)", domain: "Industrie", yearCreated: 1992,
+    location: "Siège : Aix-en-Provence – Implantation internationale",
+    employees: "15 000", chiffreAffaires: "1,4 milliard d'euros",
+    website: "https://ortec-group.com/", websiteCarriere: "https://ortec-group.com/carrieres/",
+    profiles: "Stagiaires, alternants, jeunes diplômés",
+    postTypes: ["Alternance", "CDI", "Stage"],
+    applicationMethod: "CV, lettre de motivation, 3/4 entretiens, français/anglais, visioconférence + site.",
+    description: "Au service de la performance, de l'innovation et de la compétitivité des industriels, Ortec est un groupe international. Intégrateur de solutions en Ingénierie et Travaux, le Groupe Ortec accompagne les industriels sur l'ensemble du cycle de vie de leurs projets (conception, réalisation, maintenance) avec une offre articulée autour de 4 segments : Engineering, Contracting, Global Services et Energies. Le Groupe ORTEC intervient aujourd'hui sur de nombreux marchés : Oil & Gas, Nucléaire, Aéronautique & Spatial, Défense, Automobile, Ferroviaire, Chimie, Pharmacie, Agroalimentaire.",
+    highlights: ["Groupe international 15 000 collaborateurs", "4 segments : Engineering, Contracting, Global Services, Energies", "Siège à Aix-en-Provence"],
+  },
+
+  // ── Parlym ──
+  {
+    id: 113, name: "Parlym", sector: "Ingénierie multi-sectorielle (Nucléaire, Transition énergétique, Oil & Gas, Défense, Pharmacie, ENR)", domain: "Ingénierie", yearCreated: 1995,
+    location: "Internationale",
+    employees: "1 400", chiffreAffaires: "230 millions d'euros",
+    website: "https://www.parlym.com/", websiteCarriere: "https://parlym.nos-recrutements.fr/",
+    profiles: "Ingénieurs en génie civil, tuyauterie, calcul, EIA, superviseurs/préparateurs travaux, chefs de projet, Business Managers",
+    postTypes: ["CDI"],
+    applicationMethod: "CV.",
+    description: "QUI SOMMES NOUS ? Le Groupe PARLYM est un acteur majeur de l'ingénierie, qui développe son expertise depuis plus de 50 ans. Avec une croissance constante, nous sommes fiers aujourd'hui de compter plus de 1 200 collaborateurs à travers le monde, qui déploient leurs compétences sur des projets clefs en main au sein de secteurs stratégiques : Nucléaire, Transition énergétique, Industrie, Oil & Gas, Défense & Pharmacie et Energies Renouvelables. POURQUOI NOUS REJOINDRE ? C'est intégrer une culture d'entreprise visant la performance, évoluer au sein d'un environnement multiculturel, participer au développement du Groupe.",
+    highlights: ["50+ ans d'expertise en ingénierie", "1 400 collaborateurs à l'international", "Secteurs : Nucléaire, ENR, Oil & Gas, Défense"],
+  },
+
+  // ── Syntec-Ingénierie ──
+  {
+    id: 114, name: "Syntec-Ingénierie", sector: "Fédération professionnelle de l'ingénierie", domain: "Ingénierie", yearCreated: 1990,
+    location: "22, rue Joubert – 75009 Paris",
+    employees: "15",
+    website: "https://www.syntec-ingenierie.fr",
+    profiles: "Ingénieurs, tous profils dans les entreprises adhérentes",
+    postTypes: ["Alternance", "CDD", "CDI", "Stage"],
+    applicationMethod: "Via les entreprises adhérentes.",
+    description: "Syntec-Ingénierie est la fédération professionnelle des entreprises du secteur de l'ingénierie. Notre fédération regroupe près de 400 entreprises qui emploient plus de 90 000 salariés et qui s'investissent pleinement dans des filières tournées vers l'avenir : l'éco-conception, la rénovation énergétique des bâtiments, la décarbonation de l'industrie, le développement des nouvelles sources d'énergie propres. L'ingénierie est le premier secteur qui offre un emploi aux nouveaux ingénieurs, avec plus de 25% d'insertion dans nos entreprises.",
+    highlights: ["400 entreprises adhérentes", "90 000+ salariés dans le secteur", "Premier secteur employeur des nouveaux ingénieurs"],
+  },
 ];
 
 export const allExposants = [parrain, ...partenaires, ...exposantsList].sort((a, b) =>

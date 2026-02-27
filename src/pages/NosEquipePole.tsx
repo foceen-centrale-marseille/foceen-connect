@@ -181,16 +181,12 @@ const MemberCard = ({ member }: { member: Member }) => {
       <div className="flex gap-3 mt-3">
         {showLinkedin && (
           <a
-            href={member.linkedin as string}
+            href={member.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             referrerPolicy="no-referrer"
             className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-cyan hover:text-primary-foreground transition-colors"
             aria-label={`LinkedIn de ${member.prenom}`}
-            onClick={(e) => {
-              e.stopPropagation();
-              window.open(member.linkedin as string, "_blank", "noopener,noreferrer");
-            }}
           >
             <Linkedin size={14} />
           </a>

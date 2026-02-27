@@ -11,14 +11,16 @@ interface NavbarProps {
 
 const entrepriseLinks = [
 { label: "Accueil", path: "/" },
-{ label: "Qui sommes-nous ?", path: "/qui-sommes-nous" },
 { label: "Exposants", path: "/exposants" },
+{ label: "Qui sommes-nous ?", path: "/qui-sommes-nous" },
+{ label: "Notre équipe", path: "/notre-equipe" },
 { label: "S'inscrire", path: "/inscrire", external: true }];
 
 const visiteurLinks = [
 { label: "Accueil", path: "/" },
-{ label: "Qui sommes-nous ?", path: "/qui-sommes-nous" },
 { label: "Exposants", path: "/exposants" },
+{ label: "Qui sommes-nous ?", path: "/qui-sommes-nous" },
+{ label: "Notre équipe", path: "/notre-equipe" },
 { label: "Infos Pratiques", path: "/infos-pratiques" },
 { label: "S'inscrire", path: "/inscrire", external: true }];
 

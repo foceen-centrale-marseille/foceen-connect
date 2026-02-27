@@ -7,6 +7,7 @@ import poleLogistique from "@/assets/teams/pole-logistique.jpg";
 import polePartenariats from "@/assets/teams/pole-partenariats.jpg";
 import poleQualite from "@/assets/teams/pole-qualite.jpg";
 import poleRelationsEcoles from "@/assets/teams/pole-relations-ecoles.jpg";
+import poleCommunication from "@/assets/teams/pole-communication.jpg";
 import poleServices from "@/assets/teams/pole-services.jpg";
 
 const poles = [
@@ -32,7 +33,7 @@ const poles = [
     slug: "communication",
     title: "Pôle Communication",
     description: "Gère la stratégie de communication, les réseaux sociaux et l'image du FOCEEN.",
-    photo: generaleImg,
+    photo: poleCommunication,
   },
   {
     slug: "partenariat",

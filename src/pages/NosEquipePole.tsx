@@ -21,6 +21,7 @@ import poleQualite from "@/assets/teams/pole-qualite.jpg";
 import comeGrardel from "@/assets/teams/come-grardel.jpg";
 import poleRelationsEcoles from "@/assets/teams/pole-relations-ecoles.jpg";
 import poleServices from "@/assets/teams/pole-services.jpg";
+import poleCommunication from "@/assets/teams/pole-communication.jpg";
 import enzoColasuonnoHuvelle from "@/assets/teams/enzo-colasuonno-huvelle.jpg";
 import aurelienBeaufils from "@/assets/teams/aurelien-beaufils.jpg";
 import emmaGensburger from "@/assets/teams/emma-gensburger.jpg";
@@ -98,7 +99,7 @@ const polesData: Record<string, PoleData> = {
   communication: {
     title: "Pôle Communication",
     description: "Le Pôle Communication gère la stratégie de communication, les réseaux sociaux et l'image du FOCEEN.",
-    heroPhoto: generaleImg,
+    heroPhoto: poleCommunication,
     members: [
       { prenom: "Manon", nom: "Gaudrie", poste: "Responsable", photo: manonGaudrie, linkedin: "https://www.linkedin.com/in/manon-gaudrie-074920381/" },
       { prenom: "Thomas", nom: "Arnaud", poste: "Chargé de communication", photo: thomasArnaud, linkedin: "https://www.linkedin.com/in/thomas-arnaud-88031133b/" },

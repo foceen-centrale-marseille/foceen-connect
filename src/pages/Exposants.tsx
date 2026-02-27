@@ -29,8 +29,8 @@ const Exposants = () => {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <Building2 size={48} className="text-cyan mx-auto mb-4" />
             <h1 className="text-4xl font-heading font-bold mb-4">EXPOSANTS</h1>
-            <p className="text-lg font-body text-primary-foreground/80">
-              Découvrez les entreprises qui participent au Forum FOCEEN et leurs offres de stages et d'emplois.
+            <p className="text-lg font-body text-primary-foreground/80">Découvrez les entreprises nous ont fait confiance lors de la 18ème édition leurs offres de stages et d'emplois.
+
             </p>
           </motion.div>
         </div>
@@ -45,13 +45,13 @@ const Exposants = () => {
             <motion.div
               whileHover={{ scale: 1.03 }}
               onClick={() => setSelectedExposant(parrain)}
-              className="w-80 h-40 bg-card rounded-xl flex items-center justify-center border-2 border-cyan p-6 cursor-pointer shadow-lg hover:shadow-xl transition-shadow"
-            >
-              {parrain.logo ? (
-                <img src={parrain.logo} alt={parrain.name} className="object-contain h-28 w-auto" />
-              ) : (
-                <span className="text-xl font-heading font-bold text-foreground">{parrain.name}</span>
-              )}
+              className="w-80 h-40 bg-card rounded-xl flex items-center justify-center border-2 border-cyan p-6 cursor-pointer shadow-lg hover:shadow-xl transition-shadow">
+
+              {parrain.logo ?
+              <img src={parrain.logo} alt={parrain.name} className="object-contain h-28 w-auto" /> :
+
+              <span className="text-xl font-heading font-bold text-foreground">{parrain.name}</span>
+              }
             </motion.div>
           </div>
         </div>
@@ -63,20 +63,20 @@ const Exposants = () => {
           <h2 className="text-2xl font-heading font-bold text-center text-foreground mb-2">PARTENAIRES</h2>
           <div className="w-16 h-1 bg-cyan mx-auto rounded-full mb-8" />
           <div className="flex flex-wrap justify-center gap-6">
-            {partenaires.map((p) => (
-              <motion.div
-                key={p.id}
-                whileHover={{ scale: 1.05 }}
-                onClick={() => setSelectedExposant(p)}
-                className="w-44 h-24 bg-card rounded-lg flex items-center justify-center border border-border p-3 cursor-pointer hover:border-cyan hover:shadow-md transition-all"
-              >
-                {p.logo ? (
-                  <img src={p.logo} alt={p.name} className="object-contain h-16 w-auto" />
-                ) : (
-                  <span className="text-sm font-heading text-foreground text-center">{p.name}</span>
-                )}
+            {partenaires.map((p) =>
+            <motion.div
+              key={p.id}
+              whileHover={{ scale: 1.05 }}
+              onClick={() => setSelectedExposant(p)}
+              className="w-44 h-24 bg-card rounded-lg flex items-center justify-center border border-border p-3 cursor-pointer hover:border-cyan hover:shadow-md transition-all">
+
+                {p.logo ?
+              <img src={p.logo} alt={p.name} className="object-contain h-16 w-auto" /> :
+
+              <span className="text-sm font-heading text-foreground text-center">{p.name}</span>
+              }
               </motion.div>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -96,82 +96,82 @@ const Exposants = () => {
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 placeholder="Rechercher une entreprise..."
-                className="w-full pl-10 pr-4 py-3 rounded-lg border border-border bg-card text-foreground font-body text-sm focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent"
-              />
+                className="w-full pl-10 pr-4 py-3 rounded-lg border border-border bg-card text-foreground font-body text-sm focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent" />
+
             </div>
           </div>
 
           {/* Domain filters */}
           <div className="flex flex-wrap justify-center gap-2 mb-10">
-            {DOMAINS.map((domain) => (
-              <button
-                key={domain}
-                onClick={() => setActiveDomain(domain)}
-                className={`px-4 py-2 rounded-full text-xs font-heading font-semibold transition-all ${
-                  activeDomain === domain
-                    ? "bg-cyan text-primary-foreground shadow-md"
-                    : "bg-muted text-muted-foreground hover:bg-muted/80"
-                }`}
-              >
+            {DOMAINS.map((domain) =>
+            <button
+              key={domain}
+              onClick={() => setActiveDomain(domain)}
+              className={`px-4 py-2 rounded-full text-xs font-heading font-semibold transition-all ${
+              activeDomain === domain ?
+              "bg-cyan text-primary-foreground shadow-md" :
+              "bg-muted text-muted-foreground hover:bg-muted/80"}`
+              }>
+
                 <Filter size={12} className="inline mr-1.5 -mt-0.5" />
                 {domain}
               </button>
-            ))}
+            )}
           </div>
 
           {/* Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-            {filtered.map((company, i) => (
-              <motion.div
-                key={company.id}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.015, duration: 0.3 }}
-                whileHover={{ y: -4 }}
-                onClick={() => setSelectedExposant(company)}
-                className="bg-card border border-border rounded-xl p-5 flex flex-col items-center justify-center aspect-square hover:shadow-lg hover:border-cyan transition-all cursor-pointer group"
-              >
-                {company.logo ? (
-                  <img src={company.logo} alt={company.name} className="object-contain h-16 w-auto mb-3" />
-                ) : (
-                  <Building2 size={32} className="text-muted-foreground mb-3 group-hover:text-cyan transition-colors" />
-                )}
+            {filtered.map((company, i) =>
+            <motion.div
+              key={company.id}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.015, duration: 0.3 }}
+              whileHover={{ y: -4 }}
+              onClick={() => setSelectedExposant(company)}
+              className="bg-card border border-border rounded-xl p-5 flex flex-col items-center justify-center aspect-square hover:shadow-lg hover:border-cyan transition-all cursor-pointer group">
+
+                {company.logo ?
+              <img src={company.logo} alt={company.name} className="object-contain h-16 w-auto mb-3" /> :
+
+              <Building2 size={32} className="text-muted-foreground mb-3 group-hover:text-cyan transition-colors" />
+              }
                 <span className="text-xs font-heading font-semibold text-foreground text-center leading-tight">
                   {company.name}
                 </span>
                 <span className="text-[10px] text-muted-foreground mt-1 text-center">{company.domain}</span>
               </motion.div>
-            ))}
+            )}
           </div>
 
-          {filtered.length === 0 && (
-            <div className="text-center py-16">
+          {filtered.length === 0 &&
+          <div className="text-center py-16">
               <Building2 size={48} className="text-muted-foreground mx-auto mb-4" />
               <p className="text-muted-foreground font-body">Aucun exposant trouvé pour cette recherche.</p>
             </div>
-          )}
+          }
         </div>
       </section>
 
       {/* ── DETAIL MODAL ── */}
       <Dialog open={!!selectedExposant} onOpenChange={() => setSelectedExposant(null)}>
         <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto p-0">
-          {selectedExposant && (
-            <>
+          {selectedExposant &&
+          <>
               {/* Header */}
               <div className="bg-primary text-primary-foreground p-6 rounded-t-lg">
                 <DialogHeader>
                   <div className="flex items-center gap-5">
-                    {selectedExposant.logo ? (
-                      <div className="w-20 h-20 bg-card rounded-lg flex items-center justify-center p-2 shrink-0">
+                    {selectedExposant.logo ?
+                  <div className="w-20 h-20 bg-card rounded-lg flex items-center justify-center p-2 shrink-0">
                         <img src={selectedExposant.logo} alt={selectedExposant.name} className="object-contain h-16 w-auto" />
-                      </div>
-                    ) : (
-                      <div className="w-20 h-20 bg-card/10 rounded-lg flex items-center justify-center shrink-0">
+                      </div> :
+
+                  <div className="w-20 h-20 bg-card/10 rounded-lg flex items-center justify-center shrink-0">
                         <Building2 size={36} className="text-cyan" />
                       </div>
-                    )}
+                  }
                     <div>
                       <DialogTitle className="text-2xl font-heading font-bold text-primary-foreground">
                         {selectedExposant.name}
@@ -193,15 +193,15 @@ const Exposants = () => {
                       <Briefcase size={16} className="text-cyan" /> Infos Clés
                     </h3>
                     <div className="space-y-3 text-sm font-body">
-                      {selectedExposant.yearCreated && (
-                        <div className="flex items-start gap-3">
+                      {selectedExposant.yearCreated &&
+                    <div className="flex items-start gap-3">
                           <Calendar size={16} className="text-cyan mt-0.5 shrink-0" />
                           <div>
                             <span className="text-muted-foreground">Année de création</span>
                             <p className="font-semibold text-foreground">{selectedExposant.yearCreated}</p>
                           </div>
                         </div>
-                      )}
+                    }
                       <div className="flex items-start gap-3">
                         <MapPin size={16} className="text-cyan mt-0.5 shrink-0" />
                         <div>
@@ -216,37 +216,37 @@ const Exposants = () => {
                           <p className="font-semibold text-foreground">{selectedExposant.employees}</p>
                         </div>
                       </div>
-                      {selectedExposant.chiffreAffaires && (
-                        <div className="flex items-start gap-3">
+                      {selectedExposant.chiffreAffaires &&
+                    <div className="flex items-start gap-3">
                           <TrendingUp size={16} className="text-cyan mt-0.5 shrink-0" />
                           <div>
                             <span className="text-muted-foreground">Chiffre d'affaires</span>
                             <p className="font-semibold text-foreground">{selectedExposant.chiffreAffaires}</p>
                           </div>
                         </div>
-                      )}
+                    }
                       <div className="flex items-start gap-3">
                         <Globe size={16} className="text-cyan mt-0.5 shrink-0" />
                         <div>
                           <span className="text-muted-foreground">Site web</span>
                           <a
-                            href={selectedExposant.website}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="font-semibold text-cyan hover:underline flex items-center gap-1"
-                          >
+                          href={selectedExposant.website}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="font-semibold text-cyan hover:underline flex items-center gap-1">
+
                             Visiter <ExternalLink size={12} />
                           </a>
-                          {selectedExposant.websiteCarriere && (
-                            <a
-                              href={selectedExposant.websiteCarriere}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="font-semibold text-cyan hover:underline flex items-center gap-1 mt-1"
-                            >
+                          {selectedExposant.websiteCarriere &&
+                        <a
+                          href={selectedExposant.websiteCarriere}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="font-semibold text-cyan hover:underline flex items-center gap-1 mt-1">
+
                               Carrières <ExternalLink size={12} />
                             </a>
-                          )}
+                        }
                         </div>
                       </div>
                     </div>
@@ -265,11 +265,11 @@ const Exposants = () => {
                       <div>
                         <span className="text-muted-foreground">Types de postes</span>
                         <div className="flex flex-wrap gap-2 mt-1">
-                          {selectedExposant.postTypes.map((type) => (
-                            <span key={type} className="px-3 py-1 text-xs font-heading font-semibold rounded-full bg-cyan/15 text-cyan">
+                          {selectedExposant.postTypes.map((type) =>
+                        <span key={type} className="px-3 py-1 text-xs font-heading font-semibold rounded-full bg-cyan/15 text-cyan">
                               {type}
                             </span>
-                          ))}
+                        )}
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
@@ -292,21 +292,21 @@ const Exposants = () => {
                     {selectedExposant.description}
                   </p>
                   <ul className="space-y-2">
-                    {selectedExposant.highlights.map((h, idx) => (
-                      <li key={idx} className="flex items-center gap-2 text-sm font-body text-foreground">
+                    {selectedExposant.highlights.map((h, idx) =>
+                  <li key={idx} className="flex items-center gap-2 text-sm font-body text-foreground">
                         <span className="w-1.5 h-1.5 rounded-full bg-cyan shrink-0" />
                         {h}
                       </li>
-                    ))}
+                  )}
                   </ul>
                 </div>
               </div>
             </>
-          )}
+          }
         </DialogContent>
       </Dialog>
-    </div>
-  );
+    </div>);
+
 };
 
 export default Exposants;

@@ -1,14 +1,25 @@
-import { motion } from "framer-motion";
-import { Linkedin, Mail } from "lucide-react";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Linkedin, Mail, ChevronDown } from "lucide-react";
 import bureauImg from "@/assets/teams/bureau.jpg";
 import kateBecaas from "@/assets/teams/kate-becaas.jpg";
 import antoineMaginot from "@/assets/teams/antoine-maginot.jpg";
+import adamThabet from "@/assets/teams/adam-thabet.jpg";
+import arthurPoulin from "@/assets/teams/arthur-poulin.jpg";
+import candiceDeliance from "@/assets/teams/candice-deliance.jpg";
+import diegoMartel from "@/assets/teams/diego-martel.jpg";
+import eloiPerrin from "@/assets/teams/eloi-perrin.jpg";
+import arielDia from "@/assets/teams/ariel-dia.jpg";
 import poleEntreprise from "@/assets/teams/pole-entreprise.jpg";
 import poleLogistique from "@/assets/teams/pole-logistique.jpg";
 import polePartenariats from "@/assets/teams/pole-partenariats.jpg";
 import poleQualite from "@/assets/teams/pole-qualite.jpg";
+import comeGrardel from "@/assets/teams/come-grardel.jpg";
 import poleRelationsEcoles from "@/assets/teams/pole-relations-ecoles.jpg";
 import poleServices from "@/assets/teams/pole-services.jpg";
+import enzoColasuonnoHuvelle from "@/assets/teams/enzo-colasuonno-huvelle.jpg";
+import aurelienBeaufils from "@/assets/teams/aurelien-beaufils.jpg";
+import emmaGensburger from "@/assets/teams/emma-gensburger.jpg";
 
 function generateEmail(prenom: string, nom: string) {
   const normalize = (s: string) =>
@@ -38,9 +49,9 @@ const poles: Pole[] = [
     members: [
       { prenom: "Kate", nom: "Becaas", poste: "Présidente", photo: kateBecaas },
       { prenom: "Antoine", nom: "Maginot", poste: "Vice-Président", photo: antoineMaginot },
-      { prenom: "Adam", nom: "Thabet", poste: "Trésorier" },
-      { prenom: "Arthur", nom: "Poulin", poste: "Vice-Trésorier" },
-      { prenom: "Candice", nom: "Deliance", poste: "Secrétaire" },
+      { prenom: "Adam", nom: "Thabet", poste: "Trésorier", photo: adamThabet },
+      { prenom: "Arthur", nom: "Poulin", poste: "Vice-Trésorier", photo: arthurPoulin },
+      { prenom: "Candice", nom: "Deliance", poste: "Secrétaire", photo: candiceDeliance },
     ],
   },
   {
@@ -49,9 +60,9 @@ const poles: Pole[] = [
     groupPhoto: poleEntreprise,
     members: [
       { prenom: "Victor", nom: "Clément", poste: "Responsable" },
-      { prenom: "Diego", nom: "Martel", poste: "Chef de secteur" },
-      { prenom: "Eloi", nom: "Perrin", poste: "Chef de secteur" },
-      { prenom: "Ariel", nom: "Dia", poste: "Chef de secteur" },
+      { prenom: "Diego", nom: "Martel", poste: "Chef de secteur", photo: diegoMartel },
+      { prenom: "Eloi", nom: "Perrin", poste: "Chef de secteur", photo: eloiPerrin },
+      { prenom: "Ariel", nom: "Dia", poste: "Chef de secteur", photo: arielDia },
       { prenom: "Hippolyte", nom: "Barth", poste: "Chef de secteur" },
     ],
   },
@@ -90,7 +101,7 @@ const poles: Pole[] = [
     members: [
       { prenom: "Marie", nom: "Costes", poste: "Responsable" },
       { prenom: "Raphaël", nom: "Oudot", poste: "Référent Qualité" },
-      { prenom: "Côme", nom: "Grardel", poste: "Référent DD" },
+      { prenom: "Côme", nom: "Grardel", poste: "Référent DD", photo: comeGrardel },
     ],
   },
   {
@@ -98,10 +109,10 @@ const poles: Pole[] = [
     description: "Le Pôle Services conçoit les événements complémentaires au forum : tables rondes, espace conseil, journée pré-FOCEEN.",
     groupPhoto: poleServices,
     members: [
-      { prenom: "Enzo", nom: "Colasuonno Huvelle", poste: "Co-Resp. Entrepreneuriat" },
-      { prenom: "Aurélien", nom: "Beaufils", poste: "Co-Resp. Entrepreneuriat" },
+      { prenom: "Enzo", nom: "Colasuonno Huvelle", poste: "Co-Resp. Entrepreneuriat", photo: enzoColasuonnoHuvelle },
+      { prenom: "Aurélien", nom: "Beaufils", poste: "Co-Resp. Entrepreneuriat", photo: aurelienBeaufils },
       { prenom: "Juliette", nom: "Cholet", poste: "Tables Rondes / Conf." },
-      { prenom: "Emma", nom: "Gensburger", poste: "Espace Conseil" },
+      { prenom: "Emma", nom: "Gensburger", poste: "Espace Conseil", photo: emmaGensburger },
       { prenom: "Thomas", nom: "Candeias Da Silva", poste: "Journée Pré-FOCEEN" },
     ],
   },
@@ -121,9 +132,8 @@ const MemberCard = ({ member }: { member: Member }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 15 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.4 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.35 }}
       className="flex flex-col items-center text-center bg-card rounded-xl border border-border p-5 shadow-sm hover:shadow-md transition-shadow"
     >
       <div className="w-28 h-28 rounded-full overflow-hidden bg-muted mb-4 border-2 border-cyan/30">
@@ -131,7 +141,7 @@ const MemberCard = ({ member }: { member: Member }) => {
           <img
             src={member.photo}
             alt={`${member.prenom} ${member.nom}`}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-top"
             loading="lazy"
           />
         ) : (
@@ -165,6 +175,72 @@ const MemberCard = ({ member }: { member: Member }) => {
   );
 };
 
+const PoleSection = ({ pole, index }: { pole: Pole; index: number }) => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <section className={`py-16 ${index % 2 === 0 ? "bg-background" : "bg-muted"}`}>
+      <div className="max-w-6xl mx-auto px-4">
+        {/* Header clickable */}
+        <button
+          onClick={() => setOpen(!open)}
+          className="w-full text-left group"
+        >
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-4"
+          >
+            <div className="flex items-center justify-center gap-3">
+              <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground uppercase">
+                {pole.title}
+              </h2>
+              <ChevronDown
+                size={24}
+                className={`text-cyan transition-transform duration-300 ${open ? "rotate-180" : ""}`}
+              />
+            </div>
+            <div className="w-16 h-1 bg-cyan mx-auto rounded-full mt-4 mb-4" />
+            <p className="text-sm md:text-base font-body text-muted-foreground max-w-2xl mx-auto">
+              {pole.description}
+            </p>
+          </motion.div>
+        </button>
+
+        {/* Expandable content */}
+        <AnimatePresence>
+          {open && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.4 }}
+              className="overflow-hidden"
+            >
+              {pole.groupPhoto && (
+                <div className="mb-10 rounded-xl overflow-hidden border border-border shadow-sm max-w-3xl mx-auto">
+                  <img
+                    src={pole.groupPhoto}
+                    alt={pole.title}
+                    className="w-full h-auto object-cover"
+                    loading="lazy"
+                  />
+                </div>
+              )}
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 justify-items-center">
+                {pole.members.map((m) => (
+                  <MemberCard key={`${m.prenom}-${m.nom}`} member={m} />
+                ))}
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+    </section>
+  );
+};
+
 const NotreEquipe = () => {
   return (
     <div>
@@ -186,54 +262,15 @@ const NotreEquipe = () => {
             NOTRE ÉQUIPE
           </h1>
           <div className="mt-6 w-20 h-1 bg-cyan mx-auto rounded-full" />
+          <p className="mt-4 text-primary-foreground/80 font-body text-sm md:text-base">
+            Cliquez sur un pôle pour découvrir ses membres
+          </p>
         </motion.div>
       </section>
 
       {/* Pôles */}
-      {poles.map((pole, poleIdx) => (
-        <section
-          key={pole.title}
-          className={`py-20 ${poleIdx % 2 === 0 ? "bg-background" : "bg-muted"}`}
-        >
-          <div className="max-w-6xl mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="text-center mb-12"
-            >
-              <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground uppercase">
-                {pole.title}
-              </h2>
-              <div className="w-16 h-1 bg-cyan mx-auto rounded-full mt-4 mb-4" />
-              <p className="text-sm md:text-base font-body text-muted-foreground max-w-2xl mx-auto">
-                {pole.description}
-              </p>
-            </motion.div>
-
-            {pole.groupPhoto && (
-              <motion.div
-                initial={{ opacity: 0, scale: 0.98 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                className="mb-12 rounded-xl overflow-hidden border border-border shadow-sm max-w-3xl mx-auto"
-              >
-                <img
-                  src={pole.groupPhoto}
-                  alt={pole.title}
-                  className="w-full h-auto object-cover"
-                  loading="lazy"
-                />
-              </motion.div>
-            )}
-
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 justify-items-center">
-              {pole.members.map((m) => (
-                <MemberCard key={`${m.prenom}-${m.nom}`} member={m} />
-              ))}
-            </div>
-          </div>
-        </section>
+      {poles.map((pole, idx) => (
+        <PoleSection key={pole.title} pole={pole} index={idx} />
       ))}
     </div>
   );

@@ -104,15 +104,15 @@ export default function StudentStatsSection() {
     <section className="py-16 bg-background">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-4xl lg:text-5xl font-heading font-bold text-foreground text-center mb-12">PROFILS ÉTUDIANTS</h2>
-        {/* FORCED ROW on desktop */}
-        <div style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: "3rem" }}>
-          <div style={{ width: "40%", flexShrink: 0 }}>
+        {/* FORCED ROW on desktop, column on mobile with chart first */}
+        <div className="flex flex-col-reverse sm:flex-row sm:items-center sm:justify-between sm:gap-12">
+          <div className="sm:w-[40%] sm:shrink-0 mt-6 sm:mt-0">
             <h3 className="text-xl lg:text-2xl font-heading font-bold text-foreground mb-4">FORUM FOCEEN</h3>
             <p className="text-sm leading-relaxed text-muted-foreground">
               Attirant plus de 2500 visiteurs et 136 entreprises, le FOCEEN est le plus grand forum de recrutement de la région Sud-Est. Notre but est de trouver les meilleures offres de stages et d'emplois pour les élèves de la région d'Aix-Marseille. Certifiée par la norme ISO 9001 et ISO 20121, notre association prône la qualité ainsi que l'excellence, le professionnalisme et l'autonomie mais aussi l'éco-responsabilité et la solidarité.
             </p>
           </div>
-          <div style={{ width: "55%", flexShrink: 0 }}>
+          <div className="sm:w-[55%] sm:shrink-0">
             <Tabs defaultValue="school" className="w-full">
               <TabsList className="grid w-full grid-cols-3 mb-6">
                 <TabsTrigger value="school">Par école</TabsTrigger>

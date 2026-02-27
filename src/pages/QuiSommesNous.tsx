@@ -94,20 +94,20 @@ const QuiSommesNous = () => {
             <p className="text-base md:text-lg font-body text-muted-foreground leading-relaxed max-w-3xl mx-auto">
               Le FOCEEN (Forum Centrale Méditerranée Entreprises) est une association composée de 28 étudiants-ingénieurs passionnés. Ensemble, nous orchestrons un événement de recrutement incontournable dans le Sud-Est, réunissant entreprises et étudiants pour bâtir les carrières de demain.
             </p>
-            <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-8">
+            <div className="mt-10 flex flex-row items-center justify-between sm:justify-center sm:gap-8 gap-2">
               <div className="text-center">
-                <span className="block text-4xl md:text-5xl font-heading font-bold text-cyan">19e</span>
-                <span className="text-sm font-heading uppercase tracking-widest text-muted-foreground mt-1 block">Édition</span>
+                <span className="block text-2xl sm:text-4xl md:text-5xl font-heading font-bold text-cyan">19e</span>
+                <span className="text-xs sm:text-sm font-heading uppercase tracking-widest text-muted-foreground mt-1 block">Édition</span>
               </div>
               <div className="hidden sm:block w-px h-16 bg-border" />
               <div className="text-center">
-                <span className="block text-4xl md:text-5xl font-heading font-bold text-cyan">03</span>
-                <span className="text-sm font-heading uppercase tracking-widest text-muted-foreground mt-1 block">Novembre 2026</span>
+                <span className="block text-2xl sm:text-4xl md:text-5xl font-heading font-bold text-cyan">03</span>
+                <span className="text-xs sm:text-sm font-heading uppercase tracking-widest text-muted-foreground mt-1 block">Novembre 2026</span>
               </div>
               <div className="hidden sm:block w-px h-16 bg-border" />
               <div className="text-center">
-                <span className="block text-4xl md:text-5xl font-heading font-bold text-cyan">28</span>
-                <span className="text-sm font-heading uppercase tracking-widest text-muted-foreground mt-1 block">Membres</span>
+                <span className="block text-2xl sm:text-4xl md:text-5xl font-heading font-bold text-cyan">28</span>
+                <span className="text-xs sm:text-sm font-heading uppercase tracking-widest text-muted-foreground mt-1 block">Membres</span>
               </div>
             </div>
           </motion.div>
@@ -203,7 +203,7 @@ const QuiSommesNous = () => {
 
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {values.map((v, i) =>
             <motion.div
               key={v.title}

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import generaleImg from "@/assets/teams/generale.jpg";
+import bureauImg from "@/assets/teams/bureau.jpg";
 import poleEntreprise from "@/assets/teams/pole-entreprise.jpg";
 import poleLogistique from "@/assets/teams/pole-logistique.jpg";
 import polePartenariats from "@/assets/teams/pole-partenariats.jpg";
@@ -13,7 +14,7 @@ const poles = [
     slug: "bureau",
     title: "Le Bureau",
     description: "Dirige l'association FOCEEN et coordonne l'ensemble des pôles pour assurer le succès du forum.",
-    photo: generaleImg,
+    photo: bureauImg,
   },
   {
     slug: "entreprises",

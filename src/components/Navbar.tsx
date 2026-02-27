@@ -7,8 +7,8 @@ import logoWhite from "@/assets/logo_foceen_white.png";
 const navLinks = [
   { label: "Accueil", path: "/" },
   { label: "Exposants", path: "/exposants" },
-  { label: "Notre équipe", path: "/notre-equipe" },
   { label: "Qui sommes-nous ?", path: "/qui-sommes-nous" },
+  { label: "Notre équipe", path: "/notre-equipe" },
   { label: "Infos Pratiques", path: "/infos-pratiques" },
   { label: "S'INSCRIRE", path: "/inscrire", external: true },
 ];

@@ -4,6 +4,7 @@ import { Linkedin, Mail, ArrowLeft } from "lucide-react";
 
 // Assets
 import generaleImg from "@/assets/teams/generale.jpg";
+import bureauImg from "@/assets/teams/bureau.jpg";
 import kateBecaas from "@/assets/teams/kate-becaas.jpg";
 import antoineMaginot from "@/assets/teams/antoine-maginot.jpg";
 import adamThabet from "@/assets/teams/adam-thabet.jpg";
@@ -64,7 +65,7 @@ const polesData: Record<string, PoleData> = {
   bureau: {
     title: "Le Bureau",
     description: "Le Bureau dirige l'association FOCEEN et coordonne l'ensemble des pôles pour assurer le succès du forum.",
-    heroPhoto: generaleImg,
+    heroPhoto: bureauImg,
     members: [
       { prenom: "Kate", nom: "Becaas", poste: "Présidente", photo: kateBecaas, linkedin: "https://www.linkedin.com/in/kate-becaas-470937378/" },
       { prenom: "Antoine", nom: "Maginot", poste: "Vice-Président", photo: antoineMaginot, linkedin: "https://www.linkedin.com/in/antoine-maginot-355585390/" },

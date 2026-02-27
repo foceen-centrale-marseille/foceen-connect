@@ -179,10 +179,11 @@ const MemberCard = ({ member }: { member: Member }) => {
       <p className="text-xs text-cyan font-heading mt-1">{member.poste}</p>
       <div className="flex gap-3 mt-3">
         {showLinkedin && (
-          <a
+        <a
             href={member.linkedin}
             target="_blank"
             rel="noopener noreferrer"
+            referrerPolicy="no-referrer"
             className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-cyan hover:text-primary-foreground transition-colors"
             aria-label={`LinkedIn de ${member.prenom}`}
           >

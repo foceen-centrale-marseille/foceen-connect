@@ -12,6 +12,7 @@ import NosEquipePole from "./pages/NosEquipePole";
 import Exposants from "./pages/Exposants";
 import InfosPratiques from "./pages/InfosPratiques";
 import NotFound from "./pages/NotFound";
+import Redirect from "./pages/Redirect";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +32,7 @@ const App = () => (
             <Route path="/notre-equipe/:slug" element={<NosEquipePole />} />
             <Route path="/infos-pratiques" element={<InfosPratiques />} />
           </Route>
+          <Route path="/redirect" element={<Redirect />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

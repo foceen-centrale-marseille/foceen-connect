@@ -8,6 +8,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import Index from "./pages/Index";
 import QuiSommesNous from "./pages/QuiSommesNous";
 import NotreEquipe from "./pages/NotreEquipe";
+import NosEquipePole from "./pages/NosEquipePole";
 import Exposants from "./pages/Exposants";
 import InfosPratiques from "./pages/InfosPratiques";
 import NotFound from "./pages/NotFound";
@@ -27,6 +28,7 @@ const App = () => (
             <Route path="/exposants" element={<Exposants />} />
             <Route path="/qui-sommes-nous" element={<QuiSommesNous />} />
             <Route path="/notre-equipe" element={<NotreEquipe />} />
+            <Route path="/notre-equipe/:slug" element={<NosEquipePole />} />
             <Route path="/infos-pratiques" element={<InfosPratiques />} />
           </Route>
           <Route path="*" element={<NotFound />} />

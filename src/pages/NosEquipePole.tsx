@@ -180,19 +180,13 @@ const MemberCard = ({ member }: { member: Member }) => {
       <p className="text-xs text-cyan font-heading mt-1">{member.poste}</p>
       <div className="flex gap-3 mt-3">
         {showLinkedin && (
-          <button
-            onClick={() => {
-              const win = window.open('', '_blank');
-              if (win) {
-                win.opener = null;
-                win.location.href = member.linkedin!;
-              }
-            }}
+          <a
+            href={`/redirect-linkedin?url=${encodeURIComponent(member.linkedin!)}`}
             className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-cyan hover:text-primary-foreground transition-colors"
             aria-label={`LinkedIn de ${member.prenom}`}
           >
             <Linkedin size={14} />
-          </button>
+          </a>
         )}
         <a
           href={`mailto:${email}`}

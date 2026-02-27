@@ -787,7 +787,7 @@ export const exposantsList: Exposant[] = [
 
   // ── Axone Group ──
   {
-    id: 105, name: "Axone Group", sector: "Ingénierie, études techniques", domain: "Ingénierie", yearCreated: 2016,
+    id: 105, name: "Axone Group", logo: "/logos/axone.png", sector: "Ingénierie, études techniques", domain: "Ingénierie", yearCreated: 2016,
     location: "Aix-en-Provence / Toulon / Lyon / Paris / Tours",
     employees: "65", chiffreAffaires: "5 millions d'euros",
     website: "https://www.axonegroup.com/", websiteCarriere: "https://www.axonegroup.com/offres-demploi/",
@@ -800,7 +800,7 @@ export const exposantsList: Exposant[] = [
 
   // ── Bertin Technologies ──
   {
-    id: 106, name: "Bertin Technologies", sector: "Instrumentation industrielle et scientifique", domain: "Industrie", yearCreated: 1956,
+    id: 106, name: "Bertin Technologies", logo: "/logos/bertin-technologies.webp", sector: "Instrumentation industrielle et scientifique", domain: "Industrie", yearCreated: 1956,
     location: "155, rue Louis Armand – 13290 Aix-en-Provence",
     employees: "1 000", chiffreAffaires: "178 millions d'euros",
     website: "https://www.bertin-technologies.com/",
@@ -813,7 +813,7 @@ export const exposantsList: Exposant[] = [
 
   // ── Bertrandt Technology France ──
   {
-    id: 107, name: "Bertrandt Technology France", sector: "Ingénierie automobile, aéronautique, Défense et spatial", domain: "Ingénierie", yearCreated: 1974,
+    id: 107, name: "Bertrandt Technology France", logo: "/logos/bertrandt.png", sector: "Ingénierie automobile, aéronautique, Défense et spatial", domain: "Ingénierie", yearCreated: 1974,
     location: "7 sites en France + 50 sites à l'international (États-Unis, Europe, Afrique, Chine)",
     employees: "13 000", chiffreAffaires: "1,1 milliard d'euros",
     website: "https://www.bertrandt.com/", websiteCarriere: "https://www.bertrandt.com/en/career",
@@ -826,7 +826,7 @@ export const exposantsList: Exposant[] = [
 
   // ── ERAS (Equans) ──
   {
-    id: 108, name: "ERAS", sector: "Ingénierie de Conception et de Réalisation (EPCm, EPC)", domain: "Ingénierie", yearCreated: 1994,
+    id: 108, name: "ERAS", logo: "/logos/eras.png", sector: "Ingénierie de Conception et de Réalisation (EPCm, EPC)", domain: "Ingénierie", yearCreated: 1994,
     location: "Lyon, Marseille, Montoir-de-Bretagne, Mulhouse, La Garenne-Colombes, Orléans, Dunkerque, Rouen, Tavaux, Avignon, Compiègne",
     employees: "350", chiffreAffaires: "42 millions d'euros",
     website: "https://eras.com", websiteCarriere: "https://www.equans.com/join-us",
@@ -839,7 +839,7 @@ export const exposantsList: Exposant[] = [
 
   // ── Exail SAS ──
   {
-    id: 109, name: "Exail SAS", sector: "Technologies de pointe (robotique, maritime, navigation, aéronautique, spatial, photonique)", domain: "Industrie", yearCreated: 2000,
+    id: 109, name: "Exail SAS", logo: "/logos/exail.png", sector: "Technologies de pointe (robotique, maritime, navigation, aéronautique, spatial, photonique)", domain: "Industrie", yearCreated: 2000,
     location: "Saint-Germain-en-Laye 78100 – Échelle internationale (80+ pays)",
     employees: "2 000",
     website: "https://www.exail.com", websiteCarriere: "https://www.exail.com/careers",
@@ -852,7 +852,7 @@ export const exposantsList: Exposant[] = [
 
   // ── IKOS ──
   {
-    id: 110, name: "IKOS", sector: "Ingénierie Ferroviaire & Energie", domain: "Ingénierie", yearCreated: 2005,
+    id: 110, name: "IKOS", logo: "/logos/ikos.jpg", sector: "Ingénierie Ferroviaire & Energie", domain: "Ingénierie", yearCreated: 2005,
     location: "28 bureaux dans 13 pays (France, Espagne, Belgique, Allemagne, Suisse, Suède, Italie, Angleterre, États-Unis, Canada, Maroc, Portugal, Israël)",
     employees: "1 750", chiffreAffaires: "11 368 millions d'euros",
     website: "https://www.ikosconsulting.com/",
@@ -865,7 +865,7 @@ export const exposantsList: Exposant[] = [
 
   // ── Onet Technologies ──
   {
-    id: 111, name: "Onet Technologies", sector: "Ingénierie et maintenance nucléaire", domain: "Ingénierie", yearCreated: 1999,
+    id: 111, name: "Onet Technologies", logo: "/logos/onet.png", sector: "Ingénierie et maintenance nucléaire", domain: "Ingénierie", yearCreated: 1999,
     location: "France, USA, Angleterre, Italie, Canada, Japon – 30 implantations en France",
     employees: "3 000", chiffreAffaires: "280 millions d'euros",
     website: "https://www.groupeonet.com/", websiteCarriere: "https://www.onetrecrute.com/offre-de-emploi/liste-offres.aspx",
@@ -878,7 +878,7 @@ export const exposantsList: Exposant[] = [
 
   // ── Ortec Group ──
   {
-    id: 112, name: "Ortec Group", sector: "Ingénierie et services industriels (Engineering, Contracting, Global Services, Energies)", domain: "Industrie", yearCreated: 1992,
+    id: 112, name: "Ortec Group", logo: "/logos/ortec-group.png", sector: "Ingénierie et services industriels (Engineering, Contracting, Global Services, Energies)", domain: "Industrie", yearCreated: 1992,
     location: "Siège : Aix-en-Provence – Implantation internationale",
     employees: "15 000", chiffreAffaires: "1,4 milliard d'euros",
     website: "https://ortec-group.com/", websiteCarriere: "https://ortec-group.com/carrieres/",
@@ -891,7 +891,7 @@ export const exposantsList: Exposant[] = [
 
   // ── Parlym ──
   {
-    id: 113, name: "Parlym", sector: "Ingénierie multi-sectorielle (Nucléaire, Transition énergétique, Oil & Gas, Défense, Pharmacie, ENR)", domain: "Ingénierie", yearCreated: 1995,
+    id: 113, name: "Parlym", logo: "/logos/parlym.png", sector: "Ingénierie multi-sectorielle (Nucléaire, Transition énergétique, Oil & Gas, Défense, Pharmacie, ENR)", domain: "Ingénierie", yearCreated: 1995,
     location: "Internationale",
     employees: "1 400", chiffreAffaires: "230 millions d'euros",
     website: "https://www.parlym.com/", websiteCarriere: "https://parlym.nos-recrutements.fr/",
@@ -904,7 +904,7 @@ export const exposantsList: Exposant[] = [
 
   // ── Syntec-Ingénierie ──
   {
-    id: 114, name: "Syntec-Ingénierie", sector: "Fédération professionnelle de l'ingénierie", domain: "Ingénierie", yearCreated: 1990,
+    id: 114, name: "Syntec-Ingénierie", logo: "/logos/syntec-ingenierie.png", sector: "Fédération professionnelle de l'ingénierie", domain: "Ingénierie", yearCreated: 1990,
     location: "22, rue Joubert – 75009 Paris",
     employees: "15",
     website: "https://www.syntec-ingenierie.fr",

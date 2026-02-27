@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import bureauImg from "@/assets/teams/bureau.jpg";
+import generaleImg from "@/assets/teams/generale.jpg";
 import poleEntreprise from "@/assets/teams/pole-entreprise.jpg";
 import poleLogistique from "@/assets/teams/pole-logistique.jpg";
 import polePartenariats from "@/assets/teams/pole-partenariats.jpg";
@@ -13,7 +13,7 @@ const poles = [
     slug: "bureau",
     title: "Le Bureau",
     description: "Dirige l'association FOCEEN et coordonne l'ensemble des pôles pour assurer le succès du forum.",
-    photo: bureauImg,
+    photo: generaleImg,
   },
   {
     slug: "entreprises",
@@ -31,7 +31,7 @@ const poles = [
     slug: "communication",
     title: "Pôle Communication",
     description: "Gère la stratégie de communication, les réseaux sociaux et l'image du FOCEEN.",
-    photo: bureauImg,
+    photo: generaleImg,
   },
   {
     slug: "partenariat",
@@ -68,7 +68,7 @@ const NotreEquipe = () => {
       <section className="relative h-[60vh] overflow-hidden flex items-center justify-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${bureauImg})` }}
+          style={{ backgroundImage: `url(${generaleImg})` }}
         >
           <div className="absolute inset-0 bg-primary/50" />
         </div>

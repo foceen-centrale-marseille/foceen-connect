@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Linkedin, Mail, ArrowLeft } from "lucide-react";
 
 // Assets
-import bureauImg from "@/assets/teams/bureau.jpg";
+import generaleImg from "@/assets/teams/generale.jpg";
 import kateBecaas from "@/assets/teams/kate-becaas.jpg";
 import antoineMaginot from "@/assets/teams/antoine-maginot.jpg";
 import adamThabet from "@/assets/teams/adam-thabet.jpg";
@@ -31,6 +31,13 @@ import manonGaudrie from "@/assets/teams/manon-gaudrie.jpg";
 import marieCostes from "@/assets/teams/marie-costes.jpg";
 import raphaelOudot from "@/assets/teams/raphael-oudot.jpg";
 import romainBrunat from "@/assets/teams/romain-brunat.jpg";
+import soufianeFerfra from "@/assets/teams/soufiane-ferfra.jpg";
+import thomasArnaud from "@/assets/teams/thomas-arnaud.jpg";
+import thomasCandeiasDaSilva from "@/assets/teams/thomas-candeias-da-silva.jpg";
+import tomNivaggioni from "@/assets/teams/tom-nivaggioni.jpg";
+import ulysseGuezou from "@/assets/teams/ulysse-guezou.jpg";
+import victorClement from "@/assets/teams/victor-clement.jpg";
+import ysolineMichelVillaz from "@/assets/teams/ysoline-michel-villaz.jpg";
 
 function generateEmail(prenom: string, nom: string) {
   const normalize = (s: string) =>
@@ -43,6 +50,7 @@ interface Member {
   nom: string;
   poste: string;
   photo?: string;
+  linkedin?: string; // empty string = hide button, undefined = show placeholder
 }
 
 interface PoleData {
@@ -56,13 +64,13 @@ const polesData: Record<string, PoleData> = {
   bureau: {
     title: "Le Bureau",
     description: "Le Bureau dirige l'association FOCEEN et coordonne l'ensemble des pôles pour assurer le succès du forum.",
-    heroPhoto: bureauImg,
+    heroPhoto: generaleImg,
     members: [
-      { prenom: "Kate", nom: "Becaas", poste: "Présidente", photo: kateBecaas },
-      { prenom: "Antoine", nom: "Maginot", poste: "Vice-Président", photo: antoineMaginot },
-      { prenom: "Adam", nom: "Thabet", poste: "Trésorier", photo: adamThabet },
-      { prenom: "Arthur", nom: "Poulin", poste: "Vice-Trésorier", photo: arthurPoulin },
-      { prenom: "Candice", nom: "Deliance", poste: "Secrétaire", photo: candiceDeliance },
+      { prenom: "Kate", nom: "Becaas", poste: "Présidente", photo: kateBecaas, linkedin: "https://www.linkedin.com/in/kate-becaas-470937378/" },
+      { prenom: "Antoine", nom: "Maginot", poste: "Vice-Président", photo: antoineMaginot, linkedin: "https://www.linkedin.com/in/antoine-maginot-355585390/" },
+      { prenom: "Adam", nom: "Thabet", poste: "Trésorier", photo: adamThabet, linkedin: "https://www.linkedin.com/in/adam-thabet-a873a9286/" },
+      { prenom: "Arthur", nom: "Poulin", poste: "Vice-Trésorier", photo: arthurPoulin, linkedin: "https://www.linkedin.com/in/arthur-poulin-3a0348383/" },
+      { prenom: "Candice", nom: "Deliance", poste: "Secrétaire", photo: candiceDeliance, linkedin: "https://www.linkedin.com/in/candice-deliance-a111433aa/" },
     ],
   },
   entreprises: {
@@ -70,11 +78,11 @@ const polesData: Record<string, PoleData> = {
     description: "Le Pôle Entreprises est en charge du démarchage et de la relation avec les entreprises exposantes.",
     heroPhoto: poleEntreprise,
     members: [
-      { prenom: "Victor", nom: "Clément", poste: "Responsable" },
-      { prenom: "Diego", nom: "Martel", poste: "Chef de secteur", photo: diegoMartel },
-      { prenom: "Eloi", nom: "Perrin", poste: "Chef de secteur", photo: eloiPerrin },
-      { prenom: "Ariel", nom: "Dia", poste: "Chef de secteur", photo: arielDia },
-      { prenom: "Hippolyte", nom: "Barth", poste: "Chef de secteur", photo: hippolyteBarth },
+      { prenom: "Victor", nom: "Clément", poste: "Responsable", photo: victorClement, linkedin: "https://www.linkedin.com/in/victor-clement-721742345/" },
+      { prenom: "Diego", nom: "Martel", poste: "Chef de secteur", photo: diegoMartel, linkedin: "" },
+      { prenom: "Eloi", nom: "Perrin", poste: "Chef de secteur", photo: eloiPerrin, linkedin: "https://www.linkedin.com/in/eloi-perrin-711417383/" },
+      { prenom: "Ariel", nom: "Dia", poste: "Chef de secteur", photo: arielDia, linkedin: "https://www.linkedin.com/in/ariel-dia-2ab84b272/" },
+      { prenom: "Hippolyte", nom: "Barth", poste: "Chef de secteur", photo: hippolyteBarth, linkedin: "https://www.linkedin.com/in/hippolyte-barth-a71715383/" },
     ],
   },
   logistique: {
@@ -82,19 +90,19 @@ const polesData: Record<string, PoleData> = {
     description: "Le Pôle Logistique organise l'ensemble des aspects matériels et logistiques du forum.",
     heroPhoto: poleLogistique,
     members: [
-      { prenom: "Ysoline", nom: "Michel-Villaz", poste: "Co-Responsable" },
-      { prenom: "Soufiane", nom: "Ferfra", poste: "Co-Responsable" },
+      { prenom: "Ysoline", nom: "Michel-Villaz", poste: "Co-Responsable", photo: ysolineMichelVillaz, linkedin: "https://www.linkedin.com/in/ysoline-michel-villaz-1a2217390/" },
+      { prenom: "Soufiane", nom: "Ferfra", poste: "Co-Responsable", photo: soufianeFerfra, linkedin: "https://www.linkedin.com/in/soufiane-ferfra-542a0627a/" },
     ],
   },
   communication: {
     title: "Pôle Communication",
     description: "Le Pôle Communication gère la stratégie de communication, les réseaux sociaux et l'image du FOCEEN.",
-    heroPhoto: bureauImg,
+    heroPhoto: generaleImg,
     members: [
-      { prenom: "Manon", nom: "Gaudrie", poste: "Responsable", photo: manonGaudrie },
-      { prenom: "Thomas", nom: "Arnaud", poste: "Chargé de communication" },
-      { prenom: "Ulysse", nom: "Guezou", poste: "Chargé de communication" },
-      { prenom: "Romain", nom: "Brunat", poste: "Chargé de communication", photo: romainBrunat },
+      { prenom: "Manon", nom: "Gaudrie", poste: "Responsable", photo: manonGaudrie, linkedin: "https://www.linkedin.com/in/manon-gaudrie-074920381/" },
+      { prenom: "Thomas", nom: "Arnaud", poste: "Chargé de communication", photo: thomasArnaud, linkedin: "https://www.linkedin.com/in/thomas-arnaud-88031133b/" },
+      { prenom: "Ulysse", nom: "Guezou", poste: "Chargé de communication", photo: ulysseGuezou, linkedin: "https://www.linkedin.com/in/ulysse-gu%C3%A9zou-095821377/" },
+      { prenom: "Romain", nom: "Brunat", poste: "Chargé de communication", photo: romainBrunat, linkedin: "https://www.linkedin.com/in/romain-brunat-33a857385/" },
     ],
   },
   partenariat: {
@@ -102,8 +110,8 @@ const polesData: Record<string, PoleData> = {
     description: "Le Pôle Partenariat développe et entretient les relations avec les partenaires institutionnels et privés.",
     heroPhoto: polePartenariats,
     members: [
-      { prenom: "Hippolyte", nom: "Barot", poste: "Co-Responsable", photo: hippolyteBarot },
-      { prenom: "Tom", nom: "Nivaggioni", poste: "Co-Responsable" },
+      { prenom: "Hippolyte", nom: "Barot", poste: "Co-Responsable", photo: hippolyteBarot, linkedin: "https://www.linkedin.com/in/hippolyte-barot-6442a6381/" },
+      { prenom: "Tom", nom: "Nivaggioni", poste: "Co-Responsable", photo: tomNivaggioni, linkedin: "https://www.linkedin.com/in/tom-nivaggioni-5a15b83a9/" },
     ],
   },
   qualite: {
@@ -111,9 +119,9 @@ const polesData: Record<string, PoleData> = {
     description: "Le Pôle Qualité assure le respect des normes ISO et l'amélioration continue des processus.",
     heroPhoto: poleQualite,
     members: [
-      { prenom: "Marie", nom: "Costes", poste: "Responsable", photo: marieCostes },
-      { prenom: "Raphaël", nom: "Oudot", poste: "Référent Qualité", photo: raphaelOudot },
-      { prenom: "Côme", nom: "Grardel", poste: "Référent DD", photo: comeGrardel },
+      { prenom: "Marie", nom: "Costes", poste: "Responsable", photo: marieCostes, linkedin: "https://www.linkedin.com/in/marie-costes-7946053aa/" },
+      { prenom: "Raphaël", nom: "Oudot", poste: "Référent Qualité", photo: raphaelOudot, linkedin: "" },
+      { prenom: "Côme", nom: "Grardel", poste: "Référent DD", photo: comeGrardel, linkedin: "https://www.linkedin.com/in/c%C3%B4me-grardel-785b473aa/" },
     ],
   },
   services: {
@@ -121,11 +129,11 @@ const polesData: Record<string, PoleData> = {
     description: "Le Pôle Services conçoit les événements complémentaires au forum : tables rondes, espace conseil, journée pré-FOCEEN.",
     heroPhoto: poleServices,
     members: [
-      { prenom: "Enzo", nom: "Colasuonno Huvelle", poste: "Co-Resp. Entrepreneuriat", photo: enzoColasuonnoHuvelle },
-      { prenom: "Aurélien", nom: "Beaufils", poste: "Co-Resp. Entrepreneuriat", photo: aurelienBeaufils },
-      { prenom: "Juliette", nom: "Cholet", poste: "Tables Rondes / Conf.", photo: juliettecholet },
-      { prenom: "Emma", nom: "Gensburger", poste: "Espace Conseil", photo: emmaGensburger },
-      { prenom: "Thomas", nom: "Candeias Da Silva", poste: "Journée Pré-FOCEEN" },
+      { prenom: "Enzo", nom: "Colasuonno Huvelle", poste: "Co-Resp. Entrepreneuriat", photo: enzoColasuonnoHuvelle, linkedin: "https://www.linkedin.com/in/enzocolasuonnohuvelle/" },
+      { prenom: "Aurélien", nom: "Beaufils", poste: "Co-Resp. Entrepreneuriat", photo: aurelienBeaufils, linkedin: "https://www.linkedin.com/in/aurelien-beaufils-369485399/" },
+      { prenom: "Juliette", nom: "Cholet", poste: "Tables Rondes / Conf.", photo: juliettecholet, linkedin: "https://www.linkedin.com/in/juliette-cholet-a131b6384/" },
+      { prenom: "Emma", nom: "Gensburger", poste: "Espace Conseil", photo: emmaGensburger, linkedin: "https://www.linkedin.com/in/emma-gensburger-709290389/" },
+      { prenom: "Thomas", nom: "Candeias Da Silva", poste: "Journée Pré-FOCEEN", photo: thomasCandeiasDaSilva, linkedin: "https://www.linkedin.com/in/thomas-candeias-da-silva-02a665370/" },
     ],
   },
   "relations-ecoles": {
@@ -133,14 +141,16 @@ const polesData: Record<string, PoleData> = {
     description: "Le Pôle Relations Écoles coordonne les partenariats avec les écoles d'ingénieurs de la région.",
     heroPhoto: poleRelationsEcoles,
     members: [
-      { prenom: "Jules", nom: "Bové", poste: "Co-Responsable", photo: julessBove },
-      { prenom: "Louis", nom: "Girel", poste: "Co-Responsable", photo: louisGirel },
+      { prenom: "Jules", nom: "Bové", poste: "Co-Responsable", photo: julessBove, linkedin: "https://www.linkedin.com/in/jules-bove-918600224/" },
+      { prenom: "Louis", nom: "Girel", poste: "Co-Responsable", photo: louisGirel, linkedin: "https://www.linkedin.com/in/louis-girel-2a0353386/" },
     ],
   },
 };
 
 const MemberCard = ({ member }: { member: Member }) => {
   const email = generateEmail(member.prenom, member.nom);
+  const showLinkedin = member.linkedin !== "" && member.linkedin !== undefined;
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 15 }}
@@ -167,13 +177,17 @@ const MemberCard = ({ member }: { member: Member }) => {
       </h4>
       <p className="text-xs text-cyan font-heading mt-1">{member.poste}</p>
       <div className="flex gap-3 mt-3">
-        <a
-          href="#"
-          className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-cyan hover:text-primary-foreground transition-colors"
-          aria-label={`LinkedIn de ${member.prenom}`}
-        >
-          <Linkedin size={14} />
-        </a>
+        {showLinkedin && (
+          <a
+            href={member.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-cyan hover:text-primary-foreground transition-colors"
+            aria-label={`LinkedIn de ${member.prenom}`}
+          >
+            <Linkedin size={14} />
+          </a>
+        )}
         <a
           href={`mailto:${email}`}
           className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-cyan hover:text-primary-foreground transition-colors"

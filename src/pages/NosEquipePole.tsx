@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Linkedin, Mail, ArrowLeft } from "lucide-react";
+import { Mail, ArrowLeft } from "lucide-react";
 
 // Assets
 import generaleImg from "@/assets/teams/generale.jpg";
@@ -151,7 +151,6 @@ const polesData: Record<string, PoleData> = {
 
 const MemberCard = ({ member }: { member: Member }) => {
   const email = generateEmail(member.prenom, member.nom);
-  const showLinkedin = member.linkedin !== "" && member.linkedin !== undefined;
 
   return (
     <motion.div
@@ -179,15 +178,6 @@ const MemberCard = ({ member }: { member: Member }) => {
       </h4>
       <p className="text-xs text-cyan font-heading mt-1">{member.poste}</p>
       <div className="flex gap-3 mt-3">
-        {showLinkedin && (
-          <a
-            href={`/redirect-linkedin?url=${encodeURIComponent(member.linkedin!)}`}
-            className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-cyan hover:text-primary-foreground transition-colors"
-            aria-label={`LinkedIn de ${member.prenom}`}
-          >
-            <Linkedin size={14} />
-          </a>
-        )}
         <a
           href={`mailto:${email}`}
           className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-cyan hover:text-primary-foreground transition-colors"

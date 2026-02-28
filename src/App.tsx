@@ -21,7 +21,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/foceen-connect">
         <ScrollToTop />
         <Routes>
           <Route element={<Layout />}>

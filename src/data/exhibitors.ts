@@ -914,6 +914,136 @@ export const exposantsList: Exposant[] = [
     description: "Syntec-Ingénierie est la fédération professionnelle des entreprises du secteur de l'ingénierie. Notre fédération regroupe près de 400 entreprises qui emploient plus de 90 000 salariés et qui s'investissent pleinement dans des filières tournées vers l'avenir : l'éco-conception, la rénovation énergétique des bâtiments, la décarbonation de l'industrie, le développement des nouvelles sources d'énergie propres. L'ingénierie est le premier secteur qui offre un emploi aux nouveaux ingénieurs, avec plus de 25% d'insertion dans nos entreprises.",
     highlights: ["400 entreprises adhérentes", "90 000+ salariés dans le secteur", "Premier secteur employeur des nouveaux ingénieurs"],
   },
+
+  // ── Tractebel Engineering ──
+  {
+    id: 115, name: "Tractebel Engineering", sector: "Ingénierie", domain: "Ingénierie", yearCreated: 1950,
+    location: "Paris, Lyon et Marseille",
+    employees: "850", chiffreAffaires: "142 millions d'euros",
+    website: "https://tractebel-engie.com/fr-fr/", websiteCarriere: "https://tractebel-engie.com/fr-fr/carrieres/",
+    profiles: "Ingénieur études et projets en mécanique, Génie civil, Électricité, Sûreté",
+    postTypes: ["CDI", "Stage"],
+    applicationMethod: "Envoi CV puis pré qualification téléphonique et entretien RH puis technique en visio ou en présentiel.",
+    description: "Prêt-e à réaliser ton impact positif ? Alors rejoins Tractebel, une société du groupe ENGIE, et nos 5 600 experts passionnés à travers le monde, animés par la volonté de façonner chaque jour un monde plus durable. C'est ta chance de participer à l'aventure du siècle : accélérer la transition énergétique, tout en améliorant la vie des gens à travers des projets porteurs de sens.",
+    highlights: ["Filiale du groupe ENGIE", "5 600 experts à travers le monde", "Transition énergétique : nucléaire, ENR, électricité", "Évolution en expertise technique ou chef de projet"],
+  },
+
+  // ── CMA CGM ──
+  {
+    id: 116, name: "CMA CGM", sector: "Transports et logistiques", domain: "Transport", yearCreated: 1978,
+    location: "Marseille (siège) – 177 pays",
+    employees: "160 000", chiffreAffaires: "55,5 milliards de dollars",
+    website: "https://www.cmacgm-group.com/fr", websiteCarriere: "https://jobs.cmacgm-group.com/",
+    profiles: "Tous profils",
+    postTypes: ["Alternance", "CDD", "CDI", "Stage"],
+    applicationMethod: "1 premier entretien téléphonique, 1 entretien RH, 1 entretien manager – Tests techniques possibles selon les postes.",
+    description: "True to its Purpose, 'We imagine better ways to serve a world in motion', the CMA CGM Group stands as a global leader in sea, land, air, and logistics solutions. With a presence in 177 countries, the Group employs 160,000 people, including nearly 6,000 in Marseilles, which houses its head office. As the world's third-largest container shipping company, CMA CGM serves over 420 ports across five continents.",
+    highlights: ["3ème armateur mondial en conteneurs", "160 000 collaborateurs dans 177 pays", "Siège social à Marseille", "Engagé dans la décarbonation maritime"],
+  },
+
+  // ── Framatome ──
+  {
+    id: 117, name: "Framatome", sector: "Nucléaire", domain: "Énergie", yearCreated: 1958,
+    location: "Internationale",
+    employees: "20 000", chiffreAffaires: "4 676 millions d'euros",
+    website: "https://www.framatome.com/fr/", websiteCarriere: "https://framatome-career.talent-soft.com/",
+    profiles: "Selon les offres de postes",
+    postTypes: ["Stage"],
+    applicationMethod: "CV, lettre de motivation.",
+    description: "Framatome est un leader international de l'énergie nucléaire, reconnu pour ses solutions innovantes et ses technologies à forte valeur ajoutée à destination du parc nucléaire mondial. Forte d'une expertise mondiale et de solides références en termes de fiabilité et de performances, l'entreprise conçoit, entretient et installe des composants et des combustibles ainsi que des systèmes de contrôle-commande pour les centrales nucléaires.",
+    highlights: ["Leader international de l'énergie nucléaire", "20 000 collaborateurs dans le monde", "Ingénierie, fabrication, sûreté et maintenance nucléaire", "Diversité de métiers : ingénierie, terrain, sûreté, gestion de projet"],
+  },
+
+  // ── Groupe SNEF ──
+  {
+    id: 118, name: "Groupe SNEF", sector: "Industrie, Marine, Infrastructure & Sécurité, Nucléaire, Naval", domain: "Industrie", yearCreated: 1905,
+    location: "Nationale & Internationale",
+    employees: "15 173", chiffreAffaires: "2 milliards d'euros",
+    website: "https://www.snef.fr/", websiteCarriere: "https://www.snef.fr/carrieres/page_recrute_offres.php",
+    profiles: "Électricité HT/BT, GTB/GTC, Automation, Supervision, IT & Cybersécurité, Cloud & IA, BI, Procédés, BIM, Mécanique, Chaudronnerie…",
+    postTypes: ["Alternance", "CDI", "Stage"],
+    applicationMethod: "CV.",
+    description: "Capables d'intervenir de bout en bout, tout au long du cycle de vie des installations de nos clients, nous avons bâti notre Groupe autour d'une large palette de compétences techniques. Nous sommes ingénieurs/concepteurs, intégrateurs, mainteneurs et opérateurs de solutions multitechniques dans les domaines de l'énergie, de la mécanique et du numérique.",
+    highlights: ["Groupe multitechnique : énergie, mécanique, numérique", "15 000+ collaborateurs en France et à l'international", "Révolution numérique : IoT, IA, Cybersécurité, BIM"],
+  },
+
+  // ── DGA ──
+  {
+    id: 119, name: "DGA", sector: "Défense", domain: "Défense", yearCreated: 1961,
+    location: "18 sites en France",
+    employees: "10 500",
+    website: "https://www.defense.gouv.fr/dga", websiteCarriere: "https://contractuels.civils.defense.gouv.fr/",
+    profiles: "Métiers techniques (Aéronautique, Naval, Espace, Cyber, Drones, Nucléaire/Défense NRBC), Cyber sécurité, Métiers transverses (Achat, Management de projet, Logistique, Finance, Qualité…)",
+    postTypes: ["Alternance", "CDD", "CDI", "Stage"],
+    applicationMethod: "Offres d'emploi sur https://contractuels.civils.defense.gouv.fr/ – Offres de stage sur https://stages.defense.gouv.fr/",
+    description: "La DGA est l'artisan de tous les succès technologiques de nos armées depuis plus de 60 ans. Sa vocation : équiper les forces armées et préparer l'avenir. Avec 18 sites en France, ses 10 500 femmes et hommes civils ou militaires, dont 60 % cadres, ingénieurs ou experts, 80% de personnels civils et son réseau de collaborateurs à l'international, la DGA intervient dans tous les domaines de la défense.",
+    highlights: ["60+ ans au service des armées françaises", "10 500 collaborateurs dont 60 % ingénieurs/cadres", "16 milliards d'euros de commandes à l'industrie en 2022", "Présence internationale dans 20 pays"],
+  },
+
+  // ── Marine Nationale ──
+  {
+    id: 120, name: "Marine Nationale", sector: "Défense", domain: "Défense", yearCreated: 1626,
+    location: "Internationale",
+    employees: "40 000",
+    website: "http://www.defense.gouv.fr/marine", websiteCarriere: "https://www.lamarinerecrute.fr",
+    profiles: "Profil ingénieur, école de commerce, université de Bac+3 à Bac+5 – Chaque année plus de 4 000 emplois proposés à des jeunes français âgés de 16 à 30 ans",
+    postTypes: ["CDD"],
+    applicationMethod: "CV et lettre de motivation. Contrat de 1 à 8 ans renouvelable.",
+    description: "La Marine nationale est une des composantes des forces armées et dépend du Ministère des armées. Choisir la Marine, c'est décider de servir, soit au sein des bâtiments de surface, des sous-marins, des aéronefs ou des commandos, qui constituent l'outil maritime de la défense militaire de notre pays, soit à terre dans l'environnement et le soutien de ces unités.",
+    highlights: ["Force armée avec 40 000 marins", "Carrières à bord de bâtiments de surface, sous-marins, aéronefs", "Contrats de 1 à 8 ans renouvelables", "Profils ingénieurs et grandes écoles bienvenus"],
+  },
+
+  // ── MB92 La Ciotat ──
+  {
+    id: 121, name: "MB92 La Ciotat", sector: "Réparation Navale", domain: "Industrie", yearCreated: 1998,
+    location: "La Ciotat",
+    employees: "180", chiffreAffaires: "121 millions d'euros",
+    website: "https://mb92.com", websiteCarriere: "https://mb92.com/careers",
+    profiles: "Ingénieur généraliste ou avec spécialité (mécanique) en 3ème année. Très bon niveau d'Anglais",
+    postTypes: ["CDD", "CDI", "Stage"],
+    applicationMethod: "Après le forum : entretien avec le service RH et les managers opérationnels afin de présenter l'entreprise, ses métiers et le management de projet.",
+    description: "Implanté à Barcelone, La Ciotat, Golfe Juan, Red Sea et Palma, le groupe MB92 est le leader mondial de la maintenance, la réparation et le refit de yachts d'exception et évolue sur un marché en forte progression. L'entreprise intervient auprès des superyachts les plus prestigieux au monde et compte aujourd'hui plus de 600 professionnels, dont plus de 15 nationalités.",
+    highlights: ["Leader mondial de la réparation et refit de superyachts", "600+ professionnels de 15 nationalités", "Ascenseur à bateaux de 4 300 tonnes à La Ciotat", "Évolution possible vers Chef de Projet après stage de 6 mois"],
+  },
+
+  // ── Ministère des Armées (DGSE) ──
+  {
+    id: 122, name: "Ministère des Armées", sector: "Défense", domain: "Défense", yearCreated: 1942,
+    location: "France",
+    employees: "7 500",
+    website: "https://www.dgse.gouv.fr/fr",
+    profiles: "Softskills et hardskills – tous profils techniques et transverses",
+    postTypes: ["Alternance", "CDI", "Stage"],
+    applicationMethod: "CV + LM.",
+    description: "Nous sommes la DGSE, le service secret français. Rattachés au ministère des Armées, nous contribuons à la souveraineté de notre pays. Notre mission consiste à recueillir des renseignements partout dans le monde afin d'éclairer les plus hautes autorités de l'État. Nos 7 200 agents œuvrent dans l'ombre pour connaître et anticiper les menaces de toutes natures. Du contre-terrorisme à la cyber, ils agissent pour protéger la France et les Français.",
+    highlights: ["Service de renseignement extérieur français", "7 200 agents au service de la France", "Du contre-terrorisme à la cybersécurité", "Profils très divers : techniques, linguistes, analystes"],
+  },
+
+  // ── Monaco Marine ──
+  {
+    id: 123, name: "Monaco Marine", sector: "Naval Yachting", domain: "Industrie", yearCreated: 1995,
+    location: "Région PACA (Marseille, Beaulieu-sur-Mer, Monaco)",
+    employees: "220", chiffreAffaires: "110 millions d'euros",
+    website: "https://www.monacomarine.com/fr", websiteCarriere: "https://recrutement.monacomarine.com/fr/",
+    profiles: "Chef de Projet Yachting – Dernière année d'étude ou jeune diplômé(e) d'une formation technique/école d'ingénieur ou école de commerce avec forte capacité d'organisation et maîtrise de l'Anglais et du Français",
+    postTypes: ["CDI", "Stage"],
+    applicationMethod: "Possibilité d'embauche en tant que Chef de Projet en sortie de stage de 6 mois. Possibilité d'évoluer au sein de Monaco Marine vers des métiers d'expertise technique ou de management.",
+    description: "Monaco Marine est une société spécialisée dans le refit, la réparation et la maintenance de yachts à moteur ou à voiles de 10 à 180 mètres. Nous proposons des services allant de la simple révision au refit complet. Nous accueillons, conseillons nos clients et pilotons leur projet de la conception à la finalisation au sein de nos 8 chantiers navals répartis entre Marseille et Beaulieu-sur-Mer.",
+    highlights: ["8 chantiers navals entre Marseille et Beaulieu-sur-Mer", "Yachts de 10 à 180 mètres", "Évolution vers des postes d'expertise ou management", "Une marina à Monaco complète l'offre de service"],
+  },
+
+  // ── Conduent Business Solutions France ──
+  {
+    id: 124, name: "Conduent Business Solutions", sector: "Industrie – Transport – Billétique", domain: "Numérique", yearCreated: 1970,
+    location: "Guilherand-Granges (Proche Valence)",
+    employees: "600", chiffreAffaires: "3,5 millions d'euros",
+    website: "https://www.conduent.com/", websiteCarriere: "https://careers.conduent.com/",
+    profiles: "Développement, Ingénierie Logicielle, Ingénierie Système, Test validation, Ingénierie d'Affaires, Développement d'affaires, Gestion de projet",
+    postTypes: ["CDI", "Stage"],
+    applicationMethod: "CV – Entretiens Techniques – Entretiens RH – Entretiens possibles en Visio. Les entretiens sont réalisés en Français en évaluant le niveau d'Anglais.",
+    description: "Implanté en Drôme-Ardèche, proche de Valence, Conduent Business Solutions France conçoit et développe des logiciels et des systèmes billettiques innovants. Le développement du système de lecture et de contrôle de billets pour le métro de Mexico en 1968, puis la RATP au début des années 70, a fait de l'entreprise une pionnière dans le domaine de la Billettique. CBS France est aujourd'hui un centre de compétences mondial pour les transports publics et la mobilité intelligente.",
+    highlights: ["Pionnier de la billettique depuis 1968 (métro de Mexico, RATP)", "Centre de compétences mondial pour la mobilité intelligente", "Spécialiste des transports publics", "Mobilité interne et développement des compétences"],
+  },
 ];
 
 export const allExposants = [parrain, ...partenaires, ...exposantsList].sort((a, b) =>

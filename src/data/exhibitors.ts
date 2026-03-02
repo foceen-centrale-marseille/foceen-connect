@@ -917,7 +917,7 @@ export const exposantsList: Exposant[] = [
 
   // ── Tractebel Engineering ──
   {
-    id: 115, name: "Tractebel Engineering", sector: "Ingénierie", domain: "Ingénierie", yearCreated: 1950,
+    id: 115, name: "Tractebel Engineering", sector: "Ingénierie", domain: "Ingénierie", yearCreated: 1950, logo: "/logos/tractebel.png",
     location: "Paris, Lyon et Marseille",
     employees: "850", chiffreAffaires: "142 millions d'euros",
     website: "https://tractebel-engie.com/fr-fr/", websiteCarriere: "https://tractebel-engie.com/fr-fr/carrieres/",
@@ -930,7 +930,7 @@ export const exposantsList: Exposant[] = [
 
   // ── CMA CGM ──
   {
-    id: 116, name: "CMA CGM", sector: "Transports et logistiques", domain: "Transport", yearCreated: 1978,
+    id: 116, name: "CMA CGM", sector: "Transports et logistiques", domain: "Transport", yearCreated: 1978, logo: "/logos/cma-cgm.png",
     location: "Marseille (siège) – 177 pays",
     employees: "160 000", chiffreAffaires: "55,5 milliards de dollars",
     website: "https://www.cmacgm-group.com/fr", websiteCarriere: "https://jobs.cmacgm-group.com/",
@@ -943,7 +943,7 @@ export const exposantsList: Exposant[] = [
 
   // ── Framatome ──
   {
-    id: 117, name: "Framatome", sector: "Nucléaire", domain: "Énergie", yearCreated: 1958,
+    id: 117, name: "Framatome", sector: "Nucléaire", domain: "Énergie", yearCreated: 1958, logo: "/logos/framatome.png",
     location: "Internationale",
     employees: "20 000", chiffreAffaires: "4 676 millions d'euros",
     website: "https://www.framatome.com/fr/", websiteCarriere: "https://framatome-career.talent-soft.com/",
@@ -956,7 +956,7 @@ export const exposantsList: Exposant[] = [
 
   // ── Groupe SNEF ──
   {
-    id: 118, name: "Groupe SNEF", sector: "Industrie, Marine, Infrastructure & Sécurité, Nucléaire, Naval", domain: "Industrie", yearCreated: 1905,
+    id: 118, name: "Groupe SNEF", sector: "Industrie, Marine, Infrastructure & Sécurité, Nucléaire, Naval", domain: "Industrie", yearCreated: 1905, logo: "/logos/groupe-snef.png",
     location: "Nationale & Internationale",
     employees: "15 173", chiffreAffaires: "2 milliards d'euros",
     website: "https://www.snef.fr/", websiteCarriere: "https://www.snef.fr/carrieres/page_recrute_offres.php",
@@ -969,7 +969,7 @@ export const exposantsList: Exposant[] = [
 
   // ── DGA ──
   {
-    id: 119, name: "DGA", sector: "Défense", domain: "Défense", yearCreated: 1961,
+    id: 119, name: "DGA", sector: "Défense", domain: "Défense", yearCreated: 1961, logo: "/logos/dga.png",
     location: "18 sites en France",
     employees: "10 500",
     website: "https://www.defense.gouv.fr/dga", websiteCarriere: "https://contractuels.civils.defense.gouv.fr/",
@@ -982,7 +982,7 @@ export const exposantsList: Exposant[] = [
 
   // ── Marine Nationale ──
   {
-    id: 120, name: "Marine Nationale", sector: "Défense", domain: "Défense", yearCreated: 1626,
+    id: 120, name: "Marine Nationale", sector: "Défense", domain: "Défense", yearCreated: 1626, logo: "/logos/marine-nationale.png",
     location: "Internationale",
     employees: "40 000",
     website: "http://www.defense.gouv.fr/marine", websiteCarriere: "https://www.lamarinerecrute.fr",
@@ -995,7 +995,7 @@ export const exposantsList: Exposant[] = [
 
   // ── MB92 La Ciotat ──
   {
-    id: 121, name: "MB92 La Ciotat", sector: "Réparation Navale", domain: "Industrie", yearCreated: 1998,
+    id: 121, name: "MB92 La Ciotat", sector: "Réparation Navale", domain: "Industrie", yearCreated: 1998, logo: "/logos/mb92.png",
     location: "La Ciotat",
     employees: "180", chiffreAffaires: "121 millions d'euros",
     website: "https://mb92.com", websiteCarriere: "https://mb92.com/careers",
@@ -1008,7 +1008,7 @@ export const exposantsList: Exposant[] = [
 
   // ── Ministère des Armées (DGSE) ──
   {
-    id: 122, name: "Ministère des Armées", sector: "Défense", domain: "Défense", yearCreated: 1942,
+    id: 122, name: "Ministère des Armées", sector: "Défense", domain: "Défense", yearCreated: 1942, logo: "/logos/ministere-armees.png",
     location: "France",
     employees: "7 500",
     website: "https://www.dgse.gouv.fr/fr",
@@ -1021,7 +1021,7 @@ export const exposantsList: Exposant[] = [
 
   // ── Monaco Marine ──
   {
-    id: 123, name: "Monaco Marine", sector: "Naval Yachting", domain: "Industrie", yearCreated: 1995,
+    id: 123, name: "Monaco Marine", sector: "Naval Yachting", domain: "Industrie", yearCreated: 1995, logo: "/logos/monaco-marine.png",
     location: "Région PACA (Marseille, Beaulieu-sur-Mer, Monaco)",
     employees: "220", chiffreAffaires: "110 millions d'euros",
     website: "https://www.monacomarine.com/fr", websiteCarriere: "https://recrutement.monacomarine.com/fr/",
@@ -1034,7 +1034,7 @@ export const exposantsList: Exposant[] = [
 
   // ── Conduent Business Solutions France ──
   {
-    id: 124, name: "Conduent Business Solutions", sector: "Industrie – Transport – Billétique", domain: "Numérique", yearCreated: 1970,
+    id: 124, name: "Conduent Business Solutions", sector: "Industrie – Transport – Billétique", domain: "Numérique", yearCreated: 1970, logo: "/logos/conduent.png",
     location: "Guilherand-Granges (Proche Valence)",
     employees: "600", chiffreAffaires: "3,5 millions d'euros",
     website: "https://www.conduent.com/", websiteCarriere: "https://careers.conduent.com/",

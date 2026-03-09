@@ -72,29 +72,59 @@ const Chart = ({ data, colors }: { data: { name: string; value: number }[]; colo
 
 export default function CompanyStatsSection() {
   return (
-    <section className="py-16 bg-background">
-      <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl lg:text-5xl font-heading font-bold text-foreground text-center mb-12">STATISTIQUES ENTREPRISES</h2>
-        {/* FORCED ROW on desktop, column on mobile with chart first */}
-        <div className="flex flex-col-reverse sm:flex-row sm:items-center sm:justify-between sm:gap-12">
-          <div className="sm:w-[40%] sm:shrink-0 mt-6 sm:mt-0">
-            <h3 className="text-xl lg:text-2xl font-heading font-bold text-foreground mb-4">136 EXPOSANTS</h3>
-            <p className="text-sm leading-relaxed text-muted-foreground">
-              C'est plus de 136 entreprises qui font le déplacement chaque année pour présenter leurs activités et rencontrer les étudiants qui viennent se présenter à elles.
-            </p>
-          </div>
-          <div className="sm:w-[55%] sm:shrink-0">
-            <Tabs defaultValue="sector" className="w-full">
-              <TabsList className="grid w-full grid-cols-2 mb-6">
-                <TabsTrigger value="sector">Secteurs d'activités</TabsTrigger>
-                <TabsTrigger value="structure">Types de structures</TabsTrigger>
-              </TabsList>
-              <TabsContent value="sector"><Chart data={sectorData} colors={COLORS_SECTOR} /></TabsContent>
-              <TabsContent value="structure"><Chart data={structureData} colors={COLORS_STRUCTURE} /></TabsContent>
-            </Tabs>
+    <>
+      <section className="py-16 bg-background">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-4xl lg:text-5xl font-heading font-bold text-foreground text-center mb-12">STATISTIQUES ENTREPRISES</h2>
+          {/* FORCED ROW on desktop, column on mobile with chart first */}
+          <div className="flex flex-col-reverse sm:flex-row sm:items-center sm:justify-between sm:gap-12">
+            <div className="sm:w-[40%] sm:shrink-0 mt-6 sm:mt-0">
+              <h3 className="text-xl lg:text-2xl font-heading font-bold text-foreground mb-4">136 EXPOSANTS</h3>
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                C'est plus de 136 entreprises qui font le déplacement chaque année pour présenter leurs activités et rencontrer les étudiants qui viennent se présenter à elles.
+              </p>
+            </div>
+            <div className="sm:w-[55%] sm:shrink-0">
+              <Tabs defaultValue="sector" className="w-full">
+                <TabsList className="grid w-full grid-cols-2 mb-6">
+                  <TabsTrigger value="sector">Secteurs d'activités</TabsTrigger>
+                  <TabsTrigger value="structure">Types de structures</TabsTrigger>
+                </TabsList>
+                <TabsContent value="sector"><Chart data={sectorData} colors={COLORS_SECTOR} /></TabsContent>
+                <TabsContent value="structure"><Chart data={structureData} colors={COLORS_STRUCTURE} /></TabsContent>
+              </Tabs>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* ─── Bannière Plaquette Commerciale ─── */}
+      <section className="py-14 bg-primary">
+        <div className="max-w-4xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="flex items-center gap-5">
+            <div className="shrink-0 w-14 h-14 rounded-xl bg-primary-foreground/10 flex items-center justify-center">
+              <FileText size={28} className="text-cyan" />
+            </div>
+            <div>
+              <h3 className="text-xl md:text-2xl font-heading font-bold text-primary-foreground">
+                Plaquette Commerciale 2026
+              </h3>
+              <p className="text-sm text-primary-foreground/70 font-body mt-1">
+                Découvrez toutes les offres et opportunités de partenariat pour la 19<sup>e</sup> édition du Forum FOCEEN.
+              </p>
+            </div>
+          </div>
+          <a
+            href="/documents/Plaquette_entreprise_19e_edition.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="shrink-0 inline-flex items-center gap-2.5 px-6 py-3.5 rounded-lg bg-cyan text-primary-foreground font-heading font-semibold text-sm uppercase tracking-wide hover:bg-cyan/90 transition-colors shadow-lg"
+          >
+            <Download size={18} />
+            Télécharger la Plaquette Commerciale 2026
+          </a>
+        </div>
+      </section>
+    </>
   );
 }

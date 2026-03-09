@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState, useCallback, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Users, Award, Shield, Lightbulb, Heart, Leaf, Briefcase } from "lucide-react";
 import team26 from "@/assets/teams/team26.jpg";
-import team25 from "@/assets/teams/team25.webp";
+import team25 from "@/assets/teams/team25.jpg";
 import team24 from "@/assets/teams/team24.jpg";
 import team23 from "@/assets/teams/team23.jpg";
 import team22 from "@/assets/teams/team22.webp";

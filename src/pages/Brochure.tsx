@@ -878,6 +878,7 @@ function WordSlide({
   role,
   image,
   imageAlt,
+  imageFit = "cover",
 }: {
   tag: string;
   title: string;
@@ -886,16 +887,26 @@ function WordSlide({
   role: string;
   image?: string;
   imageAlt?: string;
+  imageFit?: "cover" | "contain";
 }) {
+  const isContain = imageFit === "contain";
   return (
     <div className="w-full h-full grid lg:grid-cols-[1fr_1.3fr] overflow-hidden" style={{ background: THEME.paper }}>
       <div className="flex items-center justify-center px-10 md:px-16 py-20" style={{ background: THEME.royal }}>
         {image ? (
           <div
-            className="w-full max-w-sm aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl"
+            className={
+              isContain
+                ? "w-full max-w-md rounded-2xl overflow-hidden shadow-2xl bg-white/5"
+                : "w-full max-w-sm aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl"
+            }
             style={{ border: `2px solid rgba(255,255,255,0.5)` }}
           >
-            <img src={image} alt={imageAlt ?? ""} className="w-full h-full object-cover" />
+            <img
+              src={image}
+              alt={imageAlt ?? ""}
+              className={isContain ? "w-full h-auto max-h-[55vh] object-contain" : "w-full h-full object-cover"}
+            />
           </div>
         ) : (
           <div
@@ -958,12 +969,13 @@ function MotEquipeSlide() {
   return (
     <WordSlide
       tag="Le mot de l'équipe"
-      title="MOT DE L'ÉQUIPE"
+      title="Le mot de l'équipe FOCEEN"
       text="Pendant un an, notre équipe d'élèves-ingénieurs a porté l'ambition de faire du FOCEEN un moment d'exception. Cette brochure est le fruit de cet engagement : un outil pour vous présenter en détail les entreprises qui nous font confiance et les opportunités qu'elles offrent. Nous tenons à remercier chaleureusement nos partenaires, l'école Centrale Méditerranée et tous les bénévoles qui rendent cette 19ᵉ édition possible. Bonne lecture, et rendez-vous le 03 novembre 2026 au Parc Chanot pour vivre ensemble cette journée dédiée à votre avenir professionnel."
       author="Bureau FOCEEN"
       role="Mandat 2025 – 2026"
       image={teamPhoto}
       imageAlt="Équipe FOCEEN 2026"
+      imageFit="contain"
     />
   );
 }

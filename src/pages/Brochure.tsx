@@ -969,12 +969,13 @@ function MotEquipeSlide() {
   return (
     <WordSlide
       tag="Le mot de l'équipe"
-      title="MOT DE L'ÉQUIPE"
+      title="Le mot de l'équipe FOCEEN"
       text="Pendant un an, notre équipe d'élèves-ingénieurs a porté l'ambition de faire du FOCEEN un moment d'exception. Cette brochure est le fruit de cet engagement : un outil pour vous présenter en détail les entreprises qui nous font confiance et les opportunités qu'elles offrent. Nous tenons à remercier chaleureusement nos partenaires, l'école Centrale Méditerranée et tous les bénévoles qui rendent cette 19ᵉ édition possible. Bonne lecture, et rendez-vous le 03 novembre 2026 au Parc Chanot pour vivre ensemble cette journée dédiée à votre avenir professionnel."
       author="Bureau FOCEEN"
       role="Mandat 2025 – 2026"
       image={teamPhoto}
       imageAlt="Équipe FOCEEN 2026"
+      imageFit="contain"
     />
   );
 }

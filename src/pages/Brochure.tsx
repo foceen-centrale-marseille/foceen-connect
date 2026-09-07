@@ -157,6 +157,28 @@ const SECTORS: { name: string; companies: Company[] }[] = [
       make("Orano", "Énergie nucléaire", "/logos/orano.png"),
       make("Technip Energies", "Énergie", "/logos/technip-energies.png"),
       make("TechnicAtome", "Énergie nucléaire", "/logos/technicatome.jpg"),
+      make("VINCI Energies", "Énergie", "/logos/vinci-energies.png", {
+        founded: "2000",
+        location: "Siège à Montesson (78) — 61 pays dans le monde",
+        revenue: "20,4 Md €",
+        employees: "102 600 collaborateurs",
+        description:
+          "Acteur majeur de la transition énergétique et de la transformation numérique, VINCI Energies déploie des technologies sur mesure pour les infrastructures d'énergie, les bâtiments connectés et l'industrie 4.0 à travers ses marques Axians, Actemium et Omexom.",
+        profiles: ["Ingénieurs d'affaires", "Ingénieurs études électriques / automatismes", "Chefs de projets énergie & télécoms", "Responsables d'affaires juniors"],
+        positions: ["Programme Pépinière (CDI Jeune diplômé)", "Stage de fin d'études", "Alternance"],
+        recruitment: ["Candidature en ligne", "Échange téléphonique", "Entretiens opérationnels et RH", "Parcours Pépinière"],
+      }),
+      make("PAPREC", "Énergie", "/logos/paprec.png", {
+        founded: "1994",
+        location: "Paris (siège) — La Seyne-sur-Mer, Lyon, Nantes, Toulouse",
+        revenue: "3 Md €",
+        employees: "16 000 collaborateurs",
+        description:
+          "Leader français du recyclage et de la valorisation énergétique des déchets, Paprec conçoit, construit et exploite des usines d'incinération, de méthanisation et de tri haute performance au service de l'économie circulaire et de la production d'énergie verte.",
+        profiles: ["Ingénieurs procédés / thermique", "Ingénieurs bureau d'études (calcul, électricité, GC)", "Chefs de projets usines & travaux", "Ingénieurs exploitation"],
+        positions: ["Stage 6 mois", "Alternance", "CDI"],
+        recruitment: ["CV + lettre de motivation", "2 à 3 entretiens RH et directeurs d'usine"],
+      }),
     ],
   },
   {
@@ -195,6 +217,17 @@ const SECTORS: { name: string; companies: Company[] }[] = [
         recruitment: ["Dépôt CV", "Échange téléphonique RH", "Entretien technique avec responsable métier"],
       }),
       make("Bee Engineering", "Ingénierie", "/logos/bee-engineering.jpg"),
+      make("EODD Ingénieurs Conseils", "Ingénierie", "/logos/eodd.png", {
+        founded: "1991",
+        location: "Lyon (siège) — agences nationales dont Marseille",
+        revenue: "≈ 25 M€",
+        employees: "250 collaborateurs",
+        description:
+          "Société de conseil et d'ingénierie indépendante pionnière de la transition écologique, EODD intervient sur les projets urbains, la construction durable, la biodiversité, l'économie circulaire et la stratégie carbone des territoires et entreprises.",
+        profiles: ["Ingénieurs environnement / écoconception", "Ingénieurs performance énergétique / thermique", "Chefs de projets RSE & biodiversité", "Consultants transition bas-carbone"],
+        positions: ["Stage de fin d'études (TFE)", "CDI – Jeune diplômé", "Alternance"],
+        recruitment: ["Dépôt CV", "Entretien RH", "Entretien technique opérationnel"],
+      }),
       make("ECIA", "Ingénierie"),
       make("EMIS et EMIS Access", "Ingénierie"),
       make("Syntec-Ingénierie", "Fédération d'ingénierie", "/logos/syntec-ingenierie.png"),
@@ -285,7 +318,7 @@ const slides: Slide[] = (() => {
     { kind: "sncf-fiche" },
     { kind: "mot-parrain" },
     { kind: "mot-equipe" },
-    { kind: "divider", label: "Entreprises Partenaires", subtitle: "Découvrez nos 35 partenaires" },
+    { kind: "divider", label: "Entreprises Partenaires", subtitle: "Découvrez nos 41 partenaires" },
     { kind: "company", company: navalGroup, sector: "Défense" },
   ];
   SECTORS.forEach((s) => {
@@ -314,6 +347,8 @@ const DOMAIN_GROUPS: { label: string; names: string[] }[] = [
       "CEA",
       "Eiffage",
       "Vinci Construction",
+      "PAPREC",
+      "VINCI Energies",
       "Orano",
       "Framatome",
       "TechnicAtome",
@@ -331,6 +366,7 @@ const DOMAIN_GROUPS: { label: string; names: string[] }[] = [
       "Bee Engineering",
       "ASSYSTEM",
       "Cap Ingelec",
+      "EODD Ingénieurs Conseils",
       "Groupe SNEF",
       "Onet Technologies",
       "AKKODIS",

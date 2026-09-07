@@ -123,6 +123,17 @@ const SECTORS: { name: string; companies: Company[] }[] = [
     name: "BTP",
     companies: [
       make("Bouygues Construction", "BTP", "/logos/bouygues-batiment.jpg"),
+      make("Bouygues Bâtiment Sud-Est", "BTP", "/logos/bouygues-batiment-sud-est.png", {
+        founded: "1973",
+        location: "Marseille / Région Sud-Est",
+        revenue: "380 M€",
+        employees: "950",
+        description:
+          "Filiale de Bouygues Construction, Bouygues Bâtiment Sud-Est déploie son savoir-faire en conception, réalisation et rénovation d'ouvrages tertiaires, résidentiels et publics d'envergure, en intégrant des démarches durables et bas-carbone.",
+        profiles: ["Ingénieurs travaux", "Conducteurs de travaux", "Ingénieurs études de prix", "Chefs de projet méthodes"],
+        positions: ["Stage TFE", "CDI – Jeune diplômé", "Alternance"],
+        recruitment: ["Candidature en ligne", "Entretien RH", "Entretien opérationnel"],
+      }),
       make("Eiffage", "BTP", "/logos/eiffage.png"),
       make("Vinci Construction", "BTP", "/logos/vinci-construction.png"),
     ],
@@ -130,6 +141,17 @@ const SECTORS: { name: string; companies: Company[] }[] = [
   {
     name: "Énergie",
     companies: [
+      make("CEA", "Recherche & Énergie", "/logos/cea.png", {
+        founded: "1945",
+        location: "Cadarache (13) / Multi-sites France",
+        revenue: "Organisme public de recherche",
+        employees: "21 500",
+        description:
+          "Acteur majeur de la recherche au service de la souveraineté nationale, le CEA conçoit et développe des technologies innovantes dans les énergies bas-carbone (nucléaire et renouvelables), le numérique, la santé et la défense.",
+        profiles: ["Ingénieurs chercheurs en énergétique", "Docteurs / PhD", "Ingénieurs neutronique / thermo-hydraulique", "Data Scientists / Systèmes complexes"],
+        positions: ["Stage ingénieur", "Thèse / CIFRE", "CDD / CDI", "Alternance"],
+        recruitment: ["Candidature via l'espace emploi CEA", "Revue dossier", "Entretiens scientifiques et RH"],
+      }),
       make("EP2C Energy", "Énergie"),
       make("Framatome", "Énergie nucléaire", "/logos/framatome.png"),
       make("Orano", "Énergie nucléaire", "/logos/orano.png"),
@@ -140,7 +162,17 @@ const SECTORS: { name: string; companies: Company[] }[] = [
   {
     name: "Industrie",
     companies: [
-      make("EXAIL", "Hautes technologies", "/logos/exail.png"),
+      make("EXAIL", "Hautes technologies", "/logos/exail.png", {
+        founded: "2022 (fusion ECA Group & iXblue)",
+        location: "Saint-Germain-en-Laye (siège) / Multi-sites France et international",
+        revenue: "≈ 300 M€",
+        employees: "2 000",
+        description:
+          "Champion technologique mondial de la robotique autonome, de la photonique, de la navigation inertielle de haute précision et de l'aérospatial pour applications civiles et de défense.",
+        profiles: ["Ingénieurs systèmes embarqués", "Ingénieurs optronique / photonique", "Ingénieurs robotique / IA", "Chefs de projet R&D"],
+        positions: ["Stage", "Alternance", "CDI"],
+        recruitment: ["Sélection CV", "Entretiens techniques et RH"],
+      }),
       make("France Chimie Méditerranée", "Fédération industrielle"),
       make("Groupe SNEF", "Génie électrique & industriel", "/logos/groupe-snef.png"),
       make("Onet Technologies", "Services nucléaires", "/logos/onet.png"),
@@ -151,6 +183,17 @@ const SECTORS: { name: string; companies: Company[] }[] = [
     companies: [
       make("AKKODIS", "Ingénierie & R&D", "/logos/akkodis.png"),
       make("ASSYSTEM", "Ingénierie", "/logos/assystem.png"),
+      make("Cap Ingelec", "Ingénierie", "/logos/cap-ingelec.png", {
+        founded: "1992",
+        location: "Saint-Jean-d'Illac (siège) — agences nationales",
+        revenue: "≈ 200 M€",
+        employees: "600",
+        description:
+          "Société d'ingénierie indépendante spécialisée dans la conception et la réalisation de bâtiments complexes, data centers, salles blanches et installations industrielles à haute exigence technique et énergétique.",
+        profiles: ["Ingénieurs génie électrique", "Ingénieurs CVC / Fluides", "Chefs de projets ingénierie", "Ingénieurs efficacité énergétique"],
+        positions: ["Stage 6 mois", "CDI", "Alternance"],
+        recruitment: ["Dépôt CV", "Échange téléphonique RH", "Entretien technique avec responsable métier"],
+      }),
       make("Bee Engineering", "Ingénierie", "/logos/bee-engineering.jpg"),
       make("ECIA", "Ingénierie"),
       make("EMIS et EMIS Access", "Ingénierie"),
@@ -160,6 +203,17 @@ const SECTORS: { name: string; companies: Company[] }[] = [
   {
     name: "Numérique",
     companies: [
+      make("Capgemini", "Conseil & IT", "/logos/capgemini.png", {
+        founded: "1967",
+        location: "International — 20+ villes en France",
+        revenue: "22,5 Md €",
+        employees: "340 000",
+        description:
+          "Leader mondial du conseil, de la transformation technologique et des services d'ingénierie, Capgemini accompagne les grandes organisations dans leur transition vers le cloud, la data, l'intelligence artificielle et la décarbonation.",
+        profiles: ["Consultants IT", "Software Engineers", "Data Engineers / IA", "Consultants cybersécurité", "Architectes cloud"],
+        positions: ["Stage de fin d'études", "Alternance", "CDI – Jeune diplômé"],
+        recruitment: ["CV sur le site carrières", "Entretiens RH", "Entretien opérationnel / technique"],
+      }),
       make("CGI", "Conseil & IT", "/logos/cgi.png"),
       make("Dassault Systèmes", "Logiciel", "/logos/dassault-systemes.png"),
       make("Murex", "Logiciel financier", "/logos/murex.png"),
@@ -170,6 +224,17 @@ const SECTORS: { name: string; companies: Company[] }[] = [
   {
     name: "Conseil",
     companies: [
+      make("EY Services France", "Audit & Conseil", "/logos/ey.png", {
+        founded: "1989",
+        location: "Paris, Marseille, Lyon et bureaux régionaux",
+        revenue: "1,5 Md € (France)",
+        employees: "7 000 (France)",
+        description:
+          "Leader mondial de l'audit et du conseil, EY mobilise des équipes pluridisciplinaires pour guider les directions générales dans leurs enjeux stratégiques, technologiques, financiers et de transformation durable.",
+        profiles: ["Consultants stratégie & management", "Auditeurs financiers / SI", "Data Scientists", "Consultants cybersécurité", "Ingénieurs RSE / Climat"],
+        positions: ["Stage de césure / fin d'études", "CDI Jeune diplômé"],
+        recruitment: ["Dépôt CV", "Tests en ligne / Assessment center", "Entretiens managers et associés"],
+      }),
       make("IKOS", "Conseil", "/logos/ikos.jpg"),
       make("KPMG", "Audit & Conseil", "/logos/kpmg.jpg"),
       make("Oresys", "Conseil", "/logos/oresys.png"),
@@ -239,12 +304,14 @@ indexList.sort((a, b) => a.name.localeCompare(b.name, "fr"));
 const DOMAIN_GROUPS: { label: string; names: string[] }[] = [
   {
     label: "Audit & Conseil",
-    names: ["KPMG", "Onepoint", "Oresys", "CGI", "IKOS"],
+    names: ["KPMG", "Onepoint", "Oresys", "CGI", "IKOS", "EY Services France"],
   },
   {
     label: "Environnement, Énergie & BTP",
     names: [
       "Bouygues Construction",
+      "Bouygues Bâtiment Sud-Est",
+      "CEA",
       "Eiffage",
       "Vinci Construction",
       "Orano",
@@ -256,13 +323,14 @@ const DOMAIN_GROUPS: { label: string; names: string[] }[] = [
   },
   {
     label: "Informatique, IT & Média",
-    names: ["Dassault Systèmes", "Viveris", "Murex"],
+    names: ["Dassault Systèmes", "Viveris", "Murex", "Capgemini"],
   },
   {
     label: "Ingénierie",
     names: [
       "Bee Engineering",
       "ASSYSTEM",
+      "Cap Ingelec",
       "Groupe SNEF",
       "Onet Technologies",
       "AKKODIS",

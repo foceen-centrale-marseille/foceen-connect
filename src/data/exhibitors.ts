@@ -40,9 +40,9 @@ export const DOMAINS = [
 
 export const parrain: Exposant = {
   id: 0,
-  name: "SNCF Réseau",
-  logo: "/logo-sncf.png",
-  sector: "Acteur majeur du transport ferroviaire et des mobilités durables",
+  name: "Groupe SNCF",
+  logo: "/logo-sncf-groupe.png",
+  sector: "Leader des mobilités durables et acteur de la transition écologique",
   domain: "Transport",
   yearCreated: 1938,
   location: "Présent sur l'ensemble du territoire français",
@@ -55,7 +55,7 @@ export const parrain: Exposant = {
   postTypes: ["CDI", "Alternance", "Stage"],
   applicationMethod: "Selon le poste, pas de process général. Candidatures via le site emploi du groupe SNCF.",
   description:
-    "SNCF Réseau, entreprise du groupe SNCF, est un acteur majeur du transport ferroviaire et des mobilités durables. Avec plus de 50 000 collaborateurs, elle entretient, modernise, développe et exploite les 28 000 km du réseau ferré national afin d'adapter l'infrastructure aux besoins croissants de mobilité et aux enjeux de la transition écologique.",
+    "Le Groupe SNCF est un leader des mobilités durables. Il accompagne chaque jour des millions de voyageurs et agit pour accélérer la transition écologique grâce au développement du transport ferroviaire et de solutions de mobilité bas-carbone.",
   highlights: [
     "28 000 km de lignes en France",
     "Entretien, modernisation et exploitation du réseau ferré national",

@@ -1,8 +1,8 @@
 const parrain = {
-  name: "SNCF Réseau",
-  src: "/logo-sncf.png",
+  name: "Groupe SNCF",
+  src: "/logo-sncf-groupe.png",
   description:
-    "Acteur majeur du transport ferroviaire et des mobilités durables, SNCF Réseau entretient, modernise et exploite les 28 000 km du réseau ferré national.",
+    "Leader des mobilités durables, le Groupe SNCF agit au quotidien en faveur de la transition écologique et de solutions de transport accessibles à tous.",
 };
 
 const partenaires = [
@@ -23,7 +23,7 @@ export default function PartnersSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-heading font-bold text-center text-foreground mb-4">PARRAIN</h2>
         <div className="flex flex-col items-center mb-12">
-          <div className="w-72 h-32 bg-white rounded-lg flex items-center justify-center border border-border p-2">
+          <div className="w-72 h-32 bg-white rounded-lg flex items-center justify-center border border-border p-1">
             <img
               src={parrain.src}
               alt={`Logo ${parrain.name}, parrain officiel du FOCEEN`}

@@ -878,6 +878,7 @@ function WordSlide({
   role,
   image,
   imageAlt,
+  imageFit = "cover",
 }: {
   tag: string;
   title: string;
@@ -886,16 +887,26 @@ function WordSlide({
   role: string;
   image?: string;
   imageAlt?: string;
+  imageFit?: "cover" | "contain";
 }) {
+  const isContain = imageFit === "contain";
   return (
     <div className="w-full h-full grid lg:grid-cols-[1fr_1.3fr] overflow-hidden" style={{ background: THEME.paper }}>
       <div className="flex items-center justify-center px-10 md:px-16 py-20" style={{ background: THEME.royal }}>
         {image ? (
           <div
-            className="w-full max-w-sm aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl"
+            className={
+              isContain
+                ? "w-full max-w-md rounded-2xl overflow-hidden shadow-2xl bg-white/5"
+                : "w-full max-w-sm aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl"
+            }
             style={{ border: `2px solid rgba(255,255,255,0.5)` }}
           >
-            <img src={image} alt={imageAlt ?? ""} className="w-full h-full object-cover" />
+            <img
+              src={image}
+              alt={imageAlt ?? ""}
+              className={isContain ? "w-full h-auto max-h-[55vh] object-contain" : "w-full h-full object-cover"}
+            />
           </div>
         ) : (
           <div

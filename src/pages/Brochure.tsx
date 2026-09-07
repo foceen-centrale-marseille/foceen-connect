@@ -347,6 +347,8 @@ const DOMAIN_GROUPS: { label: string; names: string[] }[] = [
       "CEA",
       "Eiffage",
       "Vinci Construction",
+      "PAPREC",
+      "VINCI Energies",
       "Orano",
       "Framatome",
       "TechnicAtome",

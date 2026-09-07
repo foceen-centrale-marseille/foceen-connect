@@ -374,13 +374,14 @@ const DOMAIN_GROUPS: { label: string; names: string[] }[] = [
     ],
   },
   {
+    label: "Défense",
+    names: ["Naval Group", "Marine Nationale", "Ministère des Armées"],
+  },
+  {
     label: "Transports & Systèmes embarqués",
     names: [
       "SNCF",
-      "Naval Group",
       "THALES",
-      "Marine Nationale",
-      "Ministère des Armées",
       "EXAIL",
       "MB92 La Ciotat",
       "CMA CGM",
@@ -485,9 +486,13 @@ export default function Brochure() {
       <ArrowButton side="right" disabled={i === total - 1} onClick={next} onBlue={blue} />
 
       <div className="absolute top-0 left-0 right-0 flex items-center justify-between px-6 md:px-10 py-4 pointer-events-none z-40">
-        <div className="text-[11px] tracking-[0.35em] uppercase font-heading font-semibold" style={{ color: chromeColor }}>
+        <button
+          onClick={() => go(0)}
+          className="pointer-events-auto cursor-pointer hover:opacity-75 transition-opacity text-[11px] tracking-[0.35em] uppercase font-heading font-semibold"
+          style={{ color: chromeColor }}
+        >
           FOCEEN · Brochure 2026
-        </div>
+        </button>
         <button
           onClick={() => go(2)}
           className="pointer-events-auto inline-flex items-center gap-2 text-[11px] tracking-[0.25em] uppercase font-heading hover:opacity-70 transition-opacity"

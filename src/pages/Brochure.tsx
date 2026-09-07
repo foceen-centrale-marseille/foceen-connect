@@ -364,6 +364,7 @@ const DOMAIN_GROUPS: { label: string; names: string[] }[] = [
       "Bee Engineering",
       "ASSYSTEM",
       "Cap Ingelec",
+      "EODD Ingénieurs Conseils",
       "Groupe SNEF",
       "Onet Technologies",
       "AKKODIS",

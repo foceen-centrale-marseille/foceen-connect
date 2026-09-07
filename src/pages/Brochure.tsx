@@ -374,13 +374,14 @@ const DOMAIN_GROUPS: { label: string; names: string[] }[] = [
     ],
   },
   {
+    label: "Défense",
+    names: ["Naval Group", "Marine Nationale", "Ministère des Armées"],
+  },
+  {
     label: "Transports & Systèmes embarqués",
     names: [
       "SNCF",
-      "Naval Group",
       "THALES",
-      "Marine Nationale",
-      "Ministère des Armées",
       "EXAIL",
       "MB92 La Ciotat",
       "CMA CGM",
